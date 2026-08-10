@@ -22,7 +22,7 @@ export function Header() {
     { href: "#how", label: t("nav.how") },
     { href: "#specialties", label: t("nav.specialties") },
     { href: "#why", label: t("nav.why") },
-    { href: "#doctors", label: t("nav.doctors") },
+    { href: "#providers", label: t("nav.providers") },
     { href: "#faq", label: t("nav.faq") },
   ];
 

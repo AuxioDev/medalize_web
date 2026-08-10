@@ -8,7 +8,7 @@
       "how": "Nasıl çalışır",
       "specialties": "Uzmanlıklar",
       "why": "Neden Medoro",
-      "doctors": "Doktorlar için",
+      "providers": "Ortaklarımız",
       "faq": "SSS"
     },
     "cta": "Bekleme listesine katıl"
@@ -105,11 +105,36 @@
       }
     ]
   },
+  "providers": {
+    "eyebrow": "Ortaklar",
+    "title": "Sağlık hizmeti sunanlar için tasarlandı — tek başına ya da bir klinik olarak."
+  },
   "forDoctors": {
-    "eyebrow": "Doktorlar için",
+    "label": "Bağımsız doktorlar",
     "title": "Her insan kendi doktorunu seçme hakkını hak eder. Onlara bu hakkı vermeye yardımcı olun.",
     "body": "Muayenehanenizi Medoro'da basit, sabit bir abonelikle listeleyin — her randevudan komisyon alınmaz. Takviminizi, çalışma yerlerinizi ve hasta mesajlarınızı tek bir panelden yönetin.",
     "cta": "Doktor olarak başvur"
+  },
+  "forHospitals": {
+    "label": "Hastaneler ve klinikler",
+    "title": "Kliniğinizin tüm doktor kadrosu için tek bir panel.",
+    "body": "Doktorlarınızı davet edin, tüm lokasyonlarda çalışma saatlerini yönetin ve kliniğinizin programını canlı olarak görün — hiçbir zaman hasta kimliğini veya tıbbi notları görmeden. Bir doktor ayrılırsa, kendi programı ve geçmişi tamamen olduğu gibi kalır. Koltuk bazlı planlar 15 doktordan başlar.",
+    "features": [
+      {
+        "title": "Kadronuzu davet edin",
+        "body": "Medoro'nun doktor dizininde arama yapın ve onları kliniğinize davet edin — manuel veri girişine gerek yok."
+      },
+      {
+        "title": "Merkezi çalışma saatleri",
+        "body": "Tüm lokasyonlarınızdaki her doktorun çalışma saatlerini tek bir yerden belirleyin ve düzenleyin."
+      },
+      {
+        "title": "Gizliliği koruyan genel bakış",
+        "body": "Kliniğinizin randevu hacmini ve programını görün — hasta kimliği ve tıbbi notlar doktorda kalır."
+      }
+    ],
+    "pricingNote": "Klinika — ayda 299,99 AZN, 15 doktora kadar · Klinika Plus — ayda 599,99 AZN, 60 doktora kadar + gelişmiş istatistikler",
+    "cta": "Klinika hakkında bizimle konuşun"
   },
   "waitlist": {
     "title": "Bir sonraki doktorunuz sadece birkaç dokunuş uzağınızda.",
@@ -146,6 +171,10 @@
       {
         "q": "Medoro ne zaman yayınlanıyor?",
         "a": "Şu anda doğrulama ve doktor kaydını tamamlıyoruz. Bekleme listesine katılın, Medoro yayınlanır yayınlanmaz size e-posta göndereceğiz."
+      },
+      {
+        "q": "Hastaneler ve klinikler Medoro'ya katılabilir mi?",
+        "a": "Evet. Hastaneler ve klinikler; doktor davet etmek, programlarını lokasyonlar arasında yönetmek ve randevu hacmini görmek için kendi panellerine sahip olur — hasta bilgilerine erişim olmadan. Planlar 15 doktor koltuğundan başlar."
       }
     ]
   },

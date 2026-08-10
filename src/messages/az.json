@@ -8,7 +8,7 @@
       "how": "Necə işləyir",
       "specialties": "İxtisaslar",
       "why": "Niyə Medoro",
-      "doctors": "Həkimlər üçün",
+      "providers": "Tərəfdaşlar",
       "faq": "Suallar"
     },
     "cta": "Növbə siyahısına qoşul"
@@ -105,11 +105,36 @@
       }
     ]
   },
+  "providers": {
+    "eyebrow": "Tərəfdaşlar",
+    "title": "Qulluq göstərənlər üçün hazırlanıb — tək başına həkim və ya klinika olaraq."
+  },
   "forDoctors": {
-    "eyebrow": "Həkimlər üçün",
+    "label": "Müstəqil həkimlər",
     "title": "Hər bir insan öz həkimini seçmək hüququna layiqdir. Bu hüququ onlara verməyə kömək edin.",
     "body": "Sadə, sabit abunə haqqı ilə praktikanızı Medoro-da yerləşdirin — hər qəbuldan komissiya yoxdur. Cədvəlinizi, iş yerlərinizi və pasiyent yazışmalarını bir paneldən idarə edin.",
     "cta": "Həkim kimi müraciət et"
+  },
+  "forHospitals": {
+    "label": "Xəstəxanalar və klinikalar",
+    "title": "Klinikanızın bütün həkim heyəti üçün bir panel.",
+    "body": "Həkimlərinizi dəvət edin, onların iş saatlarını bütün məkanlar üzrə idarə edin və klinikanızın cədvəlini canlı izləyin — pasiyentin kimliyini və tibbi qeydlərini heç vaxt görmədən. Həkim ayrılarsa, onun öz cədvəli və tarixçəsi toxunulmaz qalır. Yerlərə görə planlar 15 həkimdən başlayır.",
+    "features": [
+      {
+        "title": "Heyətinizi dəvət edin",
+        "body": "Medoro-nun həkim kataloqunda axtarın və onları klinikanıza dəvət edin — əl ilə məlumat daxil etməyə ehtiyac yoxdur."
+      },
+      {
+        "title": "Mərkəzləşdirilmiş iş saatları",
+        "body": "Bütün məkanlarınız üzrə hər həkimin iş saatlarını bir yerdən təyin edin və dəyişdirin."
+      },
+      {
+        "title": "Məxfiliyi qoruyan icmal",
+        "body": "Klinikanızın qəbul həcmini və cədvəlini görün — pasiyent kimliyi və tibbi qeydlər həkimdə qalır."
+      }
+    ],
+    "pricingNote": "Klinika — ayda 299.99 AZN, 15 həkimə qədər · Klinika Plus — ayda 599.99 AZN, 60 həkimə qədər + genişləndirilmiş statistika",
+    "cta": "Klinika haqqında bizimlə əlaqə saxlayın"
   },
   "waitlist": {
     "title": "Növbəti həkiminiz cəmi bir neçə toxunuş uzaqlıqdadır.",
@@ -146,6 +171,10 @@
       {
         "q": "Medoro nə vaxt işə düşür?",
         "a": "Hazırda həkimlərin təsdiqini və qeydiyyatını tamamlayırıq. Növbə siyahısına qoşulun, Medoro işə düşən kimi sizə e-poçt göndərəcəyik."
+      },
+      {
+        "q": "Xəstəxanalar və klinikalar Medoro-ya qoşula bilərmi?",
+        "a": "Bəli. Xəstəxanalar və klinikalar həkimləri dəvət etmək, onların cədvəllərini məkanlar üzrə idarə etmək və qəbul həcmini görmək üçün öz panellərini əldə edirlər — pasiyent məlumatlarına giriş olmadan. Planlar 15 həkim yerindən başlayır."
       }
     ]
   },

@@ -8,7 +8,7 @@ export async function Footer() {
   const productLinks = [
     { href: "#how", label: header("nav.how") },
     { href: "#specialties", label: header("nav.specialties") },
-    { href: "#doctors", label: header("nav.doctors") },
+    { href: "#providers", label: header("nav.providers") },
     { href: "#waitlist", label: header("cta") },
   ];
 

@@ -8,7 +8,7 @@
       "how": "Comment ça marche",
       "specialties": "Spécialités",
       "why": "Pourquoi Medoro",
-      "doctors": "Pour les médecins",
+      "providers": "Partenaires",
       "faq": "FAQ"
     },
     "cta": "Rejoindre la liste d'attente"
@@ -105,11 +105,36 @@
       }
     ]
   },
+  "providers": {
+    "eyebrow": "Partenaires",
+    "title": "Conçu pour ceux qui prodiguent des soins — en solo ou au sein d'une clinique."
+  },
   "forDoctors": {
-    "eyebrow": "Pour les médecins",
+    "label": "Médecins indépendants",
     "title": "Chaque patient mérite le droit de choisir son médecin. Aidez-nous à le lui offrir.",
     "body": "Référencez votre cabinet sur Medoro avec un simple abonnement forfaitaire — sans commission sur chaque rendez-vous. Gérez votre agenda, vos lieux d'exercice et vos messages patients depuis un seul tableau de bord.",
     "cta": "Postuler en tant que médecin"
+  },
+  "forHospitals": {
+    "label": "Hôpitaux et cliniques",
+    "title": "Un tableau de bord unique pour toute l'équipe médicale de votre clinique.",
+    "body": "Invitez vos médecins, gérez leurs horaires de travail sur tous vos sites et visualisez en temps réel le planning de votre clinique — sans jamais voir l'identité d'un patient ni ses notes médicales. Si un médecin quitte la clinique, son propre planning et son historique restent intacts. Les forfaits par poste commencent à 15 médecins.",
+    "features": [
+      {
+        "title": "Invitez votre équipe",
+        "body": "Recherchez dans l'annuaire des médecins Medoro et invitez-les à rejoindre votre clinique — sans saisie manuelle."
+      },
+      {
+        "title": "Horaires centralisés",
+        "body": "Définissez et ajustez les horaires de chaque médecin sur tous vos sites depuis un seul endroit."
+      },
+      {
+        "title": "Vue d'ensemble respectueuse de la confidentialité",
+        "body": "Consultez le volume de rendez-vous et le planning de votre clinique — l'identité des patients et les notes médicales restent réservées au médecin."
+      }
+    ],
+    "pricingNote": "Klinika — 299,99 AZN/mois pour jusqu'à 15 médecins · Klinika Plus — 599,99 AZN/mois pour jusqu'à 60 médecins + statistiques avancées",
+    "cta": "Parlez-nous de Klinika"
   },
   "waitlist": {
     "title": "Votre prochain médecin n'est qu'à quelques clics.",
@@ -146,6 +171,10 @@
       {
         "q": "Quand Medoro sera-t-il lancé ?",
         "a": "Nous finalisons actuellement la vérification et l'intégration des médecins. Rejoignez la liste d'attente et nous vous enverrons un e-mail dès que Medoro sera en ligne."
+      },
+      {
+        "q": "Les hôpitaux et cliniques peuvent-ils rejoindre Medoro ?",
+        "a": "Oui. Les hôpitaux et cliniques disposent de leur propre tableau de bord pour inviter des médecins, gérer leurs plannings sur plusieurs sites et suivre le volume de rendez-vous — sans accès aux informations des patients. Les forfaits commencent à 15 postes de médecin."
       }
     ]
   },

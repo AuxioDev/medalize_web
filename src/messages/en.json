@@ -8,7 +8,7 @@
       "how": "How it works",
       "specialties": "Specialties",
       "why": "Why Medoro",
-      "doctors": "For doctors",
+      "providers": "For providers",
       "faq": "FAQ"
     },
     "cta": "Join the waitlist"
@@ -105,11 +105,36 @@
       }
     ]
   },
+  "providers": {
+    "eyebrow": "Partners",
+    "title": "Built for the people who provide care — solo or as a clinic."
+  },
   "forDoctors": {
-    "eyebrow": "For doctors",
+    "label": "Independent doctors",
     "title": "Every patient deserves the right to choose their doctor. Help give them that.",
     "body": "List your practice on Medoro with a simple flat subscription — no commission on every booking. Manage your schedule, workplaces and patient messages from one dashboard.",
     "cta": "Apply as a doctor"
+  },
+  "forHospitals": {
+    "label": "Hospitals & clinics",
+    "title": "One dashboard for your clinic's entire doctor roster.",
+    "body": "Invite your doctors, manage their working hours across every location, and see a live view of your clinic's schedule — without ever seeing a patient's identity or medical notes. If a doctor moves on, their own schedule and history stay fully intact. Seat-based plans start at 15 doctors.",
+    "features": [
+      {
+        "title": "Invite your roster",
+        "body": "Search Medoro's doctor directory and invite them to join your clinic — no manual data entry."
+      },
+      {
+        "title": "Centralized hours",
+        "body": "Set and adjust working hours for every doctor across all your locations from one place."
+      },
+      {
+        "title": "Privacy-safe overview",
+        "body": "See your clinic's appointment volume and schedule — patient identities and medical notes stay with the doctor."
+      }
+    ],
+    "pricingNote": "Klinika — 299.99 AZN/mo for up to 15 doctors · Klinika Plus — 599.99 AZN/mo for up to 60 doctors + advanced stats",
+    "cta": "Talk to us about Klinika"
   },
   "waitlist": {
     "title": "Your next doctor is a few taps away.",
@@ -146,6 +171,10 @@
       {
         "q": "When does Medoro launch?",
         "a": "We're finishing verification and onboarding doctors right now. Join the waitlist and we'll email you the moment Medoro is live."
+      },
+      {
+        "q": "Can hospitals and clinics join Medoro?",
+        "a": "Yes. Hospitals and clinics get their own dashboard to invite doctors, manage their schedules across locations, and see appointment volume — without access to patient details. Plans start at 15 doctor seats."
       }
     ]
   },
