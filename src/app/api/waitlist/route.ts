@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const NOTIFY_TO = process.env.WAITLIST_NOTIFY_EMAIL || "support@auxiodev.com";
+const NOTIFY_TO = process.env.WAITLIST_NOTIFY_EMAIL || "info@auxiodev.com";
 const NOTIFY_FROM = process.env.WAITLIST_FROM_EMAIL || "Medoro Waitlist <waitlist@medoroapp.com>";
 
 export async function POST(request: Request) {

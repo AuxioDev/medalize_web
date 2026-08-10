@@ -53,7 +53,7 @@ export async function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:support@auxiodev.com"
+                  href="mailto:info@auxiodev.com"
                   className="text-sm text-slate-400 transition-colors hover:text-white"
                 >
                   {t("contactLabel")}
@@ -66,7 +66,23 @@ export async function Footer() {
         <div className="mt-12 border-t border-brand-ink-border pt-6">
           <p className="max-w-2xl text-xs leading-relaxed text-slate-500">{t("legalNote")}</p>
           <p className="mt-3 text-xs text-slate-500">
-            {t("copyright", { year: new Date().getFullYear() })} · support@auxiodev.com
+            {t.rich("copyright", {
+              year: new Date().getFullYear(),
+              link: (chunks) => (
+                <a
+                  href="https://auxiodev.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-slate-600 underline-offset-2 transition-colors hover:text-white"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}{" "}
+            ·{" "}
+            <a href="mailto:info@auxiodev.com" className="transition-colors hover:text-white">
+              info@auxiodev.com
+            </a>
           </p>
         </div>
       </div>

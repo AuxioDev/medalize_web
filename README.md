@@ -24,7 +24,7 @@ locale (falls back to `/en`).
 
 `POST /api/waitlist` (`src/app/api/waitlist/route.ts`) validates the email and,
 if `RESEND_API_KEY` is set, emails the submission to `WAITLIST_NOTIFY_EMAIL`
-(defaults to `support@auxiodev.com`). Without an API key it just logs to the
+(defaults to `info@auxiodev.com`). Without an API key it just logs to the
 server console — fine for local dev, **not for production**. Copy `.env.example`
 to `.env.local` and fill in `RESEND_API_KEY` before deploying.
 
