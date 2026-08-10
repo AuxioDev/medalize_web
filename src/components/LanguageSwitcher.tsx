@@ -2,6 +2,7 @@
 
 import { useLocale } from "next-intl";
 import { useState, useRef, useEffect } from "react";
+import { AnimatePresence, motion } from "motion/react";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing, localeLabels, type Locale } from "@/i18n/routing";
 
@@ -46,38 +47,44 @@ export function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
           <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
       </button>
-      {open && (
-        <ul
-          role="listbox"
-          className={`absolute right-0 z-50 mt-2 w-40 overflow-hidden rounded-xl border py-1 shadow-lg ${
-            dark
-              ? "border-brand-ink-border bg-brand-ink-surface"
-              : "border-brand-border bg-white"
-          }`}
-        >
-          {routing.locales.map((l) => (
-            <li key={l}>
-              <button
-                type="button"
-                onClick={() => {
-                  setOpen(false);
-                  router.replace(pathname, { locale: l });
-                }}
-                className={`flex w-full items-center justify-between px-3 py-2 text-sm transition-colors ${
-                  l === locale
-                    ? "font-semibold text-brand-primary"
-                    : dark
-                      ? "text-brand-ink-text hover:bg-brand-ink-surface-alt"
-                      : "text-brand-text hover:bg-brand-muted-bg"
-                }`}
-              >
-                {localeLabels[l]}
-                <span className="text-xs uppercase opacity-60">{l}</span>
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
+      <AnimatePresence>
+        {open && (
+          <motion.ul
+            role="listbox"
+            initial={{ opacity: 0, y: -6, scale: 0.97 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -6, scale: 0.97 }}
+            transition={{ duration: 0.16, ease: [0.22, 1, 0.36, 1] }}
+            className={`absolute right-0 z-50 mt-2 w-40 origin-top-right overflow-hidden rounded-xl border py-1 shadow-lg ${
+              dark
+                ? "border-brand-ink-border bg-brand-ink-surface"
+                : "border-brand-border bg-white"
+            }`}
+          >
+            {routing.locales.map((l) => (
+              <li key={l}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setOpen(false);
+                    router.replace(pathname, { locale: l });
+                  }}
+                  className={`flex w-full items-center justify-between px-3 py-2 text-sm transition-colors ${
+                    l === locale
+                      ? "font-semibold text-brand-primary"
+                      : dark
+                        ? "text-brand-ink-text hover:bg-brand-ink-surface-alt"
+                        : "text-brand-text hover:bg-brand-muted-bg"
+                  }`}
+                >
+                  {localeLabels[l]}
+                  <span className="text-xs uppercase opacity-60">{l}</span>
+                </button>
+              </li>
+            ))}
+          </motion.ul>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

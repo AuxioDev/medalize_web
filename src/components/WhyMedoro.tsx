@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { Reveal, RevealGroup, RevealItem } from "./Reveal";
 
 const icons = [
   // shield-check — verified doctors
@@ -46,27 +47,31 @@ export async function WhyMedoro() {
   return (
     <section id="why" className="scroll-mt-16 bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-6">
-        <span className="text-xs font-semibold uppercase tracking-wide text-brand-primary">
-          {t("eyebrow")}
-        </span>
-        <h2 className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-brand-text sm:text-4xl">
-          {t("title")}
-        </h2>
+        <Reveal>
+          <span className="text-xs font-semibold uppercase tracking-wide text-brand-primary">
+            {t("eyebrow")}
+          </span>
+        </Reveal>
+        <Reveal delay={0.08}>
+          <h2 className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-brand-text sm:text-4xl">
+            {t("title")}
+          </h2>
+        </Reveal>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-2">
+        <RevealGroup className="mt-12 grid gap-4 sm:grid-cols-2">
           {cards.map((card, i) => (
-            <div
+            <RevealItem
               key={card.title}
-              className="rounded-2xl border border-brand-border bg-brand-card p-6 transition-colors hover:border-brand-primary/30"
+              className="rounded-2xl border border-brand-border bg-brand-card p-6 transition-all hover:-translate-y-1 hover:border-brand-primary/30 hover:shadow-md"
             >
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-primary/10 text-brand-primary">
                 {icons[i]}
               </div>
               <h3 className="mt-4 text-base font-semibold text-brand-text">{card.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-brand-text-muted">{card.body}</p>
-            </div>
+            </RevealItem>
           ))}
-        </div>
+        </RevealGroup>
       </div>
     </section>
   );
