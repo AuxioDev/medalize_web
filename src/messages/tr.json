@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "title": "Medoro — Azerbaycan'ın her yerinde doğru doktoru bulun",
+    "description": "Medoro, sizi uzmanlık alanına, mesafeye ve gerçek hasta yorumlarına göre doğrulanmış doktorlarla eşleştirir; ardından tüm aileniz için randevu almanızı, mesajlaşmanızı ve sağlık kayıtlarınızı yönetmenizi sağlar. Yakında iOS ve Android'de."
+  },
+  "header": {
+    "nav": {
+      "how": "Nasıl çalışır",
+      "specialties": "Uzmanlıklar",
+      "why": "Neden Medoro",
+      "doctors": "Doktorlar için",
+      "faq": "SSS"
+    },
+    "cta": "Bekleme listesine katıl"
+  },
+  "hero": {
+    "eyebrow": "Yakında iOS ve Android'de — tüm Azerbaycan'da",
+    "title": "Azerbaycan'ın her yerinde doğru doktoru bulun",
+    "subtitle": "Medoro, sizi uzmanlık alanına, mesafeye ve gerçek hasta yorumlarına göre doğrulanmış doktorlarla eşleştirir — ardından tek bir uygulamada randevu almanızı, mesajlaşmanızı ve tüm aileniz için sağlık kayıtlarınızı yönetmenizi sağlar.",
+    "ctaPrimary": "Bekleme listesine katıl",
+    "ctaSecondary": "Nasıl çalıştığını gör",
+    "badge1Value": "75+",
+    "badge1Label": "şehir ve bölge kapsamda",
+    "badge2Value": "6",
+    "badge2Label": "desteklenen dil",
+    "badge3Value": "%100",
+    "badge3Label": "lisanslı, doğrulanmış doktor",
+    "mock": {
+      "searchLabel": "Doktor bul",
+      "searchPlaceholder": "Uzmanlık veya belirti",
+      "resultTitle": "Dr. Aysel Məmmədova",
+      "resultSubtitle": "Kardiyoloji · Bakü",
+      "resultMeta": "4.9 ★ · 2.1 km uzaklıkta",
+      "bookLabel": "Sıradaki müsait saat",
+      "bookValue": "Bugün, 16:30",
+      "bookCta": "Randevu al"
+    }
+  },
+  "problem": {
+    "eyebrow": "Sorun",
+    "title": "Güvenebileceğiniz bir doktor bulmak hâlâ çok fazla tahmin gerektiriyor.",
+    "body": "Çoğu insan doktor bulmak için tanıdık tavsiyelerine, WhatsApp gruplarına ve tahminlere güveniyor — özellikle Bakü dışında güveni, uygunluğu ve gerçek müsaitliği karşılaştırmanın güvenilir bir yolu yok.",
+    "cards": [
+      {
+        "title": "Sadece ağızdan ağıza",
+        "body": "Tavsiyeler tanıdık çevrenizin bittiği yerde biter ve nadiren bu hafta kimin gerçekten müsait olduğunu söyler."
+      },
+      {
+        "title": "Karşılaştıracak bir şey yok",
+        "body": "Yorumlar, fiyatlar ve gerçek müsaitlik — internette varsa bile — farklı yerlerdedir."
+      },
+      {
+        "title": "Sadece Bakü seçenekleri",
+        "body": "Çoğu rehber başkentte sona erer, diğer şehirlerdeki hastalar ise kendi başına kalır."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "Nasıl çalışır",
+    "title": "Ziyaretiniz, gerçekten ihtiyacınıza göre eşleştirilir.",
+    "steps": [
+      {
+        "label": "Ara",
+        "title": "İhtiyacınızı söyleyin",
+        "body": "Bir uzmanlık seçin veya belirtinizi tarif edin, ardından konum, dil veya müsaitliğe göre filtreleyin."
+      },
+      {
+        "label": "Eşleş",
+        "title": "Anında eşleşin",
+        "body": "Doğrulanmış doktorları mesafe, puan ve boş randevu saatlerine göre karşılaştırın — sonsuz kaydırmaya gerek yok."
+      },
+      {
+        "label": "Randevu al",
+        "title": "Randevu alın, mesajlaşın, takip edin",
+        "body": "Randevunuzu onaylayın, doktorunuzla doğrudan mesajlaşın ve her ziyareti, her kaydı tek bir yerde tutun."
+      }
+    ]
+  },
+  "specialties": {
+    "eyebrow": "Uzmanlıklar",
+    "title": "Her uzmanlık. Tek arama.",
+    "subtitle": "Lansmanda sizi neyin beklediğini görmek için bir uzmanlık seçin.",
+    "detailBody": "Bu alandaki uzmanlar lansman gününden itibaren Medoro'da olacak. Mesafeye, müsaitliğe ve doğrulanmış yorumlara göre uygulama içinden eşleşin.",
+    "cta": "Bekleme listesine katıl"
+  },
+  "why": {
+    "eyebrow": "Neden Medoro",
+    "title": "Sağlık hizmetlerine erişimi en önemli şeye — güvene — odaklanarak yeniden kuruyoruz.",
+    "cards": [
+      {
+        "title": "Lisanslı, doğrulanmış doktorlar",
+        "body": "Her doktor, aramada görünmeden önce tıbbi lisansını ve belgelerini sunar; bunlar elle incelenir."
+      },
+      {
+        "title": "Sadece gerçek yorumlar",
+        "body": "Puanlar yalnızca gerçekten randevu almış hastalardan gelir — parayla sıralama yükseltme veya sahte yorum yok."
+      },
+      {
+        "title": "Tüm aile için tasarlandı",
+        "body": "Ebeveynlerinizin, çocuklarınızın veya eşinizin randevularını, kayıtlarını ve hatırlatmalarını tek bir hesaptan yönetin."
+      },
+      {
+        "title": "Tüm Azerbaycan",
+        "body": "Sadece Bakü değil — ülke genelinde 75'ten fazla şehir ve bölgede kendi dilinizde doktor arayın ve randevu alın."
+      }
+    ]
+  },
+  "forDoctors": {
+    "eyebrow": "Doktorlar için",
+    "title": "Her insan kendi doktorunu seçme hakkını hak eder. Onlara bu hakkı vermeye yardımcı olun.",
+    "body": "Muayenehanenizi Medoro'da basit, sabit bir abonelikle listeleyin — her randevudan komisyon alınmaz. Takviminizi, çalışma yerlerinizi ve hasta mesajlarınızı tek bir panelden yönetin.",
+    "cta": "Doktor olarak başvur"
+  },
+  "waitlist": {
+    "title": "Bir sonraki doktorunuz sadece birkaç dokunuş uzağınızda.",
+    "subtitle": "Bekleme listesine katılın, Medoro iOS ve Android'de yayınlandığında ilk siz öğrenin.",
+    "placeholder": "siz@ornek.com",
+    "button": "Bekleme listesine katıl",
+    "buttonLoading": "Gönderiliyor…",
+    "disclaimer": "Spam yok. Sadece Medoro hazır olduğunda yazacağız.",
+    "successTitle": "Listedesiniz.",
+    "successBody": "Medoro yayınlanır yayınlanmaz size e-posta göndereceğiz.",
+    "errorInvalid": "Lütfen geçerli bir e-posta adresi girin.",
+    "errorGeneric": "Bir şeyler ters gitti. Lütfen birazdan tekrar deneyin."
+  },
+  "faq": {
+    "eyebrow": "SSS",
+    "title": "Sıkça sorulan sorular",
+    "items": [
+      {
+        "q": "Medoro nedir?",
+        "a": "Medoro, Azerbaycan'ın doktor arama ve randevu platformudur. Uzmanlık veya belirtiye göre arayın, yakınınızdaki doğrulanmış bir doktorla eşleşin ve kendi dilinizde saniyeler içinde randevu alın."
+      },
+      {
+        "q": "Medoro hastalar için ücretsiz mi?",
+        "a": "Evet. Doktor arama, randevu alma ve mesajlaşma hastalar için tamamen ücretsizdir. Doktorlar basit bir abonelik planıyla katılır."
+      },
+      {
+        "q": "Doktorlar nasıl doğrulanıyor?",
+        "a": "Her doktor tıbbi lisansını ve belgelerini sunar; ekibimiz profil yayına girmeden önce bunları elle inceler."
+      },
+      {
+        "q": "Yorumlar gerçek mi?",
+        "a": "Yalnızca randevusunu tamamlamış hastalar yorum bırakabilir ve doktorlar daha yüksek puan için ödeme yapamaz — sahtesini yapmanın bir yolu yok."
+      },
+      {
+        "q": "Medoro ne zaman yayınlanıyor?",
+        "a": "Şu anda doğrulama ve doktor kaydını tamamlıyoruz. Bekleme listesine katılın, Medoro yayınlanır yayınlanmaz size e-posta göndereceğiz."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Sağlığınız, kolaylaştırıldı. Azerbaycan'da doğru doktor, saniyeler içinde.",
+    "productHeading": "Ürün",
+    "companyHeading": "Şirket",
+    "aboutLabel": "Hakkımızda",
+    "contactLabel": "İletişim",
+    "legalNote": "Bekleme listesine katılarak Medoro lansmanı hakkında sizinle iletişime geçilmesini kabul edersiniz. Asla spam olmayacak.",
+    "copyright": "© {year} AuxioDev · Bakü, Azerbaycan"
+  }
+}

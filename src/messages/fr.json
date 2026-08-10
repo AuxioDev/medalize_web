@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "title": "Medoro — Trouvez le bon médecin, partout en Azerbaïdjan",
+    "description": "Medoro vous met en relation avec des médecins vérifiés selon la spécialité, la distance et de vrais avis de patients, puis vous permet de prendre rendez-vous, d'échanger et de gérer les dossiers de toute votre famille. Bientôt sur iOS et Android."
+  },
+  "header": {
+    "nav": {
+      "how": "Comment ça marche",
+      "specialties": "Spécialités",
+      "why": "Pourquoi Medoro",
+      "doctors": "Pour les médecins",
+      "faq": "FAQ"
+    },
+    "cta": "Rejoindre la liste d'attente"
+  },
+  "hero": {
+    "eyebrow": "Bientôt sur iOS et Android — partout en Azerbaïdjan",
+    "title": "Trouvez le bon médecin, partout en Azerbaïdjan",
+    "subtitle": "Medoro vous met en relation avec des médecins vérifiés selon la spécialité, la distance et de vrais avis de patients — puis vous permet de prendre rendez-vous, d'échanger et de gérer les dossiers de toute votre famille, dans une seule application.",
+    "ctaPrimary": "Rejoindre la liste d'attente",
+    "ctaSecondary": "Voir comment ça marche",
+    "badge1Value": "75+",
+    "badge1Label": "villes et régions couvertes",
+    "badge2Value": "6",
+    "badge2Label": "langues prises en charge",
+    "badge3Value": "100 %",
+    "badge3Label": "médecins agréés et vérifiés",
+    "mock": {
+      "searchLabel": "Trouver un médecin",
+      "searchPlaceholder": "Spécialité ou symptôme",
+      "resultTitle": "Dr Aysel Məmmədova",
+      "resultSubtitle": "Cardiologie · Bakou",
+      "resultMeta": "4,9 ★ · à 2,1 km",
+      "bookLabel": "Prochain créneau",
+      "bookValue": "Aujourd'hui, 16h30",
+      "bookCta": "Réserver"
+    }
+  },
+  "problem": {
+    "eyebrow": "Le problème",
+    "title": "Trouver un médecin de confiance demande encore trop de tâtonnements.",
+    "body": "La plupart des gens comptent sur le bouche-à-oreille, les groupes WhatsApp et l'intuition pour trouver un médecin — sans moyen fiable de comparer la confiance, la pertinence ou les disponibilités réelles, surtout en dehors de Bakou.",
+    "cards": [
+      {
+        "title": "Rien que le bouche-à-oreille",
+        "body": "Les recommandations s'arrêtent là où s'arrête votre carnet d'adresses, et disent rarement qui est réellement disponible cette semaine."
+      },
+      {
+        "title": "Rien à comparer",
+        "body": "Avis, tarifs et disponibilités réelles se trouvent dans des endroits différents, quand ils existent en ligne."
+      },
+      {
+        "title": "Des options limitées à Bakou",
+        "body": "La plupart des annuaires s'arrêtent à la capitale, laissant les patients des autres villes se débrouiller seuls."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "Comment ça marche",
+    "title": "Votre consultation, adaptée à vos besoins réels.",
+    "steps": [
+      {
+        "label": "Recherche",
+        "title": "Dites-nous ce dont vous avez besoin",
+        "body": "Choisissez une spécialité ou décrivez votre symptôme, puis filtrez par lieu, langue ou disponibilité."
+      },
+      {
+        "label": "Mise en relation",
+        "title": "Une mise en relation instantanée",
+        "body": "Comparez des médecins vérifiés selon la distance, la note et les créneaux disponibles — sans défilement interminable."
+      },
+      {
+        "label": "Rendez-vous",
+        "title": "Réservez, échangez et suivez",
+        "body": "Confirmez votre rendez-vous, échangez directement avec votre médecin et retrouvez chaque visite et chaque dossier au même endroit."
+      }
+    ]
+  },
+  "specialties": {
+    "eyebrow": "Spécialités",
+    "title": "Toutes les spécialités. Une seule recherche.",
+    "subtitle": "Choisissez une spécialité pour voir ce qui vous attend au lancement.",
+    "detailBody": "Les spécialistes de ce domaine seront sur Medoro dès le lancement. Trouvez le bon médecin selon la distance, la disponibilité et les avis vérifiés, directement dans l'application.",
+    "cta": "Rejoindre la liste d'attente"
+  },
+  "why": {
+    "eyebrow": "Pourquoi Medoro",
+    "title": "Nous repensons l'accès aux soins autour de ce qui compte le plus : la confiance.",
+    "cards": [
+      {
+        "title": "Médecins agréés et vérifiés",
+        "body": "Chaque médecin soumet sa licence médicale et ses diplômes, examinés manuellement avant d'apparaître dans les résultats de recherche."
+      },
+      {
+        "title": "Uniquement de vrais avis",
+        "body": "Les notes ne proviennent que de patients ayant réellement consulté — pas de classement payant, pas de faux avis."
+      },
+      {
+        "title": "Pensé pour toute la famille",
+        "body": "Gérez les rendez-vous, dossiers et rappels de vos parents, enfants ou conjoint depuis un seul compte."
+      },
+      {
+        "title": "Tout l'Azerbaïdjan",
+        "body": "Pas seulement Bakou — recherchez et prenez rendez-vous avec des médecins dans plus de 75 villes et régions du pays, dans votre langue."
+      }
+    ]
+  },
+  "forDoctors": {
+    "eyebrow": "Pour les médecins",
+    "title": "Chaque patient mérite le droit de choisir son médecin. Aidez-nous à le lui offrir.",
+    "body": "Référencez votre cabinet sur Medoro avec un simple abonnement forfaitaire — sans commission sur chaque rendez-vous. Gérez votre agenda, vos lieux d'exercice et vos messages patients depuis un seul tableau de bord.",
+    "cta": "Postuler en tant que médecin"
+  },
+  "waitlist": {
+    "title": "Votre prochain médecin n'est qu'à quelques clics.",
+    "subtitle": "Rejoignez la liste d'attente et soyez informé en premier du lancement de Medoro sur iOS et Android.",
+    "placeholder": "vous@exemple.com",
+    "button": "Rejoindre la liste d'attente",
+    "buttonLoading": "Envoi…",
+    "disclaimer": "Aucun spam. Nous vous écrirons seulement quand Medoro sera prêt.",
+    "successTitle": "Vous êtes sur la liste.",
+    "successBody": "Nous vous enverrons un e-mail dès le lancement de Medoro.",
+    "errorInvalid": "Veuillez saisir une adresse e-mail valide.",
+    "errorGeneric": "Une erreur s'est produite. Merci de réessayer dans un instant."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Qu'est-ce que Medoro ?",
+        "a": "Medoro est la plateforme de recherche de médecins et de prise de rendez-vous en Azerbaïdjan. Recherchez par spécialité ou symptôme, trouvez un médecin vérifié près de vous et prenez rendez-vous en quelques secondes, dans votre langue."
+      },
+      {
+        "q": "Medoro est-il gratuit pour les patients ?",
+        "a": "Oui. La recherche, la prise de rendez-vous et les échanges avec les médecins sont entièrement gratuits pour les patients. Les médecins rejoignent la plateforme via un simple abonnement."
+      },
+      {
+        "q": "Comment les médecins sont-ils vérifiés ?",
+        "a": "Chaque médecin soumet sa licence médicale et ses diplômes, que notre équipe examine manuellement avant la mise en ligne de son profil."
+      },
+      {
+        "q": "Les avis sont-ils authentiques ?",
+        "a": "Seuls les patients ayant réellement consulté peuvent laisser un avis, et les médecins ne peuvent pas payer pour être mieux classés — impossible à truquer."
+      },
+      {
+        "q": "Quand Medoro sera-t-il lancé ?",
+        "a": "Nous finalisons actuellement la vérification et l'intégration des médecins. Rejoignez la liste d'attente et nous vous enverrons un e-mail dès que Medoro sera en ligne."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Votre santé, simplifiée. Le bon médecin en Azerbaïdjan, en quelques secondes.",
+    "productHeading": "Produit",
+    "companyHeading": "Entreprise",
+    "aboutLabel": "À propos",
+    "contactLabel": "Contact",
+    "legalNote": "En rejoignant la liste d'attente, vous acceptez d'être contacté au sujet du lancement de Medoro. Jamais de spam.",
+    "copyright": "© {year} AuxioDev · Bakou, Azerbaïdjan"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "title": "Medoro — Azərbaycanın istənilən yerində doğru həkimi tapın",
+    "description": "Medoro sizi ixtisas, məsafə və real pasiyent rəylərinə görə təsdiqlənmiş həkimlərlə uyğunlaşdırır, sonra bütün ailəniz üçün qəbula yazılmağa, yazışmağa və tibbi qeydləri idarə etməyə imkan verir. Tezliklə iOS və Android-də."
+  },
+  "header": {
+    "nav": {
+      "how": "Necə işləyir",
+      "specialties": "İxtisaslar",
+      "why": "Niyə Medoro",
+      "doctors": "Həkimlər üçün",
+      "faq": "Suallar"
+    },
+    "cta": "Növbə siyahısına qoşul"
+  },
+  "hero": {
+    "eyebrow": "Tezliklə iOS və Android-də — bütün Azərbaycanda",
+    "title": "Azərbaycanın istənilən yerində doğru həkimi tapın",
+    "subtitle": "Medoro sizi ixtisas, məsafə və real pasiyent rəylərinə görə təsdiqlənmiş həkimlərlə uyğunlaşdırır — sonra bir tətbiqdə bütün ailəniz üçün qəbula yazılmağa, yazışmağa və tibbi qeydləri idarə etməyə imkan verir.",
+    "ctaPrimary": "Növbə siyahısına qoşul",
+    "ctaSecondary": "Necə işlədiyinə bax",
+    "badge1Value": "75+",
+    "badge1Label": "şəhər və rayon əhatə olunub",
+    "badge2Value": "6",
+    "badge2Label": "dəstəklənən dil",
+    "badge3Value": "100%",
+    "badge3Label": "lisenziyalı, təsdiqlənmiş həkim",
+    "mock": {
+      "searchLabel": "Həkim tap",
+      "searchPlaceholder": "İxtisas və ya simptom",
+      "resultTitle": "Dr. Aysel Məmmədova",
+      "resultSubtitle": "Kardiologiya · Bakı",
+      "resultMeta": "4.9 ★ · 2.1 km məsafədə",
+      "bookLabel": "Növbəti boş vaxt",
+      "bookValue": "Bu gün, 16:30",
+      "bookCta": "Yazıl"
+    }
+  },
+  "problem": {
+    "eyebrow": "Problem",
+    "title": "Etibar edə biləcəyiniz həkimi tapmaq hələ də çox təxmin tələb edir.",
+    "body": "Əksər insanlar həkim tapmaq üçün tanışların məsləhətinə, WhatsApp qruplarına və təxminlərə güvənir — xüsusilə Bakıdan kənarda etibarı, uyğunluğu və real boş vaxtı müqayisə etməyin etibarlı yolu yoxdur.",
+    "cards": [
+      {
+        "title": "Yalnız tanış məsləhəti",
+        "body": "Tövsiyələr sizin tanış dairənizdə bitir və nadir hallarda bu həftə kimin əslində boş olduğunu deyir."
+      },
+      {
+        "title": "Müqayisə ediləsi heç nə yoxdur",
+        "body": "Rəylər, qiymətlər və real boş vaxtlar fərqli yerlərdədir, əgər ümumiyyətlə internetdə varsa."
+      },
+      {
+        "title": "Yalnız Bakı seçimləri",
+        "body": "Əksər kataloqlar paytaxtda bitir, digər bütün şəhərlərdəki pasiyentlər isə tək qalır."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "Necə işləyir",
+    "title": "Ziyarətiniz, əslində ehtiyacınız olana uyğunlaşdırılır.",
+    "steps": [
+      {
+        "label": "Axtar",
+        "title": "Nə lazım olduğunu deyin",
+        "body": "İxtisas seçin və ya simptomunuzu təsvir edin, sonra məsafə, dil və ya boş vaxta görə süzün."
+      },
+      {
+        "label": "Uyğunlaş",
+        "title": "Dərhal uyğunlaşın",
+        "body": "Təsdiqlənmiş həkimləri məsafə, reytinq və boş vaxt aralıqlarına görə müqayisə edin — sonsuz axtarışa ehtiyac yoxdur."
+      },
+      {
+        "label": "Yazıl",
+        "title": "Yazılın, yazışın və izləyin",
+        "body": "Qəbulunuzu təsdiqləyin, həkiminizlə birbaşa yazışın və hər ziyarəti, hər qeydi bir yerdə saxlayın."
+      }
+    ]
+  },
+  "specialties": {
+    "eyebrow": "İxtisaslar",
+    "title": "Hər ixtisas. Bir axtarış.",
+    "subtitle": "Buraxılışda sizi nəyin gözlədiyini görmək üçün bir ixtisas seçin.",
+    "detailBody": "Bu sahədəki mütəxəssislər buraxılış günündən Medoro-da olacaq. Tətbiq daxilində məsafə, boş vaxt və təsdiqlənmiş rəylərə görə uyğunlaşın.",
+    "cta": "Növbə siyahısına qoşul"
+  },
+  "why": {
+    "eyebrow": "Niyə Medoro",
+    "title": "Səhiyyəyə çıxışı ən vacib olan şeyə — etibara diqqət yetirərək yenidən qururuq.",
+    "cards": [
+      {
+        "title": "Lisenziyalı, təsdiqlənmiş həkimlər",
+        "body": "Hər həkim axtarışda görünməzdən əvvəl tibbi lisenziyasını və sertifikatlarını təqdim edir, onlar əl ilə yoxlanılır."
+      },
+      {
+        "title": "Yalnız real rəylər",
+        "body": "Reytinqlər yalnız real qəbulu tamamlamış pasiyentlərdən gəlir — pullu reytinq yüksəltmə və ya saxta rəy yoxdur."
+      },
+      {
+        "title": "Bütün ailə üçün",
+        "body": "Valideynlərinizin, uşaqlarınızın və ya partnyorunuzun qəbullarını, qeydlərini və xatırlatmalarını tək hesabdan idarə edin."
+      },
+      {
+        "title": "Bütün Azərbaycan",
+        "body": "Təkcə Bakı deyil — öz dilinizdə ölkə üzrə 75+ şəhər və rayonda həkim axtarın və yazılın."
+      }
+    ]
+  },
+  "forDoctors": {
+    "eyebrow": "Həkimlər üçün",
+    "title": "Hər bir insan öz həkimini seçmək hüququna layiqdir. Bu hüququ onlara verməyə kömək edin.",
+    "body": "Sadə, sabit abunə haqqı ilə praktikanızı Medoro-da yerləşdirin — hər qəbuldan komissiya yoxdur. Cədvəlinizi, iş yerlərinizi və pasiyent yazışmalarını bir paneldən idarə edin.",
+    "cta": "Həkim kimi müraciət et"
+  },
+  "waitlist": {
+    "title": "Növbəti həkiminiz cəmi bir neçə toxunuş uzaqlıqdadır.",
+    "subtitle": "Növbə siyahısına qoşulun, Medoro iOS və Android-də işə düşən kimi ilk siz bilin.",
+    "placeholder": "siz@example.com",
+    "button": "Növbəyə qoşul",
+    "buttonLoading": "Göndərilir…",
+    "disclaimer": "Spam yoxdur. Yalnız Medoro hazır olanda yazacağıq.",
+    "successTitle": "Siz artıq siyahıdasınız.",
+    "successBody": "Medoro işə düşən kimi sizə e-poçt göndərəcəyik.",
+    "errorInvalid": "Zəhmət olmasa düzgün e-poçt ünvanı daxil edin.",
+    "errorGeneric": "Nəsə səhv getdi. Zəhmət olmasa bir azdan yenidən cəhd edin."
+  },
+  "faq": {
+    "eyebrow": "Suallar",
+    "title": "Tez-tez verilən suallar",
+    "items": [
+      {
+        "q": "Medoro nədir?",
+        "a": "Medoro Azərbaycanın həkim axtarışı və qəbula yazılış platformasıdır. İxtisas və ya simptoma görə axtarın, yaxınlıqdakı təsdiqlənmiş həkimlə uyğunlaşın və öz dilinizdə saniyələr içində yazılın."
+      },
+      {
+        "q": "Medoro pasiyentlər üçün pulsuzdur?",
+        "a": "Bəli. Həkim axtarışı, qəbula yazılış və yazışma pasiyentlər üçün tamamilə pulsuzdur. Həkimlər sadə abunə planı ilə qoşulur."
+      },
+      {
+        "q": "Həkimlər necə təsdiqlənir?",
+        "a": "Hər həkim tibbi lisenziyasını və sertifikatlarını təqdim edir, komandamız profil aktiv olmazdan əvvəl onları əl ilə yoxlayır."
+      },
+      {
+        "q": "Rəylər həqiqidirmi?",
+        "a": "Yalnız qəbulu tamamlamış pasiyentlər rəy yaza bilər, həkimlər isə daha yuxarı reytinq üçün ödəyə bilməzlər — saxtalaşdırmağın yolu yoxdur."
+      },
+      {
+        "q": "Medoro nə vaxt işə düşür?",
+        "a": "Hazırda həkimlərin təsdiqini və qeydiyyatını tamamlayırıq. Növbə siyahısına qoşulun, Medoro işə düşən kimi sizə e-poçt göndərəcəyik."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Sağlamlığınız, sadələşdirilmiş. Azərbaycanda doğru həkim, saniyələr içində.",
+    "productHeading": "Məhsul",
+    "companyHeading": "Şirkət",
+    "aboutLabel": "Haqqımızda",
+    "contactLabel": "Əlaqə",
+    "legalNote": "Növbə siyahısına qoşularaq Medoro-nun buraxılışı barədə sizinlə əlaqə saxlanılmasına razılıq verirsiniz. Heç vaxt spam olmayacaq.",
+    "copyright": "© {year} AuxioDev · Bakı, Azərbaycan"
+  }
+}

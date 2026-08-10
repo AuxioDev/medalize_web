@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "title": "Medoro — Find the right doctor, anywhere in Azerbaijan",
+    "description": "Medoro matches you with verified doctors by specialty, location and real patient reviews, then lets you book, message and manage records for your whole family. Coming soon to iOS and Android."
+  },
+  "header": {
+    "nav": {
+      "how": "How it works",
+      "specialties": "Specialties",
+      "why": "Why Medoro",
+      "doctors": "For doctors",
+      "faq": "FAQ"
+    },
+    "cta": "Join the waitlist"
+  },
+  "hero": {
+    "eyebrow": "Coming soon to iOS & Android — all over Azerbaijan",
+    "title": "Find the right doctor, wherever you are in Azerbaijan",
+    "subtitle": "Medoro matches you with verified doctors by specialty, location and real patient reviews — then lets you book, message and manage records for your whole family, in one app.",
+    "ctaPrimary": "Join the waitlist",
+    "ctaSecondary": "See how it works",
+    "badge1Value": "75+",
+    "badge1Label": "cities & regions covered",
+    "badge2Value": "6",
+    "badge2Label": "languages supported",
+    "badge3Value": "100%",
+    "badge3Label": "licensed, verified doctors",
+    "mock": {
+      "searchLabel": "Find a doctor",
+      "searchPlaceholder": "Specialty or symptom",
+      "resultTitle": "Dr. Aysel Məmmədova",
+      "resultSubtitle": "Cardiology · Baku",
+      "resultMeta": "4.9 ★ · 2.1 km away",
+      "bookLabel": "Next available",
+      "bookValue": "Today, 16:30",
+      "bookCta": "Book"
+    }
+  },
+  "problem": {
+    "eyebrow": "The problem",
+    "title": "Finding a doctor you can trust still takes too much guesswork.",
+    "body": "Most people rely on word of mouth, WhatsApp groups and guesswork to find a doctor — with no reliable way to compare trust, fit or real availability, especially outside Baku.",
+    "cards": [
+      {
+        "title": "Word of mouth only",
+        "body": "Recommendations end where your contact list does, and they rarely tell you who's actually free this week."
+      },
+      {
+        "title": "Nothing to compare",
+        "body": "Reviews, prices and real availability live in different places, if they exist online at all."
+      },
+      {
+        "title": "Baku-only options",
+        "body": "Most directories stop at the capital, leaving patients in every other city to figure it out alone."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "Your visit, matched to what you actually need.",
+    "steps": [
+      {
+        "label": "Search",
+        "title": "Tell us what you need",
+        "body": "Pick a specialty or describe your symptom, then filter by location, language or availability."
+      },
+      {
+        "label": "Match",
+        "title": "Match instantly",
+        "body": "Compare verified doctors by distance, rating and open slots — no endless scrolling required."
+      },
+      {
+        "label": "Book",
+        "title": "Book, message & track",
+        "body": "Confirm your appointment, message your doctor directly, and keep every visit and record in one place."
+      }
+    ]
+  },
+  "specialties": {
+    "eyebrow": "Specialties",
+    "title": "Every specialty. One search.",
+    "subtitle": "Pick a specialty to see what's waiting for you at launch.",
+    "detailBody": "Specialists in this field will be on Medoro from launch day. Match by distance, availability and verified reviews right inside the app.",
+    "cta": "Join the waitlist"
+  },
+  "why": {
+    "eyebrow": "Why Medoro",
+    "title": "Rebuilding healthcare access around the one thing that matters: trust.",
+    "cards": [
+      {
+        "title": "Verified, licensed doctors",
+        "body": "Every doctor submits their medical license and credentials for manual review before they ever appear in search."
+      },
+      {
+        "title": "Real reviews only",
+        "body": "Ratings come only from patients who completed an actual visit — no pay-to-rank, no fake reviews."
+      },
+      {
+        "title": "Built for the whole family",
+        "body": "Manage appointments, records and reminders for your parents, kids or partner from a single account."
+      },
+      {
+        "title": "All of Azerbaijan",
+        "body": "Not just Baku — search and book doctors across 75+ cities and regions nationwide, in your own language."
+      }
+    ]
+  },
+  "forDoctors": {
+    "eyebrow": "For doctors",
+    "title": "Every patient deserves the right to choose their doctor. Help give them that.",
+    "body": "List your practice on Medoro with a simple flat subscription — no commission on every booking. Manage your schedule, workplaces and patient messages from one dashboard.",
+    "cta": "Apply as a doctor"
+  },
+  "waitlist": {
+    "title": "Your next doctor is a few taps away.",
+    "subtitle": "Join the waitlist and be the first to know when Medoro launches on iOS and Android.",
+    "placeholder": "you@example.com",
+    "button": "Join waitlist",
+    "buttonLoading": "Joining…",
+    "disclaimer": "No spam. We'll only write when Medoro is ready.",
+    "successTitle": "You're on the list.",
+    "successBody": "We'll email you the moment Medoro launches.",
+    "errorInvalid": "Please enter a valid email address.",
+    "errorGeneric": "Something went wrong. Please try again in a moment."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "What is Medoro?",
+        "a": "Medoro is Azerbaijan's doctor search and appointment platform. Search by specialty or symptom, match with a verified doctor near you, and book in seconds — in your language."
+      },
+      {
+        "q": "Is Medoro free for patients?",
+        "a": "Yes. Searching, booking and messaging doctors is completely free for patients. Doctors join through a simple subscription plan."
+      },
+      {
+        "q": "How are doctors verified?",
+        "a": "Every doctor submits their medical license and credentials, which our team reviews manually before their profile goes live."
+      },
+      {
+        "q": "Are the reviews real?",
+        "a": "Only patients who completed a visit can leave a review, and doctors cannot pay to rank higher — there's no way to fake it."
+      },
+      {
+        "q": "When does Medoro launch?",
+        "a": "We're finishing verification and onboarding doctors right now. Join the waitlist and we'll email you the moment Medoro is live."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Your health, simplified. The right doctor in Azerbaijan, in seconds.",
+    "productHeading": "Product",
+    "companyHeading": "Company",
+    "aboutLabel": "About",
+    "contactLabel": "Contact",
+    "legalNote": "By joining the waitlist you agree to be contacted about the Medoro launch. No spam, ever.",
+    "copyright": "© {year} AuxioDev · Baku, Azerbaijan"
+  }
+}
