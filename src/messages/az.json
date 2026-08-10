@@ -24,17 +24,7 @@
     "badge2Value": "6",
     "badge2Label": "dəstəklənən dil",
     "badge3Value": "100%",
-    "badge3Label": "lisenziyalı, təsdiqlənmiş həkim",
-    "mock": {
-      "searchLabel": "Həkim tap",
-      "searchPlaceholder": "İxtisas və ya simptom",
-      "resultTitle": "Dr. Aysel Məmmədova",
-      "resultSubtitle": "Kardiologiya · Bakı",
-      "resultMeta": "4.9 ★ · 2.1 km məsafədə",
-      "bookLabel": "Növbəti boş vaxt",
-      "bookValue": "Bu gün, 16:30",
-      "bookCta": "Yazıl"
-    }
+    "badge3Label": "lisenziyalı, təsdiqlənmiş həkim"
   },
   "problem": {
     "eyebrow": "Problem",

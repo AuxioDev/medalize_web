@@ -24,17 +24,7 @@
     "badge2Value": "6",
     "badge2Label": "languages supported",
     "badge3Value": "100%",
-    "badge3Label": "licensed, verified doctors",
-    "mock": {
-      "searchLabel": "Find a doctor",
-      "searchPlaceholder": "Specialty or symptom",
-      "resultTitle": "Dr. Aysel Məmmədova",
-      "resultSubtitle": "Cardiology · Baku",
-      "resultMeta": "4.9 ★ · 2.1 km away",
-      "bookLabel": "Next available",
-      "bookValue": "Today, 16:30",
-      "bookCta": "Book"
-    }
+    "badge3Label": "licensed, verified doctors"
   },
   "problem": {
     "eyebrow": "The problem",

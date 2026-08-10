@@ -24,17 +24,7 @@
     "badge2Value": "6",
     "badge2Label": "langues prises en charge",
     "badge3Value": "100 %",
-    "badge3Label": "médecins agréés et vérifiés",
-    "mock": {
-      "searchLabel": "Trouver un médecin",
-      "searchPlaceholder": "Spécialité ou symptôme",
-      "resultTitle": "Dr Aysel Məmmədova",
-      "resultSubtitle": "Cardiologie · Bakou",
-      "resultMeta": "4,9 ★ · à 2,1 km",
-      "bookLabel": "Prochain créneau",
-      "bookValue": "Aujourd'hui, 16h30",
-      "bookCta": "Réserver"
-    }
+    "badge3Label": "médecins agréés et vérifiés"
   },
   "problem": {
     "eyebrow": "Le problème",

@@ -24,17 +24,7 @@
     "badge2Value": "6",
     "badge2Label": "поддерживаемых языков",
     "badge3Value": "100%",
-    "badge3Label": "лицензированных, проверенных врачей",
-    "mock": {
-      "searchLabel": "Найти врача",
-      "searchPlaceholder": "Специализация или симптом",
-      "resultTitle": "Др. Айсель Мамедова",
-      "resultSubtitle": "Кардиология · Баку",
-      "resultMeta": "4.9 ★ · 2.1 км",
-      "bookLabel": "Ближайшее время",
-      "bookValue": "Сегодня, 16:30",
-      "bookCta": "Записаться"
-    }
+    "badge3Label": "лицензированных, проверенных врачей"
   },
   "problem": {
     "eyebrow": "Проблема",
