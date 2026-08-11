@@ -26,6 +26,24 @@
     "badge3Value": "100 %",
     "badge3Label": "médecins agréés et vérifiés"
   },
+  "bookingDemo": {
+    "findDoctorTitle": "Trouver un médecin",
+    "searchPlaceholder": "Rechercher par nom...",
+    "cityLabel": "Bakou",
+    "cityFieldPlaceholder": "Ville",
+    "searchButtonLabel": "Rechercher",
+    "sortByLabel": "Trier par",
+    "relevanceLabel": "Pertinence",
+    "noRatingsYet": "Pas encore d'avis",
+    "availableToday": "Disponible aujourd'hui",
+    "doctorName": "Dr. Elşən Rzayev",
+    "doctorTitle": "Cardiologue pédiatrique",
+    "bookHeaderPrefix": "Réserver",
+    "pickDateTitle": "Choisissez une date",
+    "pickDateSubtitle": "Les créneaux disponibles s'afficheront ici",
+    "confirmButton": "Confirmer le rendez-vous",
+    "successTitle": "Rendez-vous confirmé !"
+  },
   "problem": {
     "eyebrow": "Le problème",
     "title": "Trouver un médecin de confiance demande encore trop de tâtonnements.",

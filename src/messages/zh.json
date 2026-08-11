@@ -26,6 +26,24 @@
     "badge3Value": "100%",
     "badge3Label": "持证认证医生"
   },
+  "bookingDemo": {
+    "findDoctorTitle": "查找医生",
+    "searchPlaceholder": "按姓名搜索...",
+    "cityLabel": "巴库",
+    "cityFieldPlaceholder": "城市",
+    "searchButtonLabel": "搜索",
+    "sortByLabel": "排序",
+    "relevanceLabel": "相关性",
+    "noRatingsYet": "暂无评分",
+    "availableToday": "今日可约",
+    "doctorName": "Dr. Elşən Rzayev",
+    "doctorTitle": "儿科心脏病专家",
+    "bookHeaderPrefix": "预约",
+    "pickDateTitle": "选择日期",
+    "pickDateSubtitle": "可预约时间将显示在此处",
+    "confirmButton": "确认预约",
+    "successTitle": "预约成功！"
+  },
   "problem": {
     "eyebrow": "痛点",
     "title": "找到一位值得信赖的医生，仍然要靠太多猜测。",

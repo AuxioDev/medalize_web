@@ -1,13 +1,28 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "motion/react";
+import { specialties, type SpecialtyId } from "@/data/specialties";
+import { WEEKDAY_SHORT, formatFullDate, formatMonthYear, formatShortDate } from "@/data/bookingDemoDates";
+import type { Locale } from "@/i18n/routing";
 
-// Recreates the real booking screen captured from the app (same layout,
-// same brand tokens as globals.css) as a small looping demo — a real
-// screenshot is static, this is the only way to show the actual
-// select-a-date → pick-a-slot → confirm flow in motion.
+// Recreates the real app flow (same layout, same brand tokens as
+// globals.css) as a small looping demo — a static screenshot can't show
+// the actual specialty → doctor → date → slot → confirm sequence in
+// motion, so this redraws it using the site's own translations, matching
+// whichever language the site is set to.
 const EASE = [0.22, 1, 0.36, 1] as const;
+
+const SPECIALTY_ORDER: SpecialtyId[] = [
+  "general_practice",
+  "cardiology",
+  "dermatology",
+  "pediatrics",
+  "neurology",
+];
+const SELECTED_SPECIALTY: SpecialtyId = "pediatrics";
+const RATING_PILLS = ["2+", "3+", "4+", "5+"];
 
 type Cell = { d: number; muted: boolean; today?: boolean; target?: boolean };
 
@@ -29,15 +44,21 @@ const CELLS: Cell[] = [
   ...[1, 2, 3, 4, 5].map((d) => ({ d, muted: true })),
 ];
 
-const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const SLOTS = ["09:00", "13:30", "16:00"];
 const SELECTED_SLOT = 1;
 
-// phase: 0 calendar idle · 1 date selected · 2 slots appear · 3 slot selected
-// 4 confirm + press · 5 success
-const DURATIONS = [1500, 1300, 1300, 1100, 1700, 2600];
+// 0 specialty · 1 doctor list · 2 calendar idle · 3 date selected
+// 4 slots appear · 5 slot selected · 6 confirm + press · 7 success
+const DURATIONS = [2100, 1900, 1300, 1200, 1200, 1000, 1600, 2400];
 
-function ChevronIcon({ dir = "left" }: { dir?: "left" | "right" }) {
+function ChevronIcon({ dir = "left" }: { dir?: "left" | "right" | "down" }) {
+  if (dir === "down") {
+    return (
+      <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+        <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    );
+  }
   return (
     <svg width="7" height="12" viewBox="0 0 7 12" fill="none" className={dir === "right" ? "rotate-180" : ""}>
       <path d="M6 1L1 6L6 11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -55,32 +76,204 @@ function CalendarIcon({ className = "" }: { className?: string }) {
   );
 }
 
+function SearchIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" className={className}>
+      <circle cx="5.5" cy="5.5" r="4.2" stroke="currentColor" strokeWidth="1.4" />
+      <path d="M12 12L9 9" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function PinIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" className={className}>
+      <path
+        d="M5 11.3S9 7.9 9 4.5C9 2.3 7.2 0.7 5 0.7C2.8 0.7 1 2.3 1 4.5C1 7.9 5 11.3 5 11.3Z"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinejoin="round"
+      />
+      <circle cx="5" cy="4.5" r="1.3" stroke="currentColor" strokeWidth="1.3" />
+    </svg>
+  );
+}
+
+function StarIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg width="9" height="9" viewBox="0 0 9 9" fill="currentColor" className={className}>
+      <path d="M4.5 0.5L5.6 3.1L8.4 3.4L6.3 5.3L6.9 8.1L4.5 6.6L2.1 8.1L2.7 5.3L0.6 3.4L3.4 3.1Z" />
+    </svg>
+  );
+}
+
+function SortIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" className={className}>
+      <path d="M2.5 1.5V9.5M2.5 1.5L0.8 3.2M2.5 1.5L4.2 3.2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8.5 9.5V1.5M8.5 9.5L6.8 7.8M8.5 9.5L10.2 7.8" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function HeartIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" className={className}>
+      <path
+        d="M7.5 13S1 9.1 1 4.6C1 2.6 2.6 1 4.5 1C5.7 1 6.8 1.6 7.5 2.6C8.2 1.6 9.3 1 10.5 1C12.4 1 14 2.6 14 4.6C14 9.1 7.5 13 7.5 13Z"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export function BookingAnimation() {
   const [phase, setPhase] = useState(0);
+  const t = useTranslations("bookingDemo");
+  const locale = useLocale() as Locale;
 
   useEffect(() => {
     const timer = setTimeout(() => setPhase((p) => (p + 1) % DURATIONS.length), DURATIONS[phase]);
     return () => clearTimeout(timer);
   }, [phase]);
 
-  const dateChosen = phase >= 1;
-  const slotsVisible = phase >= 2 && phase <= 4;
-  const slotChosen = phase >= 3;
-  const confirming = phase === 4;
-  const success = phase === 5;
+  // Aug 14, 2026 is a Friday — weekday index 5 (Sun=0..Sat=6).
+  const monthYear = useMemo(() => formatMonthYear(locale), [locale]);
+  const weekdayLabels = WEEKDAY_SHORT[locale];
+  const fullDateLabel = useMemo(() => formatFullDate(locale, 14, 5), [locale]);
+  const shortDateLabel = useMemo(() => formatShortDate(locale, 14, 5), [locale]);
+
+  const specialtyChosen = phase >= 0;
+  const showDoctorCard = phase >= 1;
+  const showBooking = phase >= 2;
+  const dateChosen = phase >= 3;
+  const slotsVisible = phase >= 4 && phase <= 6;
+  const slotChosen = phase >= 5;
+  const confirming = phase === 6;
+  const success = phase === 7;
 
   return (
     <div className="flex h-full w-full flex-col bg-white text-brand-text">
-      <div className="flex shrink-0 items-center gap-2 border-b border-brand-border px-4 py-3">
-        <span className="text-brand-text-muted">
-          <ChevronIcon />
-        </span>
-        <CalendarIcon className="text-brand-text shrink-0" />
-        <span className="truncate text-[13px] font-bold">Book — Dr. Nigar Quliyeva</span>
-      </div>
-
       <AnimatePresence mode="wait" initial={false}>
-        {!success ? (
+        {!showBooking ? (
+          <motion.div
+            key="search"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35, ease: EASE }}
+            className="flex flex-1 flex-col"
+          >
+            <div className="flex shrink-0 items-center gap-2 border-b border-brand-border px-4 py-3">
+              <span className="text-brand-text-muted">
+                <ChevronIcon />
+              </span>
+              <SearchIcon className="text-brand-text shrink-0" />
+              <span className="truncate text-[13px] font-bold">{t("findDoctorTitle")}</span>
+            </div>
+
+            <div className="px-4 pt-2.5">
+              <div className="flex items-center gap-2 rounded-xl border border-brand-border bg-white px-3 py-2">
+                <SearchIcon className="shrink-0 text-brand-text-muted" />
+                <span className="truncate text-[10px] text-brand-text-muted">{t("searchPlaceholder")}</span>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-1.5 px-4 pt-1.5">
+              <div className="flex flex-1 items-center gap-1.5 rounded-xl border border-brand-border bg-white px-3 py-2">
+                <PinIcon className="shrink-0 text-brand-text-muted" />
+                <span className="flex-1 truncate text-[10px] text-brand-text-muted">{t("cityFieldPlaceholder")}</span>
+                <ChevronIcon dir="down" />
+              </div>
+              <span className="brand-gradient shrink-0 rounded-xl px-3 py-2 text-[10px] font-semibold text-white">
+                {t("searchButtonLabel")}
+              </span>
+            </div>
+
+            <div className="flex flex-wrap gap-1.5 px-4 pt-2.5">
+              {SPECIALTY_ORDER.map((id) => {
+                const isSelected = id === SELECTED_SPECIALTY && specialtyChosen;
+                return (
+                  <motion.span
+                    key={id}
+                    animate={{
+                      backgroundColor: isSelected ? "#2563EB" : "#FFFFFF",
+                      color: isSelected ? "#FFFFFF" : "#0F172A",
+                      borderColor: isSelected ? "#2563EB" : "#E2E8F0",
+                    }}
+                    transition={{ duration: 0.4, ease: EASE }}
+                    className="rounded-full border px-2.5 py-1 text-[9.5px] font-medium"
+                  >
+                    {specialties[id][locale]}
+                  </motion.span>
+                );
+              })}
+            </div>
+
+            <div className="flex flex-wrap gap-1.5 px-4 pt-1.5">
+              {RATING_PILLS.map((r) => (
+                <span
+                  key={r}
+                  className="flex items-center gap-0.5 rounded-full border border-brand-border bg-white px-2 py-0.5 text-[9px] font-medium text-brand-text-muted"
+                >
+                  <StarIcon className="text-amber-400" />
+                  {r}
+                </span>
+              ))}
+            </div>
+
+            <div className="flex items-center justify-between px-4 pt-2.5 text-[9.5px]">
+              <span className="flex items-center gap-1 font-medium text-brand-text-muted">
+                <SortIcon />
+                {t("sortByLabel")}
+              </span>
+              <span className="flex items-center gap-0.5 font-semibold text-brand-primary">
+                {t("relevanceLabel")}
+                <ChevronIcon dir="down" />
+              </span>
+            </div>
+
+            <div className="flex-1 px-4 pt-2.5">
+              <AnimatePresence>
+                {showDoctorCard && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{
+                      opacity: 1,
+                      y: 0,
+                      scale: [1, 1.02, 1],
+                      backgroundColor: ["#FFFFFF", "#EFF6FF", "#FFFFFF"],
+                    }}
+                    transition={{ duration: 0.5, ease: EASE, delay: 0.15 }}
+                    className="rounded-2xl border border-brand-border p-3 shadow-sm"
+                  >
+                    <div className="flex items-start gap-2.5">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-primary text-xs font-bold text-white">
+                        E
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <p className="truncate text-[11px] font-bold">{t("doctorName")}</p>
+                        <p className="truncate text-[10px] font-medium text-brand-primary">{t("doctorTitle")}</p>
+                        <p className="mt-1 flex items-center gap-1 text-[9px] text-brand-text-muted">
+                          <PinIcon />
+                          {t("cityLabel")}
+                        </p>
+                        <p className="mt-0.5 text-[9px] text-brand-text-muted">{t("noRatingsYet")}</p>
+                        <p className="mt-0.5 flex items-center gap-1 text-[9px] font-medium text-emerald-600">
+                          <CalendarIcon className="h-2.5 w-2.5" />
+                          {t("availableToday")}
+                        </p>
+                      </div>
+                      <HeartIcon className="mt-0.5 shrink-0 text-brand-text-muted" />
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          </motion.div>
+        ) : (
           <motion.div
             key="booking"
             initial={{ opacity: 0 }}
@@ -89,160 +282,175 @@ export function BookingAnimation() {
             transition={{ duration: 0.35, ease: EASE }}
             className="flex flex-1 flex-col overflow-hidden"
           >
-            <div className="flex shrink-0 items-center justify-between bg-brand-muted-bg px-4 py-2.5 text-brand-primary">
-              <ChevronIcon />
-              <span className="text-[12px] font-semibold text-brand-text">August 2026</span>
-              <ChevronIcon dir="right" />
-            </div>
+            {!success ? (
+              <>
+                <div className="flex shrink-0 items-center gap-2 border-b border-brand-border px-4 py-3">
+                  <span className="text-brand-text-muted">
+                    <ChevronIcon />
+                  </span>
+                  <CalendarIcon className="text-brand-text shrink-0" />
+                  <span className="truncate text-[13px] font-bold">
+                    {t("bookHeaderPrefix")} — {t("doctorName")}
+                  </span>
+                </div>
 
-            <div className="grid shrink-0 grid-cols-7 px-2 pt-2 text-center text-[9px] font-medium text-brand-text-muted">
-              {WEEKDAYS.map((w) => (
-                <span key={w}>{w}</span>
-              ))}
-            </div>
+                <div className="flex shrink-0 items-center justify-between bg-brand-muted-bg px-4 py-2.5 text-brand-primary">
+                  <ChevronIcon />
+                  <span className="truncate text-[12px] font-semibold text-brand-text">{monthYear}</span>
+                  <ChevronIcon dir="right" />
+                </div>
 
-            <div className="grid shrink-0 grid-cols-7 gap-y-0.5 px-2 pb-2 pt-1">
-              {CELLS.map((cell, i) => {
-                const isTarget = cell.target;
-                const isSelected = isTarget && dateChosen;
-                return (
-                  <div key={i} className="flex items-center justify-center py-1">
-                    <motion.span
-                      animate={{
-                        backgroundColor: isSelected ? "#2563EB" : cell.today ? "#DBEAFE" : "rgba(0,0,0,0)",
-                        color: isSelected ? "#FFFFFF" : cell.today ? "#1D4ED8" : cell.muted ? "#CBD5E1" : "#0F172A",
-                        scale: isSelected ? [1, 1.25, 1] : 1,
-                      }}
-                      transition={{ duration: 0.45, ease: EASE }}
-                      className="flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-medium"
-                    >
-                      {cell.d}
-                    </motion.span>
-                  </div>
-                );
-              })}
-            </div>
+                <div className="grid shrink-0 grid-cols-7 px-2 pt-2 text-center text-[9px] font-medium text-brand-text-muted">
+                  {weekdayLabels.map((w, i) => (
+                    <span key={i} className="truncate">
+                      {w}
+                    </span>
+                  ))}
+                </div>
 
-            <div className="flex flex-1 flex-col bg-brand-muted-bg px-4 pt-4">
-              <AnimatePresence mode="wait">
-                {!slotsVisible ? (
-                  <motion.div
-                    key="placeholder"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="flex flex-1 flex-col items-center justify-center gap-2 pb-10 text-center"
-                  >
-                    <CalendarIcon className="h-6 w-6 text-brand-primary" />
-                    <p className="text-[11px] font-semibold">Pick a date</p>
-                    <p className="text-[9px] text-brand-text-muted">Available time slots will appear here</p>
-                  </motion.div>
-                ) : (
-                  <motion.div
-                    key="slots"
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3, ease: EASE }}
-                    className="flex-1"
-                  >
-                    <p className="mb-2.5 flex items-center gap-1.5 text-[10px] font-semibold text-brand-primary">
-                      <CalendarIcon className="h-3 w-3" />
-                      Friday, 14 August 2026
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {SLOTS.map((slot, i) => {
-                        const chosen = slotChosen && i === SELECTED_SLOT;
-                        return (
-                          <motion.span
-                            key={slot}
-                            initial={{ opacity: 0, y: 6 }}
-                            animate={{
-                              opacity: 1,
-                              y: 0,
-                              backgroundColor: chosen ? "#2563EB" : "#FFFFFF",
-                              color: chosen ? "#FFFFFF" : "#0F172A",
-                              borderColor: chosen ? "#2563EB" : "#E2E8F0",
-                            }}
-                            transition={{ duration: 0.3, delay: i * 0.08, ease: EASE }}
-                            className="rounded-full border px-3 py-1.5 text-[10px] font-semibold shadow-sm"
-                          >
-                            {slot}
-                          </motion.span>
-                        );
-                      })}
-                    </div>
-
-                    <AnimatePresence>
-                      {confirming && (
-                        <motion.div
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0 }}
-                          transition={{ duration: 0.3, ease: EASE }}
-                          className="mt-4 rounded-xl border border-brand-border bg-white p-3 shadow-sm"
+                <div className="grid shrink-0 grid-cols-7 gap-y-0.5 px-2 pb-2 pt-1">
+                  {CELLS.map((cell, i) => {
+                    const isSelected = cell.target && dateChosen;
+                    return (
+                      <div key={i} className="flex items-center justify-center py-1">
+                        <motion.span
+                          animate={{
+                            backgroundColor: isSelected ? "#2563EB" : cell.today ? "#DBEAFE" : "rgba(0,0,0,0)",
+                            color: isSelected ? "#FFFFFF" : cell.today ? "#1D4ED8" : cell.muted ? "#CBD5E1" : "#0F172A",
+                            scale: isSelected ? [1, 1.25, 1] : 1,
+                          }}
+                          transition={{ duration: 0.45, ease: EASE }}
+                          className="flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-medium"
                         >
-                          <p className="text-[10px] font-semibold">Dr. Nigar Quliyeva</p>
-                          <p className="text-[9px] text-brand-text-muted">Fri, 14 Aug · 13:30</p>
-                          <motion.div
-                            animate={{ scale: [1, 0.94, 1] }}
-                            transition={{ duration: 0.9, times: [0, 0.5, 1], ease: EASE }}
-                            className="brand-gradient mt-2.5 rounded-full py-1.5 text-center text-[10px] font-semibold text-white"
-                          >
-                            Confirm Appointment
-                          </motion.div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          </motion.div>
-        ) : (
-          <motion.div
-            key="success"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.35, ease: EASE }}
-            className="flex flex-1 flex-col items-center justify-center gap-3 bg-brand-muted-bg px-6 text-center"
-          >
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ type: "spring", stiffness: 320, damping: 16, delay: 0.1 }}
-              className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 text-white"
-            >
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <motion.path
-                  d="M4 10.5L8 14.5L16 6"
-                  stroke="white"
-                  strokeWidth="2.2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{ duration: 0.4, delay: 0.35, ease: EASE }}
-                />
-              </svg>
-            </motion.div>
-            <motion.p
-              initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.3 }}
-              className="text-[13px] font-bold"
-            >
-              Appointment booked!
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.3 }}
-              className="text-[10px] text-brand-text-muted"
-            >
-              Dr. Nigar Quliyeva · Fri, 14 Aug · 13:30
-            </motion.p>
+                          {cell.d}
+                        </motion.span>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div className="flex flex-1 flex-col bg-brand-muted-bg px-4 pt-4">
+                  <AnimatePresence mode="wait">
+                    {!slotsVisible ? (
+                      <motion.div
+                        key="placeholder"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="flex flex-1 flex-col items-center justify-center gap-2 pb-10 text-center"
+                      >
+                        <CalendarIcon className="h-6 w-6 text-brand-primary" />
+                        <p className="text-[11px] font-semibold">{t("pickDateTitle")}</p>
+                        <p className="text-[9px] text-brand-text-muted">{t("pickDateSubtitle")}</p>
+                      </motion.div>
+                    ) : (
+                      <motion.div
+                        key="slots"
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.3, ease: EASE }}
+                        className="flex-1"
+                      >
+                        <p className="mb-2.5 flex items-center gap-1.5 text-[10px] font-semibold capitalize text-brand-primary">
+                          <CalendarIcon className="h-3 w-3" />
+                          {fullDateLabel}
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          {SLOTS.map((slot, i) => {
+                            const chosen = slotChosen && i === SELECTED_SLOT;
+                            return (
+                              <motion.span
+                                key={slot}
+                                initial={{ opacity: 0, y: 6 }}
+                                animate={{
+                                  opacity: 1,
+                                  y: 0,
+                                  backgroundColor: chosen ? "#2563EB" : "#FFFFFF",
+                                  color: chosen ? "#FFFFFF" : "#0F172A",
+                                  borderColor: chosen ? "#2563EB" : "#E2E8F0",
+                                }}
+                                transition={{ duration: 0.3, delay: i * 0.08, ease: EASE }}
+                                className="rounded-full border px-3 py-1.5 text-[10px] font-semibold shadow-sm"
+                              >
+                                {slot}
+                              </motion.span>
+                            );
+                          })}
+                        </div>
+
+                        <AnimatePresence>
+                          {confirming && (
+                            <motion.div
+                              initial={{ opacity: 0, y: 10 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              exit={{ opacity: 0 }}
+                              transition={{ duration: 0.3, ease: EASE }}
+                              className="mt-4 rounded-xl border border-brand-border bg-white p-3 shadow-sm"
+                            >
+                              <p className="truncate text-[10px] font-semibold">{t("doctorName")}</p>
+                              <p className="truncate text-[9px] text-brand-text-muted">
+                                {shortDateLabel} · {SLOTS[SELECTED_SLOT]}
+                              </p>
+                              <motion.div
+                                animate={{ scale: [1, 0.94, 1] }}
+                                transition={{ duration: 0.9, times: [0, 0.5, 1], ease: EASE }}
+                                className="brand-gradient mt-2.5 rounded-full py-1.5 text-center text-[10px] font-semibold text-white"
+                              >
+                                {t("confirmButton")}
+                              </motion.div>
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </>
+            ) : (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.35, ease: EASE }}
+                className="flex flex-1 flex-col items-center justify-center gap-3 bg-brand-muted-bg px-6 text-center"
+              >
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ type: "spring", stiffness: 320, damping: 16, delay: 0.1 }}
+                  className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 text-white"
+                >
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <motion.path
+                      d="M4 10.5L8 14.5L16 6"
+                      stroke="white"
+                      strokeWidth="2.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      initial={{ pathLength: 0 }}
+                      animate={{ pathLength: 1 }}
+                      transition={{ duration: 0.4, delay: 0.35, ease: EASE }}
+                    />
+                  </svg>
+                </motion.div>
+                <motion.p
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4, duration: 0.3 }}
+                  className="text-[13px] font-bold"
+                >
+                  {t("successTitle")}
+                </motion.p>
+                <motion.p
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.3 }}
+                  className="truncate text-[10px] text-brand-text-muted"
+                >
+                  {t("doctorName")} · {shortDateLabel} · {SLOTS[SELECTED_SLOT]}
+                </motion.p>
+              </motion.div>
+            )}
           </motion.div>
         )}
       </AnimatePresence>

@@ -26,6 +26,24 @@
     "badge3Value": "100%",
     "badge3Label": "licensed, verified doctors"
   },
+  "bookingDemo": {
+    "findDoctorTitle": "Find a Doctor",
+    "searchPlaceholder": "Search by name...",
+    "cityLabel": "Baku",
+    "cityFieldPlaceholder": "City",
+    "searchButtonLabel": "Search",
+    "sortByLabel": "Sort by",
+    "relevanceLabel": "Relevance",
+    "noRatingsYet": "No ratings yet",
+    "availableToday": "Available today",
+    "doctorName": "Dr. Elşən Rzayev",
+    "doctorTitle": "Pediatric Cardiologist",
+    "bookHeaderPrefix": "Book",
+    "pickDateTitle": "Pick a date",
+    "pickDateSubtitle": "Available time slots will appear here",
+    "confirmButton": "Confirm Appointment",
+    "successTitle": "Appointment booked!"
+  },
   "problem": {
     "eyebrow": "The problem",
     "title": "Finding a doctor you can trust still takes too much guesswork.",

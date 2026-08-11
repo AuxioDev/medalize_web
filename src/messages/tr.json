@@ -26,6 +26,24 @@
     "badge3Value": "%100",
     "badge3Label": "lisanslı, doğrulanmış doktor"
   },
+  "bookingDemo": {
+    "findDoctorTitle": "Doktor bul",
+    "searchPlaceholder": "Ada göre ara...",
+    "cityLabel": "Bakü",
+    "cityFieldPlaceholder": "Şehir",
+    "searchButtonLabel": "Ara",
+    "sortByLabel": "Sırala",
+    "relevanceLabel": "İlgi düzeyi",
+    "noRatingsYet": "Henüz değerlendirme yok",
+    "availableToday": "Bugün müsait",
+    "doctorName": "Dr. Elşən Rzayev",
+    "doctorTitle": "Pediatrik Kardiyolog",
+    "bookHeaderPrefix": "Randevu",
+    "pickDateTitle": "Tarih seçin",
+    "pickDateSubtitle": "Müsait saatler burada görünecek",
+    "confirmButton": "Randevuyu onayla",
+    "successTitle": "Randevu oluşturuldu!"
+  },
   "problem": {
     "eyebrow": "Sorun",
     "title": "Güvenebileceğiniz bir doktor bulmak hâlâ çok fazla tahmin gerektiriyor.",

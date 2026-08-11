@@ -26,6 +26,24 @@
     "badge3Value": "100%",
     "badge3Label": "лицензированных, проверенных врачей"
   },
+  "bookingDemo": {
+    "findDoctorTitle": "Найти врача",
+    "searchPlaceholder": "Поиск по имени...",
+    "cityLabel": "Баку",
+    "cityFieldPlaceholder": "Город",
+    "searchButtonLabel": "Поиск",
+    "sortByLabel": "Сортировка",
+    "relevanceLabel": "Релевантность",
+    "noRatingsYet": "Пока нет отзывов",
+    "availableToday": "Доступен сегодня",
+    "doctorName": "Dr. Elşən Rzayev",
+    "doctorTitle": "Детский кардиолог",
+    "bookHeaderPrefix": "Запись",
+    "pickDateTitle": "Выберите дату",
+    "pickDateSubtitle": "Здесь появятся свободные слоты времени",
+    "confirmButton": "Подтвердить запись",
+    "successTitle": "Запись подтверждена!"
+  },
   "problem": {
     "eyebrow": "Проблема",
     "title": "Найти врача, которому можно доверять, всё ещё требует слишком много догадок.",

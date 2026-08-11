@@ -26,6 +26,24 @@
     "badge3Value": "100%",
     "badge3Label": "lisenziyalı, təsdiqlənmiş həkim"
   },
+  "bookingDemo": {
+    "findDoctorTitle": "Həkim tap",
+    "searchPlaceholder": "Ada görə axtar...",
+    "cityLabel": "Bakı",
+    "cityFieldPlaceholder": "Şəhər",
+    "searchButtonLabel": "Axtar",
+    "sortByLabel": "Sırala",
+    "relevanceLabel": "Uyğunluq",
+    "noRatingsYet": "Hələ reytinq yoxdur",
+    "availableToday": "Bu gün mövcuddur",
+    "doctorName": "Dr. Elşən Rzayev",
+    "doctorTitle": "Pediatrik Kardioloq",
+    "bookHeaderPrefix": "Yazıl",
+    "pickDateTitle": "Tarix seçin",
+    "pickDateSubtitle": "Boş vaxt aralıqları burada görünəcək",
+    "confirmButton": "Qəbulu təsdiqlə",
+    "successTitle": "Qəbula yazıldınız!"
+  },
   "problem": {
     "eyebrow": "Problem",
     "title": "Etibar edə biləcəyiniz həkimi tapmaq hələ də çox təxmin tələb edir.",
