@@ -1,9 +1,9 @@
-import Image from "next/image";
+import { BookingAnimation } from "./BookingAnimation";
 
-// Real capture from the Medoro app running on an iPhone 17 Pro Max simulator
-// (1320×2868 pt, via the mobile MCP + simctl) — the patient-side appointment
-// booking calendar, not a hand-drawn recreation, so the frame's aspect ratio
-// below is locked to that device's real ratio.
+// Real device ratio, from a capture of the app running on an iPhone 17 Pro
+// Max simulator (1320×2868 pt, via the mobile MCP + simctl) — the frame
+// below is locked to that ratio so the recreated screen inside reads as
+// the real device, not an arbitrary rectangle.
 const SCREENSHOT_WIDTH = 1320;
 const SCREENSHOT_HEIGHT = 2868;
 
@@ -23,15 +23,7 @@ export function PhoneMockup() {
           className="relative overflow-hidden rounded-[2.55rem] bg-brand-muted-bg"
           style={{ aspectRatio: `${SCREENSHOT_WIDTH} / ${SCREENSHOT_HEIGHT}` }}
         >
-          <Image
-            src="/brand/app-screenshot-booking.png"
-            alt="Medoro running on iPhone 17 Pro Max — booking an appointment with a doctor"
-            width={SCREENSHOT_WIDTH}
-            height={SCREENSHOT_HEIGHT}
-            className="h-full w-full object-cover"
-            priority
-            sizes="252px"
-          />
+          <BookingAnimation />
         </div>
       </div>
     </div>
