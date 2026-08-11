@@ -5,7 +5,7 @@ export async function ForDoctorsCard() {
   const t = await getTranslations("forDoctors");
 
   return (
-    <Reveal className="flex flex-col items-start gap-8 rounded-3xl border border-brand-ink-border bg-brand-ink-surface p-8 sm:p-12 lg:flex-row lg:items-center lg:justify-between">
+    <Reveal className="flex flex-col items-start gap-8 rounded-3xl border border-brand-ink-border bg-brand-ink-surface p-8 sm:p-12 md:flex-row md:items-center md:justify-between">
       <div className="max-w-2xl">
         <span className="text-xs font-semibold uppercase tracking-wide text-teal-400">
           {t("label")}
