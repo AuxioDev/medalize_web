@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "motion/react";
+import { PulseTrace } from "./PulseLoader";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -100,9 +101,16 @@ export function WaitlistForm() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -4 }}
                   transition={{ duration: 0.15 }}
-                  className="inline-block"
+                  className="inline-flex items-center gap-2"
                 >
-                  {status === "loading" ? t("buttonLoading") : t("button")}
+                  {status === "loading" ? (
+                    <>
+                      <PulseTrace className="h-4 w-9" />
+                      {t("buttonLoading")}
+                    </>
+                  ) : (
+                    t("button")
+                  )}
                 </motion.span>
               </AnimatePresence>
             </motion.button>

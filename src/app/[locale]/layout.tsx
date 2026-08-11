@@ -28,7 +28,7 @@ export async function generateMetadata({
     metadataBase: new URL("https://medoroapp.com"),
     title: {
       default: t("title"),
-      template: `%s · Medoro`,
+      template: `%s · DocLine`,
     },
     description: t("description"),
     alternates: {
@@ -41,7 +41,7 @@ export async function generateMetadata({
       title: t("title"),
       description: t("description"),
       url: `https://medoroapp.com/${locale}`,
-      siteName: "Medoro",
+      siteName: "DocLine",
       locale,
       type: "website",
     },

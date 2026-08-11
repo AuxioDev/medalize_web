@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Medoro — Trouvez le bon médecin, partout en Azerbaïdjan",
-    "description": "Medoro vous met en relation avec des médecins vérifiés selon la spécialité, la distance et de vrais avis de patients, puis vous permet de prendre rendez-vous, d'échanger et de gérer les dossiers de toute votre famille. Bientôt sur iOS et Android."
+    "title": "DocLine — Trouvez le bon médecin, partout en Azerbaïdjan",
+    "description": "DocLine vous met en relation avec des médecins vérifiés selon la spécialité, la distance et de vrais avis de patients, puis vous permet de prendre rendez-vous, d'échanger et de gérer les dossiers de toute votre famille. Bientôt sur iOS et Android."
   },
   "header": {
     "nav": {
       "how": "Comment ça marche",
       "specialties": "Spécialités",
-      "why": "Pourquoi Medoro",
+      "why": "Pourquoi DocLine",
       "providers": "Partenaires",
       "faq": "FAQ"
     },
@@ -16,7 +16,7 @@
   "hero": {
     "eyebrow": "Bientôt sur iOS et Android — partout en Azerbaïdjan",
     "title": "Trouvez le bon médecin, partout en Azerbaïdjan",
-    "subtitle": "Medoro vous met en relation avec des médecins vérifiés selon la spécialité, la distance et de vrais avis de patients — puis vous permet de prendre rendez-vous, d'échanger et de gérer les dossiers de toute votre famille, dans une seule application.",
+    "subtitle": "DocLine vous met en relation avec des médecins vérifiés selon la spécialité, la distance et de vrais avis de patients — puis vous permet de prendre rendez-vous, d'échanger et de gérer les dossiers de toute votre famille, dans une seule application.",
     "ctaPrimary": "Rejoindre la liste d'attente",
     "ctaSecondary": "Voir comment ça marche",
     "badge1Value": "75+",
@@ -88,11 +88,11 @@
     "eyebrow": "Spécialités",
     "title": "Toutes les spécialités. Une seule recherche.",
     "subtitle": "Choisissez une spécialité pour voir ce qui vous attend au lancement.",
-    "detailBody": "Les spécialistes de ce domaine seront sur Medoro dès le lancement. Trouvez le bon médecin selon la distance, la disponibilité et les avis vérifiés, directement dans l'application.",
+    "detailBody": "Les spécialistes de ce domaine seront sur DocLine dès le lancement. Trouvez le bon médecin selon la distance, la disponibilité et les avis vérifiés, directement dans l'application.",
     "cta": "Rejoindre la liste d'attente"
   },
   "why": {
-    "eyebrow": "Pourquoi Medoro",
+    "eyebrow": "Pourquoi DocLine",
     "title": "Nous repensons l'accès aux soins autour de ce qui compte le plus : la confiance.",
     "cards": [
       {
@@ -120,7 +120,7 @@
   "forDoctors": {
     "label": "Médecins indépendants",
     "title": "Chaque patient mérite le droit de choisir son médecin. Aidez-nous à le lui offrir.",
-    "body": "Référencez votre cabinet sur Medoro avec un simple abonnement forfaitaire — sans commission sur chaque rendez-vous. Gérez votre agenda, vos lieux d'exercice et vos messages patients depuis un seul tableau de bord.",
+    "body": "Référencez votre cabinet sur DocLine avec un simple abonnement forfaitaire — sans commission sur chaque rendez-vous. Gérez votre agenda, vos lieux d'exercice et vos messages patients depuis un seul tableau de bord.",
     "cta": "Postuler en tant que médecin"
   },
   "forHospitals": {
@@ -130,7 +130,7 @@
     "features": [
       {
         "title": "Invitez votre équipe",
-        "body": "Recherchez dans l'annuaire des médecins Medoro et invitez-les à rejoindre votre clinique — sans saisie manuelle."
+        "body": "Recherchez dans l'annuaire des médecins DocLine et invitez-les à rejoindre votre clinique — sans saisie manuelle."
       },
       {
         "title": "Horaires centralisés",
@@ -146,13 +146,13 @@
   },
   "waitlist": {
     "title": "Votre prochain médecin n'est qu'à quelques clics.",
-    "subtitle": "Rejoignez la liste d'attente et soyez informé en premier du lancement de Medoro sur iOS et Android.",
+    "subtitle": "Rejoignez la liste d'attente et soyez informé en premier du lancement de DocLine sur iOS et Android.",
     "placeholder": "vous@exemple.com",
     "button": "Rejoindre la liste d'attente",
     "buttonLoading": "Envoi…",
-    "disclaimer": "Aucun spam. Nous vous écrirons seulement quand Medoro sera prêt.",
+    "disclaimer": "Aucun spam. Nous vous écrirons seulement quand DocLine sera prêt.",
     "successTitle": "Vous êtes sur la liste.",
-    "successBody": "Nous vous enverrons un e-mail dès le lancement de Medoro.",
+    "successBody": "Nous vous enverrons un e-mail dès le lancement de DocLine.",
     "errorInvalid": "Veuillez saisir une adresse e-mail valide.",
     "errorGeneric": "Une erreur s'est produite. Merci de réessayer dans un instant."
   },
@@ -161,11 +161,11 @@
     "title": "Questions fréquentes",
     "items": [
       {
-        "q": "Qu'est-ce que Medoro ?",
-        "a": "Medoro est la plateforme de recherche de médecins et de prise de rendez-vous en Azerbaïdjan. Recherchez par spécialité ou symptôme, trouvez un médecin vérifié près de vous et prenez rendez-vous en quelques secondes, dans votre langue."
+        "q": "Qu'est-ce que DocLine ?",
+        "a": "DocLine est la plateforme de recherche de médecins et de prise de rendez-vous en Azerbaïdjan. Recherchez par spécialité ou symptôme, trouvez un médecin vérifié près de vous et prenez rendez-vous en quelques secondes, dans votre langue."
       },
       {
-        "q": "Medoro est-il gratuit pour les patients ?",
+        "q": "DocLine est-il gratuit pour les patients ?",
         "a": "Oui. La recherche, la prise de rendez-vous et les échanges avec les médecins sont entièrement gratuits pour les patients. Les médecins rejoignent la plateforme via un simple abonnement."
       },
       {
@@ -177,11 +177,11 @@
         "a": "Seuls les patients ayant réellement consulté peuvent laisser un avis, et les médecins ne peuvent pas payer pour être mieux classés — impossible à truquer."
       },
       {
-        "q": "Quand Medoro sera-t-il lancé ?",
-        "a": "Nous finalisons actuellement la vérification et l'intégration des médecins. Rejoignez la liste d'attente et nous vous enverrons un e-mail dès que Medoro sera en ligne."
+        "q": "Quand DocLine sera-t-il lancé ?",
+        "a": "Nous finalisons actuellement la vérification et l'intégration des médecins. Rejoignez la liste d'attente et nous vous enverrons un e-mail dès que DocLine sera en ligne."
       },
       {
-        "q": "Les hôpitaux et cliniques peuvent-ils rejoindre Medoro ?",
+        "q": "Les hôpitaux et cliniques peuvent-ils rejoindre DocLine ?",
         "a": "Oui. Les hôpitaux et cliniques disposent de leur propre tableau de bord pour inviter des médecins, gérer leurs plannings sur plusieurs sites et suivre le volume de rendez-vous — sans accès aux informations des patients. Les forfaits commencent à 15 postes de médecin."
       }
     ]
@@ -192,7 +192,7 @@
     "companyHeading": "Entreprise",
     "aboutLabel": "À propos",
     "contactLabel": "Contact",
-    "legalNote": "En rejoignant la liste d'attente, vous acceptez d'être contacté au sujet du lancement de Medoro. Jamais de spam.",
+    "legalNote": "En rejoignant la liste d'attente, vous acceptez d'être contacté au sujet du lancement de DocLine. Jamais de spam.",
     "copyright": "© {year} <link>AuxioDev</link> · Bakou, Azerbaïdjan"
   }
 }

@@ -9,9 +9,12 @@ export function LogoMark({ className = "h-8 w-8" }: { className?: string }) {
       </defs>
       <rect width="1024" height="1024" rx="224" fill="url(#medoroGrad)" />
       <path
-        fill="#FFFFFF"
-        fillRule="evenodd"
-        d="M332 608A270 270 0 1 1 692 608L692 887L512 767L332 887Z M467 227L557 227Q557 362 692 362L692 452Q557 452 557 587L467 587Q467 452 332 452L332 362Q467 362 467 227Z"
+        d="M150,512 L350,512 L400,437 L450,512 L505,512 L545,682 L598,150 L651,700 L704,512 L874,512"
+        fill="none"
+        stroke="#FFFFFF"
+        strokeWidth={56}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -28,7 +31,7 @@ export function Logo({
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
       <LogoMark className="h-8 w-8 shrink-0" />
       <span className={`text-lg font-semibold tracking-tight ${wordmarkClassName}`}>
-        Medoro
+        DocLine
       </span>
     </span>
   );

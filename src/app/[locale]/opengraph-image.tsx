@@ -37,13 +37,20 @@ export default async function OgImage({
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              fontSize: 30,
-              fontWeight: 700,
             }}
           >
-            M
+            <svg width="34" height="34" viewBox="0 0 1024 1024">
+              <path
+                d="M150,512 L350,512 L400,437 L450,512 L505,512 L545,682 L598,150 L651,700 L704,512 L874,512"
+                fill="none"
+                stroke="#FFFFFF"
+                strokeWidth={70}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </div>
-          <div style={{ fontSize: 34, fontWeight: 600 }}>Medoro</div>
+          <div style={{ fontSize: 34, fontWeight: 600 }}>DocLine</div>
         </div>
         <div
           style={{
