@@ -194,5 +194,26 @@
     "contactLabel": "Contact",
     "legalNote": "En rejoignant la liste d'attente, vous acceptez d'être contacté au sujet du lancement de DocLine. Jamais de spam.",
     "copyright": "© {year} <link>AuxioDev</link> · Bakou, Azerbaïdjan"
+  },
+  "profile": {
+    "verifiedBadge": "Vérifié",
+    "noRatingsYet": "Pas encore d'avis",
+    "reviewsSuffix": "avis",
+    "bioHeading": "À propos",
+    "workplacesHeading": "Lieux de consultation",
+    "hospitalLocationHeading": "Adresse",
+    "comingSoonEyebrow": "Bientôt sur iOS et Android",
+    "ctaWaitlist": "Rejoindre la liste d'attente",
+    "doctorDisplayName": "Dr {name}",
+    "doctorPageTitle": "Dr {name} — {specialty}",
+    "doctorMetaDescription": "Dr {name}, {specialty} — profil de médecin vérifié sur DocLine. Rejoignez la liste d'attente pour prendre rendez-vous dès le lancement de DocLine près de chez vous.",
+    "hospitalDoctorsHeading": "Médecins de cet établissement",
+    "hospitalPageTitle": "{name} — {city}",
+    "hospitalMetaDescription": "{name} sur DocLine, {city}. Rejoignez la liste d'attente pour être averti du lancement de DocLine près de chez vous."
+  },
+  "notFound": {
+    "title": "Cette page n'est pas disponible",
+    "body": "Le lien est peut-être obsolète, ou cette page n'existe pas. Retournez à l'accueil pour continuer à découvrir DocLine.",
+    "cta": "Retour à l'accueil"
   }
 }

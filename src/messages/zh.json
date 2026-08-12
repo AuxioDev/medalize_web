@@ -194,5 +194,26 @@
     "contactLabel": "联系方式",
     "legalNote": "加入等候名单即表示您同意我们就 DocLine 上线事宜与您联系。绝不发送垃圾邮件。",
     "copyright": "© {year} <link>AuxioDev</link> · 阿塞拜疆巴库"
+  },
+  "profile": {
+    "verifiedBadge": "已认证",
+    "noRatingsYet": "暂无评分",
+    "reviewsSuffix": "条评价",
+    "bioHeading": "医生简介",
+    "workplacesHeading": "出诊地点",
+    "hospitalLocationHeading": "地址",
+    "comingSoonEyebrow": "即将登陆 iOS 和 Android",
+    "ctaWaitlist": "加入等候名单",
+    "doctorDisplayName": "{name} 医生",
+    "doctorPageTitle": "{name} 医生 — {specialty}",
+    "doctorMetaDescription": "{name} 医生，{specialty} — DocLine 认证医生主页。加入等候名单，DocLine 在您所在城市上线后即可预约。",
+    "hospitalDoctorsHeading": "在这里出诊的医生",
+    "hospitalPageTitle": "{name} — {city}",
+    "hospitalMetaDescription": "{name}（DocLine 平台，{city}）。加入等候名单，DocLine 在您附近上线时将第一时间通知您。"
+  },
+  "notFound": {
+    "title": "此页面暂时无法访问",
+    "body": "链接可能已失效，或该页面并不存在。返回首页继续了解 DocLine。",
+    "cta": "返回首页"
   }
 }

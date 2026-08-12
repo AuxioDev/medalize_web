@@ -194,5 +194,26 @@
     "contactLabel": "Контакты",
     "legalNote": "Вставая в очередь, вы соглашаетесь на то, что мы свяжемся с вами по поводу запуска DocLine. Никакого спама — никогда.",
     "copyright": "© {year} <link>AuxioDev</link> · Баку, Азербайджан"
+  },
+  "profile": {
+    "verifiedBadge": "Проверен",
+    "noRatingsYet": "Пока нет отзывов",
+    "reviewsSuffix": "отзывов",
+    "bioHeading": "О враче",
+    "workplacesHeading": "Где принимает",
+    "hospitalLocationHeading": "Адрес",
+    "comingSoonEyebrow": "Скоро в iOS и Android",
+    "ctaWaitlist": "Встать в очередь",
+    "doctorDisplayName": "Dr. {name}",
+    "doctorPageTitle": "Dr. {name} — {specialty}",
+    "doctorMetaDescription": "Dr. {name}, {specialty} — проверенный профиль врача на DocLine. Встаньте в очередь, чтобы записаться, когда DocLine запустится рядом с вами.",
+    "hospitalDoctorsHeading": "Врачи в клинике",
+    "hospitalPageTitle": "{name} — {city}",
+    "hospitalMetaDescription": "{name} на DocLine, {city}. Встаньте в очередь, чтобы узнать, когда DocLine запустится рядом с вами."
+  },
+  "notFound": {
+    "title": "Эта страница недоступна",
+    "body": "Ссылка могла устареть, либо такой страницы просто нет. Вернитесь на главную, чтобы продолжить знакомство с DocLine.",
+    "cta": "На главную"
   }
 }

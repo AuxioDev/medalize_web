@@ -194,5 +194,26 @@
     "contactLabel": "Contact",
     "legalNote": "By joining the waitlist you agree to be contacted about the DocLine launch. No spam, ever.",
     "copyright": "© {year} <link>AuxioDev</link> · Baku, Azerbaijan"
+  },
+  "profile": {
+    "verifiedBadge": "Verified",
+    "noRatingsYet": "No ratings yet",
+    "reviewsSuffix": "reviews",
+    "bioHeading": "About",
+    "workplacesHeading": "Where to find",
+    "hospitalLocationHeading": "Location",
+    "comingSoonEyebrow": "Coming soon to iOS & Android",
+    "ctaWaitlist": "Join the waitlist",
+    "doctorDisplayName": "Dr. {name}",
+    "doctorPageTitle": "Dr. {name} — {specialty}",
+    "doctorMetaDescription": "Dr. {name}, {specialty} — verified doctor profile on DocLine. Join the waitlist to book once DocLine launches near you.",
+    "hospitalDoctorsHeading": "Doctors here",
+    "hospitalPageTitle": "{name} — {city}",
+    "hospitalMetaDescription": "{name} on DocLine, {city}. Join the waitlist to be notified when DocLine launches near you."
+  },
+  "notFound": {
+    "title": "This page isn't available",
+    "body": "The link may be out of date, or this page just isn't here. Head back to the homepage to keep exploring DocLine.",
+    "cta": "Back to homepage"
   }
 }

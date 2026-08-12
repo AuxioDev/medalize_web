@@ -194,5 +194,26 @@
     "contactLabel": "Əlaqə",
     "legalNote": "Növbə siyahısına qoşularaq DocLine-nun buraxılışı barədə sizinlə əlaqə saxlanılmasına razılıq verirsiniz. Heç vaxt spam olmayacaq.",
     "copyright": "© {year} <link>AuxioDev</link> · Bakı, Azərbaycan"
+  },
+  "profile": {
+    "verifiedBadge": "Təsdiqlənib",
+    "noRatingsYet": "Hələ rəy yoxdur",
+    "reviewsSuffix": "rəy",
+    "bioHeading": "Haqqında",
+    "workplacesHeading": "Qəbul yerləri",
+    "hospitalLocationHeading": "Ünvan",
+    "comingSoonEyebrow": "Tezliklə iOS və Android-də",
+    "ctaWaitlist": "Növbəyə yazıl",
+    "doctorDisplayName": "Dr. {name}",
+    "doctorPageTitle": "Dr. {name} — {specialty}",
+    "doctorMetaDescription": "Dr. {name}, {specialty} — DocLine-da təsdiqlənmiş həkim profili. DocLine sizin şəhərinizdə işə düşəndə qeydiyyatdan keçmək üçün növbəyə yazılın.",
+    "hospitalDoctorsHeading": "Buradakı həkimlər",
+    "hospitalPageTitle": "{name} — {city}",
+    "hospitalMetaDescription": "{name} DocLine-da, {city}. DocLine yaxınlıqda işə düşəndə xəbərdar olmaq üçün növbəyə yazılın."
+  },
+  "notFound": {
+    "title": "Bu səhifə əlçatan deyil",
+    "body": "Keçid köhnəlmiş ola bilər, ya da belə bir səhifə yoxdur. DocLine-ı kəşf etməyə davam etmək üçün əsas səhifəyə qayıdın.",
+    "cta": "Əsas səhifəyə qayıt"
   }
 }

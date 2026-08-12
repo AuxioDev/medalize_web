@@ -194,5 +194,26 @@
     "contactLabel": "İletişim",
     "legalNote": "Bekleme listesine katılarak DocLine lansmanı hakkında sizinle iletişime geçilmesini kabul edersiniz. Asla spam olmayacak.",
     "copyright": "© {year} <link>AuxioDev</link> · Bakü, Azerbaycan"
+  },
+  "profile": {
+    "verifiedBadge": "Onaylı",
+    "noRatingsYet": "Henüz değerlendirme yok",
+    "reviewsSuffix": "değerlendirme",
+    "bioHeading": "Hakkında",
+    "workplacesHeading": "Nerede muayene ediyor",
+    "hospitalLocationHeading": "Adres",
+    "comingSoonEyebrow": "Yakında iOS ve Android'de",
+    "ctaWaitlist": "Bekleme listesine katıl",
+    "doctorDisplayName": "Dr. {name}",
+    "doctorPageTitle": "Dr. {name} — {specialty}",
+    "doctorMetaDescription": "Dr. {name}, {specialty} — DocLine'da onaylı doktor profili. DocLine bölgenizde yayına girdiğinde randevu almak için bekleme listesine katılın.",
+    "hospitalDoctorsHeading": "Buradaki doktorlar",
+    "hospitalPageTitle": "{name} — {city}",
+    "hospitalMetaDescription": "{name}, DocLine'da, {city}. DocLine yakınınızda yayına girdiğinde haberdar olmak için bekleme listesine katılın."
+  },
+  "notFound": {
+    "title": "Bu sayfa şu anda erişilebilir değil",
+    "body": "Bağlantı güncel olmayabilir ya da böyle bir sayfa yok. DocLine'ı keşfetmeye devam etmek için ana sayfaya dönün.",
+    "cta": "Ana sayfaya dön"
   }
 }
