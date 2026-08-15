@@ -1,10 +1,14 @@
+import type { ReactNode } from "react";
 import { getTranslations } from "next-intl/server";
-import { PhoneMockup } from "./PhoneMockup";
-import { BookingAnimation } from "./BookingAnimation";
-import { AnimatedStat, HeroItem, HeroStagger, PhoneReveal } from "./HeroMotion";
+import { AnimatedStat, HeroItem, HeroStagger, PhoneReveal } from "@/components/HeroMotion";
 
-export async function Hero() {
-  const t = await getTranslations("hero");
+// Same hero layout as the homepage's Hero.tsx (copy + stat badges on the
+// left, a phone mockup on the right with the same entrance/float motion),
+// parameterized by i18n namespace so /for-doctors and /for-hospitals reuse
+// it instead of duplicating the section. `mockup` is the already-composed
+// <PhoneMockup><...Animation /></PhoneMockup> for that audience.
+export async function ProviderHero({ namespace, mockup }: { namespace: string; mockup: ReactNode }) {
+  const t = await getTranslations(`${namespace}.hero`);
 
   const badges = [
     { value: t("badge1Value"), label: t("badge1Label") },
@@ -13,7 +17,7 @@ export async function Hero() {
   ];
 
   return (
-    <section id="top" className="relative overflow-hidden">
+    <section className="relative overflow-hidden">
       <div className="absolute inset-x-0 top-0 -z-10 h-[560px] bg-gradient-to-b from-blue-50 via-teal-50/40 to-transparent" />
 
       <div className="mx-auto grid max-w-6xl gap-12 px-5 pb-16 pt-14 sm:px-6 sm:pt-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:pb-24 lg:pt-24">
@@ -68,11 +72,7 @@ export async function Hero() {
           </HeroItem>
         </HeroStagger>
 
-        <PhoneReveal>
-          <PhoneMockup>
-            <BookingAnimation />
-          </PhoneMockup>
-        </PhoneReveal>
+        <PhoneReveal>{mockup}</PhoneReveal>
       </div>
     </section>
   );

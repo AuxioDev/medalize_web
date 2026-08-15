@@ -1,11 +1,21 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "motion/react";
 import { specialties, type SpecialtyId } from "@/data/specialties";
 import { WEEKDAY_SHORT, formatFullDate, formatMonthYear, formatShortDate } from "@/data/bookingDemoDates";
 import type { Locale } from "@/i18n/routing";
+import { usePhaseLoop } from "./demo/usePhaseLoop";
+import {
+  CalendarIcon,
+  ChevronIcon,
+  HeartIcon,
+  PinIcon,
+  SearchIcon,
+  SortIcon,
+  StarIcon,
+} from "./demo/icons";
 
 // Recreates the real app flow (same layout, same brand tokens as
 // globals.css) as a small looping demo — a static screenshot can't show
@@ -51,93 +61,13 @@ const SELECTED_SLOT = 1;
 // 4 slots appear · 5 slot selected · 6 confirm + press · 7 success
 const DURATIONS = [2100, 1900, 1300, 1200, 1200, 1000, 1600, 2400];
 
-function ChevronIcon({ dir = "left" }: { dir?: "left" | "right" | "down" }) {
-  if (dir === "down") {
-    return (
-      <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-        <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    );
-  }
-  return (
-    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" className={dir === "right" ? "rotate-180" : ""}>
-      <path d="M6 1L1 6L6 11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
-
-function CalendarIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className={className}>
-      <rect x="1.5" y="2.8" width="13" height="11.7" rx="1.8" stroke="currentColor" strokeWidth="1.4" />
-      <path d="M1.5 6.2H14.5" stroke="currentColor" strokeWidth="1.4" />
-      <path d="M4.5 1V3.6M11.5 1V3.6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-    </svg>
-  );
-}
-
-function SearchIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" className={className}>
-      <circle cx="5.5" cy="5.5" r="4.2" stroke="currentColor" strokeWidth="1.4" />
-      <path d="M12 12L9 9" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-    </svg>
-  );
-}
-
-function PinIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg width="10" height="12" viewBox="0 0 10 12" fill="none" className={className}>
-      <path
-        d="M5 11.3S9 7.9 9 4.5C9 2.3 7.2 0.7 5 0.7C2.8 0.7 1 2.3 1 4.5C1 7.9 5 11.3 5 11.3Z"
-        stroke="currentColor"
-        strokeWidth="1.3"
-        strokeLinejoin="round"
-      />
-      <circle cx="5" cy="4.5" r="1.3" stroke="currentColor" strokeWidth="1.3" />
-    </svg>
-  );
-}
-
-function StarIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg width="9" height="9" viewBox="0 0 9 9" fill="currentColor" className={className}>
-      <path d="M4.5 0.5L5.6 3.1L8.4 3.4L6.3 5.3L6.9 8.1L4.5 6.6L2.1 8.1L2.7 5.3L0.6 3.4L3.4 3.1Z" />
-    </svg>
-  );
-}
-
-function SortIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" className={className}>
-      <path d="M2.5 1.5V9.5M2.5 1.5L0.8 3.2M2.5 1.5L4.2 3.2" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M8.5 9.5V1.5M8.5 9.5L6.8 7.8M8.5 9.5L10.2 7.8" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
-
-function HeartIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" className={className}>
-      <path
-        d="M7.5 13S1 9.1 1 4.6C1 2.6 2.6 1 4.5 1C5.7 1 6.8 1.6 7.5 2.6C8.2 1.6 9.3 1 10.5 1C12.4 1 14 2.6 14 4.6C14 9.1 7.5 13 7.5 13Z"
-        stroke="currentColor"
-        strokeWidth="1.3"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
 export function BookingAnimation() {
-  const [phase, setPhase] = useState(0);
+  // Confirming (phase 6) is the single most informative frame — slot
+  // chosen and the confirm card visible — so it's what a
+  // prefers-reduced-motion visitor sees, statically, instead of the loop.
+  const { phase, ref } = usePhaseLoop(DURATIONS, 6);
   const t = useTranslations("bookingDemo");
   const locale = useLocale() as Locale;
-
-  useEffect(() => {
-    const timer = setTimeout(() => setPhase((p) => (p + 1) % DURATIONS.length), DURATIONS[phase]);
-    return () => clearTimeout(timer);
-  }, [phase]);
 
   // Aug 14, 2026 is a Friday — weekday index 5 (Sun=0..Sat=6).
   const monthYear = useMemo(() => formatMonthYear(locale), [locale]);
@@ -155,7 +85,7 @@ export function BookingAnimation() {
   const success = phase === 7;
 
   return (
-    <div className="flex h-full w-full flex-col bg-white text-brand-text">
+    <div ref={ref} className="flex h-full w-full flex-col bg-white text-brand-text">
       <AnimatePresence mode="wait" initial={false}>
         {!showBooking ? (
           <motion.div

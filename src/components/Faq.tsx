@@ -5,8 +5,8 @@ import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "motion/react";
 import { Reveal, RevealGroup, RevealItem } from "./Reveal";
 
-export function Faq() {
-  const t = useTranslations("faq");
+export function Faq({ namespace = "faq" }: { namespace?: string }) {
+  const t = useTranslations(namespace);
   const items = t.raw("items") as { q: string; a: string }[];
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 

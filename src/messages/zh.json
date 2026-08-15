@@ -9,7 +9,9 @@
       "specialties": "科室",
       "why": "为什么选择 DocGet",
       "providers": "合作伙伴",
-      "faq": "常见问题"
+      "faq": "常见问题",
+      "forDoctors": "医生专区",
+      "forHospitals": "诊所专区"
     },
     "cta": "加入等候名单"
   },
@@ -121,7 +123,8 @@
     "label": "独立医生",
     "title": "每个人都应该有权选择自己的医生。帮助我们把这项权利交到他们手中。",
     "body": "以简单的固定订阅费用在 DocGet 上线您的诊所——每次预约不收取佣金。在一个后台管理您的排班、执业地点和患者消息。",
-    "cta": "申请入驻"
+    "cta": "申请入驻",
+    "learnMore": "了解更多"
   },
   "forHospitals": {
     "label": "医院与诊所",
@@ -142,7 +145,8 @@
       }
     ],
     "pricingNote": "Klinika——每月 299.99 马纳特，最多 15 名医生 · Klinika Plus——每月 599.99 马纳特，最多 60 名医生 + 高级统计功能",
-    "cta": "咨询 Klinika 方案"
+    "cta": "咨询 Klinika 方案",
+    "learnMore": "了解更多"
   },
   "waitlist": {
     "title": "您的下一位医生，只需轻轻几下即可预约。",
@@ -193,7 +197,8 @@
     "aboutLabel": "关于我们",
     "contactLabel": "联系方式",
     "legalNote": "加入等候名单即表示您同意我们就 DocGet 上线事宜与您联系。绝不发送垃圾邮件。",
-    "copyright": "© {year} <link>AuxioDev</link> · 阿塞拜疆巴库"
+    "copyright": "© {year} <link>AuxioDev</link> · 阿塞拜疆巴库",
+    "providersHeading": "合作伙伴"
   },
   "profile": {
     "verifiedBadge": "已认证",
@@ -215,5 +220,279 @@
     "title": "此页面暂时无法访问",
     "body": "链接可能已失效，或该页面并不存在。返回首页继续了解 DocGet。",
     "cta": "返回首页"
+  },
+  "doctorPage": {
+    "meta": {
+      "title": "DocGet 医生版——上线您的诊所，管理预约",
+      "description": "以医生身份加入 DocGet：固定订阅费用、零佣金，在一个后台管理您在阿塞拜疆各地的排班、执业地点和患者消息。"
+    },
+    "hero": {
+      "eyebrow": "医生专区",
+      "title": "诊所约满——却无需为每次就诊分成",
+      "subtitle": "在 DocGet 上线您的资料，用一个应用管理所有执业地点和时间段，让患者直接向您预约。固定月费，永不收取佣金。",
+      "ctaPrimary": "申请入驻",
+      "ctaSecondary": "了解运作方式",
+      "badge1Value": "0%",
+      "badge1Label": "预约佣金",
+      "badge2Value": "30",
+      "badge2Label": "天免费试用",
+      "badge3Value": "5",
+      "badge3Label": "Peşəkar 套餐可用执业地点"
+    },
+    "steps": [
+      {
+        "label": "申请",
+        "title": "提交执业证明",
+        "body": "提交您的医师执照与资质证明——我们的团队会人工审核每一位医生，通过后资料才会上线。"
+      },
+      {
+        "label": "设置",
+        "title": "添加排班",
+        "body": "添加您的执业地点，为每个地点设置工作时间，并选择就诊时长。患者只会看到空闲时段。"
+      },
+      {
+        "label": "获得预约",
+        "title": "一处管理全部事务",
+        "body": "确认或拒绝预约请求，与患者沟通，随时查看本月情况——无论身在何处，用手机即可完成。"
+      }
+    ],
+    "features": [
+      {
+        "title": "固定订阅，零佣金",
+        "body": "每月固定费用。您通过预约赚取的一切都归您所有——DocGet 从不抽成。"
+      },
+      {
+        "title": "多个执业地点，统一排班",
+        "body": "添加您接诊患者的所有诊所和办公室，并为每一处单独设置工作时间。"
+      },
+      {
+        "title": "直接与患者沟通",
+        "body": "通过应用内聊天回答问题、分享注意事项——无需电话往返，不会遗漏消息。"
+      }
+    ],
+    "pricing": {
+      "eyebrow": "价格",
+      "title": "单一固定价格，永不收取佣金。",
+      "tiers": [
+        {
+          "name": "Başlanğıc",
+          "price": "19.99",
+          "period": "/月",
+          "description": "适合单一执业地点。",
+          "features": [
+            "1 个执业地点",
+            "每月最多 40 次预约",
+            "30 天免费试用"
+          ]
+        },
+        {
+          "name": "Peşəkar",
+          "price": "39.99",
+          "period": "/月",
+          "description": "适合拥有多个执业地点的医生。",
+          "features": [
+            "最多 5 个执业地点",
+            "预约次数不限",
+            "应用内患者聊天",
+            "优先展示位置",
+            "高级统计数据",
+            "30 天免费试用"
+          ]
+        }
+      ],
+      "note": "价格以阿塞拜疆马纳特（AZN）计。可随时取消。"
+    },
+    "faq": {
+      "eyebrow": "常见问题",
+      "title": "医生常见问题",
+      "items": [
+        {
+          "q": "使用 DocGet 需要多少费用？",
+          "a": "Başlanğıc 套餐每月 19.99 AZN，可管理 1 个执业地点；Peşəkar 套餐每月 39.99 AZN，可管理最多 5 个执业地点，预约不限次数并可使用应用内聊天。每个套餐均提供 30 天免费试用。"
+        },
+        {
+          "q": "DocGet 会收取佣金吗？",
+          "a": "不会。订阅费用是唯一的成本——DocGet 从不从您通过预约获得的收入中抽成。"
+        },
+        {
+          "q": "你们如何审核医生？",
+          "a": "申请时您需提交医师执照和资质证明，我们的团队会在资料上线前进行人工审核——患者只能看到已通过审核的医生。"
+        },
+        {
+          "q": "我可以管理多个执业地点吗？",
+          "a": "可以。添加您接诊患者的所有诊所或办公室，并为每一处单独设置工作时间——患者始终能看到各地点准确的可预约时间。"
+        },
+        {
+          "q": "免费试用结束后会怎样？",
+          "a": "在 30 天试用期内，所有功能均可使用。试用结束后，选择 Başlanğıc 或 Peşəkar 套餐即可让资料保持上线。"
+        },
+        {
+          "q": "我什么时候可以开始？",
+          "a": "我们目前正在为医生办理入驻。立即申请，我们的团队会在 DocGet 正式上线前与您联系，核实您的资质。"
+        }
+      ]
+    },
+    "stepsEyebrow": "使用方法",
+    "featuresTitle": "运营诊所所需的一切",
+    "navFeaturesLabel": "功能"
+  },
+  "doctorDemo": {
+    "greeting": "您好，Dr. Elşən Rzayev",
+    "subtitle": "这是您今天的安排",
+    "statMonth": "本月",
+    "statPatients": "患者",
+    "statPending": "待处理",
+    "pendingHeading": "待处理的预约请求",
+    "patientName": "Aysel Məmmədova",
+    "statusPending": "待处理",
+    "statusConfirmed": "已确认",
+    "declineButton": "拒绝",
+    "confirmButton": "确认",
+    "workplaceHeading": "新增执业地点",
+    "workplaceName": "Klinika Nizami",
+    "cityLabel": "巴库",
+    "workingDaysLabel": "工作日",
+    "hoursLabel": "工作时间",
+    "visitLengthLabel": "就诊时长",
+    "visitLengthValue": "30 分钟",
+    "saveButton": "保存",
+    "publishedTitle": "已发布",
+    "publishedSubtitle": "患者现在可以在此预约您"
+  },
+  "hospitalPage": {
+    "meta": {
+      "title": "DocGet 医院与诊所版——为您的医生团队提供统一后台",
+      "description": "邀请您的医生，统一管理他们在各执业地点的工作时间，并实时查看诊所排班——全程不会看到患者身份信息。"
+    },
+    "hero": {
+      "eyebrow": "医院与诊所专区",
+      "title": "为您诊所的整个医生团队提供统一管理后台",
+      "subtitle": "邀请您的医生，统一设置他们在各执业地点的工作时间，实时查看预约量——患者身份和病历信息始终由医生本人保管。",
+      "ctaPrimary": "咨询 Klinika 方案",
+      "ctaSecondary": "了解运作方式",
+      "badge1Value": "60",
+      "badge1Label": "Klinika Plus 可容纳医生数",
+      "badge2Value": "0",
+      "badge2Label": "您的员工可见的患者病历",
+      "badge3Value": "1",
+      "badge3Label": "统一管理所有执业地点的后台"
+    },
+    "steps": [
+      {
+        "label": "邀请",
+        "title": "组建您的团队",
+        "body": "在 DocGet 医生名录中搜索并邀请您的团队加入——无需手动录入信息，也不用表格。"
+      },
+      {
+        "label": "审批",
+        "title": "审批或邀请",
+        "body": "已在 DocGet 注册的医生可申请加入您的诊所，您也可以直接邀请他们，医生通过手机即可确认。"
+      },
+      {
+        "label": "总览掌控",
+        "title": "一目了然掌握诊所情况",
+        "body": "为每位医生的每个执业地点设置工作时间，并追踪预约量——患者信息始终由医生本人保密。"
+      }
+    ],
+    "features": [
+      {
+        "title": "邀请您的团队",
+        "body": "在 DocGet 医生名录中搜索并邀请他们加入您的诊所——无需手动录入信息。"
+      },
+      {
+        "title": "统一管理工作时间",
+        "body": "在一个地方为您所有执业地点的每位医生设置和调整工作时间。"
+      },
+      {
+        "title": "隐私安全的总览",
+        "body": "查看诊所的预约量和排班情况——患者身份和病历信息始终由医生本人保管。"
+      }
+    ],
+    "pricing": {
+      "eyebrow": "价格",
+      "title": "按席位计费，适合各种规模的诊所",
+      "tiers": [
+        {
+          "name": "Klinika",
+          "price": "299.99",
+          "period": "/月",
+          "description": "适合最多 15 名医生的诊所。",
+          "features": [
+            "最多 15 个医生席位",
+            "统一管理工作时间",
+            "隐私安全的预约总览"
+          ]
+        },
+        {
+          "name": "Klinika Plus",
+          "price": "599.99",
+          "period": "/月",
+          "description": "适合大型医院和连锁机构。",
+          "features": [
+            "最多 60 个医生席位",
+            "高级统计数据",
+            "包含 Klinika 的全部功能"
+          ]
+        }
+      ],
+      "note": "价格以阿塞拜疆马纳特（AZN）计。诊所账户暂不提供免费试用——请先与我们联系，我们会为您演示后台。"
+    },
+    "faq": {
+      "eyebrow": "常见问题",
+      "title": "医院与诊所常见问题",
+      "items": [
+        {
+          "q": "诊所套餐需要多少费用？",
+          "a": "Klinika 套餐每月 299.99 AZN，最多可容纳 15 名医生；Klinika Plus 套餐每月 599.99 AZN，最多可容纳 60 名医生并提供高级统计数据。"
+        },
+        {
+          "q": "诊所账户有免费试用吗？",
+          "a": "目前没有——诊所账户经审批后会直接进入付费套餐。请先与我们联系，我们会为您演示后台。"
+        },
+        {
+          "q": "我们能查看医生的患者病历吗？",
+          "a": "不能。您的后台只显示排班和预约量——患者身份和病历信息始终由医生本人保管，您的员工无法查看。"
+        },
+        {
+          "q": "我们如何将医生添加到团队？",
+          "a": "可直接在后台的 DocGet 医生名录中搜索并发送邀请，也可以审批主动申请加入贵诊所的医生。"
+        },
+        {
+          "q": "如果医生离开我们的诊所会怎样？",
+          "a": "医生自己的排班、患者和历史记录会完整保留在其个人账户中——将其从团队中移除，只会取消您后台对其诊所工作时间的可见性。"
+        },
+        {
+          "q": "我们能管理跨多个执业地点的医生吗？",
+          "a": "可以。在同一个后台中，为诊所每个执业地点的每位医生单独设置工作时间。"
+        }
+      ]
+    },
+    "stepsEyebrow": "使用方法",
+    "featuresTitle": "诊所所需的一切，尽在一处",
+    "navFeaturesLabel": "功能"
+  },
+  "hospitalDemo": {
+    "clinicName": "Klinika Nizami",
+    "subtitle": "这是您的团队",
+    "doctorsTile": "医生",
+    "inviteTile": "邀请",
+    "appointmentsTile": "预约",
+    "profileTile": "资料",
+    "searchPlaceholder": "搜索医生...",
+    "candidateName1": "Dr. Elşən Rzayev",
+    "candidateSpecialty1": "儿科心脏病专家",
+    "inviteButton": "邀请",
+    "invitedLabel": "已邀请",
+    "tabConfirmed": "已确认",
+    "tabRequests": "申请",
+    "tabInvited": "已邀请",
+    "requestedToJoin": "申请加入",
+    "approveAction": "批准",
+    "rejectAction": "拒绝",
+    "hoursHeading": "工作时间",
+    "hoursLocation": "Klinika Nizami · 巴库",
+    "appointmentsHeading": "今日排班",
+    "privacyNote": "患者身份始终由医生保管",
+    "patientMasked": "患者 •••"
   }
 }

@@ -9,7 +9,9 @@
       "specialties": "Uzmanlıklar",
       "why": "Neden DocGet",
       "providers": "Ortaklarımız",
-      "faq": "SSS"
+      "faq": "SSS",
+      "forDoctors": "Doktorlar için",
+      "forHospitals": "Klinikler için"
     },
     "cta": "Bekleme listesine katıl"
   },
@@ -121,7 +123,8 @@
     "label": "Bağımsız doktorlar",
     "title": "Her insan kendi doktorunu seçme hakkını hak eder. Onlara bu hakkı vermeye yardımcı olun.",
     "body": "Muayenehanenizi DocGet'da basit, sabit bir abonelikle listeleyin — her randevudan komisyon alınmaz. Takviminizi, çalışma yerlerinizi ve hasta mesajlarınızı tek bir panelden yönetin.",
-    "cta": "Doktor olarak başvur"
+    "cta": "Doktor olarak başvur",
+    "learnMore": "Daha fazla bilgi"
   },
   "forHospitals": {
     "label": "Hastaneler ve klinikler",
@@ -142,7 +145,8 @@
       }
     ],
     "pricingNote": "Klinika — ayda 299,99 AZN, 15 doktora kadar · Klinika Plus — ayda 599,99 AZN, 60 doktora kadar + gelişmiş istatistikler",
-    "cta": "Klinika hakkında bizimle konuşun"
+    "cta": "Klinika hakkında bizimle konuşun",
+    "learnMore": "Daha fazla bilgi"
   },
   "waitlist": {
     "title": "Bir sonraki doktorunuz sadece birkaç dokunuş uzağınızda.",
@@ -193,7 +197,8 @@
     "aboutLabel": "Hakkımızda",
     "contactLabel": "İletişim",
     "legalNote": "Bekleme listesine katılarak DocGet lansmanı hakkında sizinle iletişime geçilmesini kabul edersiniz. Asla spam olmayacak.",
-    "copyright": "© {year} <link>AuxioDev</link> · Bakü, Azerbaycan"
+    "copyright": "© {year} <link>AuxioDev</link> · Bakü, Azerbaycan",
+    "providersHeading": "Sağlayıcılar için"
   },
   "profile": {
     "verifiedBadge": "Onaylı",
@@ -215,5 +220,279 @@
     "title": "Bu sayfa şu anda erişilebilir değil",
     "body": "Bağlantı güncel olmayabilir ya da böyle bir sayfa yok. DocGet'ı keşfetmeye devam etmek için ana sayfaya dönün.",
     "cta": "Ana sayfaya dön"
+  },
+  "doctorPage": {
+    "meta": {
+      "title": "Doktorlar için DocGet — Muayenehanenizi listeleyin, randevuları yönetin",
+      "description": "DocGet'a doktor olarak katılın: sabit bir abonelik, komisyon yok ve Azerbaycan genelinde takviminiz, çalışma yerleriniz ve hasta mesajlarınız için tek bir panel."
+    },
+    "hero": {
+      "eyebrow": "Doktorlar için",
+      "title": "Muayenehaneniz dolu — her randevudan pay vermeden",
+      "subtitle": "Profilinizi DocGet'a ekleyin, tüm çalışma yerlerinizi ve zaman aralıklarınızı tek bir uygulamadan yönetin, hastaların doğrudan size randevu almasını sağlayın. Sabit aylık ücret, asla komisyon yok.",
+      "ctaPrimary": "Doktor olarak başvur",
+      "ctaSecondary": "Nasıl çalıştığını gör",
+      "badge1Value": "%0",
+      "badge1Label": "randevu komisyonu",
+      "badge2Value": "30",
+      "badge2Label": "gün ücretsiz deneme",
+      "badge3Value": "5",
+      "badge3Label": "Peşəkar planında çalışma yeri"
+    },
+    "steps": [
+      {
+        "label": "Başvur",
+        "title": "Lisansınızı gönderin",
+        "body": "Tıp lisansınızı ve belgelerinizi gönderin — ekibimiz her doktoru profil yayına girmeden önce manuel olarak doğrular."
+      },
+      {
+        "label": "Kurulum",
+        "title": "Takviminizi ekleyin",
+        "body": "Çalışma yerlerinizi ekleyin, her lokasyon için saatlerinizi belirleyin ve muayene süresini seçin. Hastalar yalnızca boş randevu saatlerini görür."
+      },
+      {
+        "label": "Randevu alın",
+        "title": "Her şeyi tek yerden yönetin",
+        "body": "Talepleri onaylayın veya reddedin, hastalarla mesajlaşın ve ayınızı takip edin — telefonunuzdan, nerede olursanız olun."
+      }
+    ],
+    "features": [
+      {
+        "title": "Sabit abonelik, komisyon yok",
+        "body": "Tek bir aylık ücret. Bir randevudan kazandığınız her şey sizde kalır — DocGet asla pay almaz."
+      },
+      {
+        "title": "Her çalışma yeri, tek takvim",
+        "body": "Hasta kabul ettiğiniz tüm klinikleri ve ofisleri ekleyin, her biri için ayrı çalışma saatleri belirleyin."
+      },
+      {
+        "title": "Doğrudan hasta mesajlaşması",
+        "body": "Uygulama içi sohbet ile soruları yanıtlayın ve talimatları paylaşın — telefon trafiği yok, kayıp mesaj yok."
+      }
+    ],
+    "pricing": {
+      "eyebrow": "Fiyatlandırma",
+      "title": "Tek sabit ücret. Asla komisyon yok.",
+      "tiers": [
+        {
+          "name": "Başlanğıc",
+          "price": "19.99",
+          "period": "/ay",
+          "description": "Tek bir çalışma yeri için.",
+          "features": [
+            "1 çalışma yeri",
+            "Ayda 40'a kadar randevu",
+            "30 gün ücretsiz deneme"
+          ]
+        },
+        {
+          "name": "Peşəkar",
+          "price": "39.99",
+          "period": "/ay",
+          "description": "Birden fazla muayenehanesi olan doktorlar için.",
+          "features": [
+            "5'e kadar çalışma yeri",
+            "Sınırsız randevu",
+            "Uygulama içi hasta sohbeti",
+            "Öne çıkan listeleme",
+            "Gelişmiş istatistikler",
+            "30 gün ücretsiz deneme"
+          ]
+        }
+      ],
+      "note": "Fiyatlar Azerbaycan manatı (AZN) cinsindendir. İstediğiniz zaman iptal edebilirsiniz."
+    },
+    "faq": {
+      "eyebrow": "SSS",
+      "title": "Doktor SSS",
+      "items": [
+        {
+          "q": "DocGet ne kadara mal olur?",
+          "a": "Başlanğıc, tek çalışma yeri için ayda 19.99 AZN; Peşəkar, sınırsız randevu ve uygulama içi sohbet ile 5'e kadar çalışma yeri için ayda 39.99 AZN. Her plan 30 gün ücretsiz deneme ile başlar."
+        },
+        {
+          "q": "DocGet komisyon alır mı?",
+          "a": "Hayır. Tek maliyetiniz aboneliğinizdir — DocGet bir randevudan kazandığınızın hiçbir yüzdesini almaz."
+        },
+        {
+          "q": "Doktorları nasıl doğruluyorsunuz?",
+          "a": "Başvururken tıp lisansınızı ve belgelerinizi gönderirsiniz. Ekibimiz profiliniz yayına girmeden önce bunları manuel olarak inceler — hastalar yalnızca doğrulanmış doktorları görür."
+        },
+        {
+          "q": "Birden fazla çalışma yerini yönetebilir miyim?",
+          "a": "Evet. Hasta kabul ettiğiniz tüm klinikleri veya ofisleri ekleyin ve her biri için ayrı çalışma saatleri belirleyin — hastalar her zaman lokasyona göre doğru uygunluğu görür."
+        },
+        {
+          "q": "Ücretsiz denemeden sonra ne olur?",
+          "a": "30 günlük deneme boyunca tüm özellikler sizde kalır. Sonrasında profilinizi aktif tutmak için Başlanğıc veya Peşəkar'ı seçin."
+        },
+        {
+          "q": "Ne zaman başlayabilirim?",
+          "a": "Şu anda doktorları sisteme dahil ediyoruz. Bugün başvurun, DocGet halka açık olarak yayına girmeden önce ekibimiz belgelerinizi doğrulamak için sizinle iletişime geçecek."
+        }
+      ]
+    },
+    "stepsEyebrow": "Nasıl çalışır",
+    "featuresTitle": "Muayenehanenizi yönetmek için ihtiyacınız olan her şey",
+    "navFeaturesLabel": "Özellikler"
+  },
+  "doctorDemo": {
+    "greeting": "Merhaba, Dr. Elşən Rzayev",
+    "subtitle": "İşte gününüz",
+    "statMonth": "Bu ay",
+    "statPatients": "Hastalar",
+    "statPending": "Bekleyen",
+    "pendingHeading": "Bekleyen talepler",
+    "patientName": "Aysel Məmmədova",
+    "statusPending": "Bekliyor",
+    "statusConfirmed": "Onaylandı",
+    "declineButton": "Reddet",
+    "confirmButton": "Onayla",
+    "workplaceHeading": "Yeni çalışma yeri",
+    "workplaceName": "Klinika Nizami",
+    "cityLabel": "Bakü",
+    "workingDaysLabel": "Çalışma günleri",
+    "hoursLabel": "Saatler",
+    "visitLengthLabel": "Muayene süresi",
+    "visitLengthValue": "30 dk",
+    "saveButton": "Kaydet",
+    "publishedTitle": "Yayınlandı",
+    "publishedSubtitle": "Hastalar artık buradan size randevu alabilir"
+  },
+  "hospitalPage": {
+    "meta": {
+      "title": "Hastaneler ve Klinikler için DocGet — Kadronuz için tek panel",
+      "description": "Doktorlarınızı davet edin, tüm lokasyonlardaki saatlerini yönetin ve kliniğinizin programını canlı olarak görün — hiçbir zaman hasta kimliğini görmeden."
+    },
+    "hero": {
+      "eyebrow": "Hastaneler ve klinikler için",
+      "title": "Kliniğinizin tüm doktor kadrosu için tek bir panel",
+      "subtitle": "Doktorlarınızı davet edin, tüm lokasyonlarda saatlerini belirleyin ve randevu hacmini canlı olarak izleyin — hasta kimliği ve tıbbi notlar her zaman doktorda kalır.",
+      "ctaPrimary": "Klinika hakkında bizimle konuşun",
+      "ctaSecondary": "Nasıl çalıştığını gör",
+      "badge1Value": "60",
+      "badge1Label": "Klinika Plus'ta doktor",
+      "badge2Value": "0",
+      "badge2Label": "personelinizin gördüğü hasta kaydı",
+      "badge3Value": "1",
+      "badge3Label": "her lokasyon için panel"
+    },
+    "steps": [
+      {
+        "label": "Davet et",
+        "title": "Kadronuzu oluşturun",
+        "body": "DocGet'nun doktor dizininde arama yapın ve ekibinizi katılmaya davet edin — manuel veri girişi veya tablo yok."
+      },
+      {
+        "label": "Onayla",
+        "title": "Onaylayın veya davet edin",
+        "body": "DocGet'a zaten kayıtlı doktorlar kliniğinize katılmak için talep gönderebilir, ya da onları doğrudan davet edebilirsiniz; onlar telefonlarından onaylar."
+      },
+      {
+        "label": "Denetleyin",
+        "title": "Kliniğinizi tek bakışta görün",
+        "body": "Her doktor ve her lokasyon için çalışma saatleri belirleyin, randevu hacmini takip edin — hasta detayları doktorda gizli kalır."
+      }
+    ],
+    "features": [
+      {
+        "title": "Kadronuzu davet edin",
+        "body": "DocGet'nun doktor dizininde arama yapın ve onları kliniğinize davet edin — manuel veri girişine gerek yok."
+      },
+      {
+        "title": "Merkezi çalışma saatleri",
+        "body": "Tüm lokasyonlarınızdaki her doktorun çalışma saatlerini tek bir yerden belirleyin ve düzenleyin."
+      },
+      {
+        "title": "Gizliliği koruyan genel bakış",
+        "body": "Kliniğinizin randevu hacmini ve programını görün — hasta kimliği ve tıbbi notlar doktorda kalır."
+      }
+    ],
+    "pricing": {
+      "eyebrow": "Fiyatlandırma",
+      "title": "Her büyüklükteki klinik için koltuk bazlı planlar",
+      "tiers": [
+        {
+          "name": "Klinika",
+          "price": "299.99",
+          "period": "/ay",
+          "description": "15 doktora kadar klinikler için.",
+          "features": [
+            "15 doktor koltuğuna kadar",
+            "Merkezi çalışma saatleri",
+            "Gizliliği koruyan randevu genel bakışı"
+          ]
+        },
+        {
+          "name": "Klinika Plus",
+          "price": "599.99",
+          "period": "/ay",
+          "description": "Daha büyük hastaneler ve ağlar için.",
+          "features": [
+            "60 doktor koltuğuna kadar",
+            "Gelişmiş istatistikler",
+            "Klinika'daki her şey"
+          ]
+        }
+      ],
+      "note": "Fiyatlar Azerbaycan manatı (AZN) cinsindendir. Klinik hesapları için ücretsiz deneme yoktur — önce sizi panelde gezdirmemiz için bizimle iletişime geçin."
+    },
+    "faq": {
+      "eyebrow": "SSS",
+      "title": "Hastane ve klinik SSS",
+      "items": [
+        {
+          "q": "Bir klinik planı ne kadara mal olur?",
+          "a": "Klinika, 15 doktor koltuğuna kadar ayda 299.99 AZN; Klinika Plus, 60 koltuğa kadar ve gelişmiş istatistiklerle ayda 599.99 AZN'dir."
+        },
+        {
+          "q": "Klinikler için ücretsiz deneme var mı?",
+          "a": "Şu anda yok — klinik hesapları onaylandıktan sonra doğrudan ücretli plana geçer. Bizimle iletişime geçin, önce paneli size gezdirelim."
+        },
+        {
+          "q": "Doktorlarımızın hasta kayıtlarını görebilir miyiz?",
+          "a": "Hayır. Panelinizde yalnızca programlar ve randevu hacmi görünür — hasta kimliği ve tıbbi notlar her zaman doktorda kalır, personelinizde asla."
+        },
+        {
+          "q": "Doktorları kadromuza nasıl ekleriz?",
+          "a": "Panelinizden DocGet'nun doktor dizininde arama yapıp davet gönderin, ya da kliniğinize katılmak için kendileri talep gönderen doktorları onaylayın."
+        },
+        {
+          "q": "Bir doktor kliniğimizden ayrılırsa ne olur?",
+          "a": "Kendi programı, hastaları ve geçmişi kişisel hesabında tamamen olduğu gibi kalır — onu kadronuzdan çıkarmak yalnızca panelinizin klinik saatlerine erişimini kaldırır."
+        },
+        {
+          "q": "Doktorları birden fazla lokasyonda yönetebilir miyiz?",
+          "a": "Evet. Aynı panelden kliniğinizin her lokasyonundaki her doktor için ayrı çalışma saatleri belirleyin."
+        }
+      ]
+    },
+    "stepsEyebrow": "Nasıl çalışır",
+    "featuresTitle": "Kliniğinizin ihtiyaç duyduğu her şey tek yerde",
+    "navFeaturesLabel": "Özellikler"
+  },
+  "hospitalDemo": {
+    "clinicName": "Klinika Nizami",
+    "subtitle": "İşte kadronuz",
+    "doctorsTile": "Doktorlar",
+    "inviteTile": "Davet et",
+    "appointmentsTile": "Randevular",
+    "profileTile": "Profil",
+    "searchPlaceholder": "Doktor ara...",
+    "candidateName1": "Dr. Elşən Rzayev",
+    "candidateSpecialty1": "Pediatrik Kardiyolog",
+    "inviteButton": "Davet et",
+    "invitedLabel": "Davet edildi",
+    "tabConfirmed": "Onaylı",
+    "tabRequests": "Talepler",
+    "tabInvited": "Davet edilenler",
+    "requestedToJoin": "Katılmak istiyor",
+    "approveAction": "Onayla",
+    "rejectAction": "Reddet",
+    "hoursHeading": "Çalışma saatleri",
+    "hoursLocation": "Klinika Nizami · Bakü",
+    "appointmentsHeading": "Bugünün programı",
+    "privacyNote": "Hasta kimliği doktorda kalır",
+    "patientMasked": "Hasta •••"
   }
 }

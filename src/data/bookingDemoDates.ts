@@ -81,6 +81,16 @@ export function formatFullDate(locale: Locale, day: number, weekdayIndex: number
   }
 }
 
+// WEEKDAY_SHORT is Sun-first (index 0=Sun) to match the calendar grid in
+// BookingAnimation. The doctor/hospital working-hours demos instead show a
+// Mon–Sun row (matching the real app's WorkingHoursDay, which is
+// Mon(0)–Sun(6) — see medalize_mb's working_hours_fields.dart) — this
+// reorders the same labels rather than hand-writing a second set.
+export function weekdaysMondayFirst(locale: Locale): string[] {
+  const [sun, ...rest] = WEEKDAY_SHORT[locale];
+  return [...rest, sun];
+}
+
 export function formatShortDate(locale: Locale, day: number, weekdayIndex: number): string {
   const weekday = WEEKDAY_SHORT[locale][weekdayIndex];
   switch (locale) {

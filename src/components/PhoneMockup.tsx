@@ -1,4 +1,4 @@
-import { BookingAnimation } from "./BookingAnimation";
+import type { ReactNode } from "react";
 
 // Real device ratio, from a capture of the app running on an iPhone 17 Pro
 // Max simulator (1320×2868 pt, via the mobile MCP + simctl) — the frame
@@ -65,7 +65,7 @@ function StatusBar() {
   );
 }
 
-export function PhoneMockup() {
+export function PhoneMockup({ children }: { children: ReactNode }) {
   return (
     <div className="relative mx-auto w-full max-w-[252px]">
       <div className="absolute -inset-[30px] -z-10 rounded-[3.75rem] bg-gradient-to-br from-blue-200/50 via-teal-100/40 to-transparent blur-2xl" />
@@ -82,9 +82,7 @@ export function PhoneMockup() {
           style={{ aspectRatio: `${SCREENSHOT_WIDTH} / ${SCREENSHOT_HEIGHT}` }}
         >
           <StatusBar />
-          <div className="min-h-0 flex-1">
-            <BookingAnimation />
-          </div>
+          <div className="min-h-0 flex-1">{children}</div>
         </div>
       </div>
     </div>

@@ -9,7 +9,9 @@
       "specialties": "Spécialités",
       "why": "Pourquoi DocGet",
       "providers": "Partenaires",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "forDoctors": "Médecins",
+      "forHospitals": "Cliniques"
     },
     "cta": "Rejoindre la liste d'attente"
   },
@@ -121,7 +123,8 @@
     "label": "Médecins indépendants",
     "title": "Chaque patient mérite le droit de choisir son médecin. Aidez-nous à le lui offrir.",
     "body": "Référencez votre cabinet sur DocGet avec un simple abonnement forfaitaire — sans commission sur chaque rendez-vous. Gérez votre agenda, vos lieux d'exercice et vos messages patients depuis un seul tableau de bord.",
-    "cta": "Postuler en tant que médecin"
+    "cta": "Postuler en tant que médecin",
+    "learnMore": "En savoir plus"
   },
   "forHospitals": {
     "label": "Hôpitaux et cliniques",
@@ -142,7 +145,8 @@
       }
     ],
     "pricingNote": "Klinika — 299,99 AZN/mois pour jusqu'à 15 médecins · Klinika Plus — 599,99 AZN/mois pour jusqu'à 60 médecins + statistiques avancées",
-    "cta": "Parlez-nous de Klinika"
+    "cta": "Parlez-nous de Klinika",
+    "learnMore": "En savoir plus"
   },
   "waitlist": {
     "title": "Votre prochain médecin n'est qu'à quelques clics.",
@@ -193,7 +197,8 @@
     "aboutLabel": "À propos",
     "contactLabel": "Contact",
     "legalNote": "En rejoignant la liste d'attente, vous acceptez d'être contacté au sujet du lancement de DocGet. Jamais de spam.",
-    "copyright": "© {year} <link>AuxioDev</link> · Bakou, Azerbaïdjan"
+    "copyright": "© {year} <link>AuxioDev</link> · Bakou, Azerbaïdjan",
+    "providersHeading": "Pour les prestataires"
   },
   "profile": {
     "verifiedBadge": "Vérifié",
@@ -215,5 +220,279 @@
     "title": "Cette page n'est pas disponible",
     "body": "Le lien est peut-être obsolète, ou cette page n'existe pas. Retournez à l'accueil pour continuer à découvrir DocGet.",
     "cta": "Retour à l'accueil"
+  },
+  "doctorPage": {
+    "meta": {
+      "title": "DocGet pour les médecins — Référencez votre cabinet, gérez vos rendez-vous",
+      "description": "Rejoignez DocGet en tant que médecin : un abonnement forfaitaire, sans commission, et un seul tableau de bord pour votre agenda, vos lieux d'exercice et vos messages patients dans tout l'Azerbaïdjan."
+    },
+    "hero": {
+      "eyebrow": "Pour les médecins",
+      "title": "Votre cabinet complet — sans céder de commission sur chaque visite",
+      "subtitle": "Référencez votre profil sur DocGet, gérez tous vos lieux d'exercice et créneaux depuis une seule application, et laissez les patients prendre rendez-vous directement. Un prix mensuel forfaitaire, sans commission, jamais.",
+      "ctaPrimary": "Postuler en tant que médecin",
+      "ctaSecondary": "Voir comment ça marche",
+      "badge1Value": "0 %",
+      "badge1Label": "de commission sur les rendez-vous",
+      "badge2Value": "30",
+      "badge2Label": "jours d'essai gratuit",
+      "badge3Value": "5",
+      "badge3Label": "lieux d'exercice avec Peşəkar"
+    },
+    "steps": [
+      {
+        "label": "Postuler",
+        "title": "Envoyez votre licence",
+        "body": "Envoyez votre licence médicale et vos qualifications — notre équipe vérifie manuellement chaque médecin avant la mise en ligne de son profil."
+      },
+      {
+        "label": "Configurer",
+        "title": "Ajoutez votre agenda",
+        "body": "Ajoutez vos lieux d'exercice, définissez vos horaires pour chacun et choisissez la durée de vos consultations. Les patients ne voient que les créneaux disponibles."
+      },
+      {
+        "label": "Être réservé",
+        "title": "Gérez tout depuis un seul endroit",
+        "body": "Confirmez ou refusez les demandes, échangez avec vos patients et suivez votre mois — depuis votre téléphone, où que vous soyez."
+      }
+    ],
+    "features": [
+      {
+        "title": "Abonnement forfaitaire, sans commission",
+        "body": "Un prix mensuel unique. Tout ce que vous gagnez sur un rendez-vous vous revient — DocGet ne prend jamais de commission."
+      },
+      {
+        "title": "Tous vos lieux d'exercice, un seul agenda",
+        "body": "Ajoutez tous les cabinets et cliniques où vous recevez des patients, avec des horaires indépendants pour chacun."
+      },
+      {
+        "title": "Messagerie directe avec les patients",
+        "body": "Répondez aux questions et partagez des instructions via la messagerie intégrée — plus de va-et-vient téléphonique ni de messages perdus."
+      }
+    ],
+    "pricing": {
+      "eyebrow": "Tarifs",
+      "title": "Un prix forfaitaire unique. Sans commission, jamais.",
+      "tiers": [
+        {
+          "name": "Başlanğıc",
+          "price": "19.99",
+          "period": "/mois",
+          "description": "Pour un seul lieu d'exercice.",
+          "features": [
+            "1 lieu d'exercice",
+            "Jusqu'à 40 rendez-vous/mois",
+            "30 jours d'essai gratuit"
+          ]
+        },
+        {
+          "name": "Peşəkar",
+          "price": "39.99",
+          "period": "/mois",
+          "description": "Pour les médecins exerçant sur plusieurs sites.",
+          "features": [
+            "Jusqu'à 5 lieux d'exercice",
+            "Rendez-vous illimités",
+            "Messagerie patient intégrée",
+            "Mise en avant du profil",
+            "Statistiques avancées",
+            "30 jours d'essai gratuit"
+          ]
+        }
+      ],
+      "note": "Prix en manats azerbaïdjanais (AZN). Annulation possible à tout moment."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "FAQ médecins",
+      "items": [
+        {
+          "q": "Combien coûte DocGet ?",
+          "a": "Başlanğıc coûte 19,99 AZN/mois pour un lieu d'exercice ; Peşəkar coûte 39,99 AZN/mois pour jusqu'à 5 lieux, avec rendez-vous illimités et messagerie intégrée. Chaque forfait débute par 30 jours d'essai gratuit."
+        },
+        {
+          "q": "DocGet prend-il une commission ?",
+          "a": "Non. Votre abonnement est le seul coût — DocGet ne prend jamais de pourcentage sur ce que vous gagnez grâce à un rendez-vous."
+        },
+        {
+          "q": "Comment vérifiez-vous les médecins ?",
+          "a": "Vous envoyez votre licence médicale et vos qualifications lors de votre candidature. Notre équipe les vérifie manuellement avant la mise en ligne de votre profil — les patients ne voient que des médecins vérifiés."
+        },
+        {
+          "q": "Puis-je gérer plusieurs lieux d'exercice ?",
+          "a": "Oui. Ajoutez tous les cabinets ou cliniques où vous recevez des patients et définissez des horaires indépendants pour chacun — les patients voient toujours les disponibilités exactes par site."
+        },
+        {
+          "q": "Que se passe-t-il après l'essai gratuit ?",
+          "a": "Vous conservez toutes les fonctionnalités pendant les 30 jours d'essai. Ensuite, choisissez Başlanğıc ou Peşəkar pour garder votre profil actif."
+        },
+        {
+          "q": "Quand puis-je commencer ?",
+          "a": "Nous accueillons des médecins dès maintenant. Postulez aujourd'hui — notre équipe vous contactera pour vérifier vos qualifications avant le lancement public de DocGet."
+        }
+      ]
+    },
+    "stepsEyebrow": "Comment ça marche",
+    "featuresTitle": "Tout ce qu'il faut pour gérer votre cabinet",
+    "navFeaturesLabel": "Fonctionnalités"
+  },
+  "doctorDemo": {
+    "greeting": "Bonjour, Dr. Elşən Rzayev",
+    "subtitle": "Voici votre journée",
+    "statMonth": "Ce mois-ci",
+    "statPatients": "Patients",
+    "statPending": "En attente",
+    "pendingHeading": "Demandes en attente",
+    "patientName": "Aysel Məmmədova",
+    "statusPending": "En attente",
+    "statusConfirmed": "Confirmé",
+    "declineButton": "Refuser",
+    "confirmButton": "Confirmer",
+    "workplaceHeading": "Nouveau lieu d'exercice",
+    "workplaceName": "Klinika Nizami",
+    "cityLabel": "Bakou",
+    "workingDaysLabel": "Jours travaillés",
+    "hoursLabel": "Horaires",
+    "visitLengthLabel": "Durée de consultation",
+    "visitLengthValue": "30 min",
+    "saveButton": "Enregistrer",
+    "publishedTitle": "Publié",
+    "publishedSubtitle": "Les patients peuvent désormais prendre rendez-vous ici"
+  },
+  "hospitalPage": {
+    "meta": {
+      "title": "DocGet pour les hôpitaux et cliniques — Un tableau de bord pour votre équipe",
+      "description": "Invitez vos médecins, gérez leurs horaires sur tous vos sites et visualisez en temps réel le planning de votre clinique — sans jamais voir l'identité d'un patient."
+    },
+    "hero": {
+      "eyebrow": "Pour les hôpitaux et cliniques",
+      "title": "Un tableau de bord unique pour toute l'équipe médicale de votre clinique",
+      "subtitle": "Invitez vos médecins, définissez leurs horaires sur tous vos sites et suivez le volume de rendez-vous en temps réel — l'identité des patients et les notes médicales restent toujours réservées au médecin.",
+      "ctaPrimary": "Parlez-nous de Klinika",
+      "ctaSecondary": "Voir comment ça marche",
+      "badge1Value": "60",
+      "badge1Label": "médecins avec Klinika Plus",
+      "badge2Value": "0",
+      "badge2Label": "dossier patient visible par votre équipe",
+      "badge3Value": "1",
+      "badge3Label": "tableau de bord pour tous vos sites"
+    },
+    "steps": [
+      {
+        "label": "Invitez",
+        "title": "Constituez votre équipe",
+        "body": "Recherchez dans l'annuaire des médecins DocGet et invitez votre équipe à rejoindre — sans saisie manuelle ni tableur."
+      },
+      {
+        "label": "Approuvez",
+        "title": "Approuvez ou invitez",
+        "body": "Les médecins déjà sur DocGet peuvent demander à rejoindre votre clinique, ou vous pouvez les inviter directement — ils confirment depuis leur téléphone."
+      },
+      {
+        "label": "Supervisez",
+        "title": "Votre clinique en un coup d'œil",
+        "body": "Définissez les horaires de chaque médecin par site et suivez le volume de rendez-vous — les données patients restent privées, réservées au médecin."
+      }
+    ],
+    "features": [
+      {
+        "title": "Invitez votre équipe",
+        "body": "Recherchez dans l'annuaire des médecins DocGet et invitez-les à rejoindre votre clinique — sans saisie manuelle."
+      },
+      {
+        "title": "Horaires centralisés",
+        "body": "Définissez et ajustez les horaires de chaque médecin sur tous vos sites depuis un seul endroit."
+      },
+      {
+        "title": "Vue d'ensemble respectueuse de la confidentialité",
+        "body": "Consultez le volume de rendez-vous et le planning de votre clinique — l'identité des patients et les notes médicales restent réservées au médecin."
+      }
+    ],
+    "pricing": {
+      "eyebrow": "Tarifs",
+      "title": "Des forfaits par poste, pour cliniques de toute taille",
+      "tiers": [
+        {
+          "name": "Klinika",
+          "price": "299.99",
+          "period": "/mois",
+          "description": "Pour les cliniques jusqu'à 15 médecins.",
+          "features": [
+            "Jusqu'à 15 postes médecins",
+            "Horaires centralisés",
+            "Vue d'ensemble des rendez-vous respectueuse de la confidentialité"
+          ]
+        },
+        {
+          "name": "Klinika Plus",
+          "price": "599.99",
+          "period": "/mois",
+          "description": "Pour les grands hôpitaux et réseaux.",
+          "features": [
+            "Jusqu'à 60 postes médecins",
+            "Statistiques avancées",
+            "Tout ce qu'offre Klinika"
+          ]
+        }
+      ],
+      "note": "Prix en manats azerbaïdjanais (AZN). Pas d'essai gratuit pour les comptes cliniques — contactez-nous pour une démonstration au préalable."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "FAQ hôpitaux et cliniques",
+      "items": [
+        {
+          "q": "Combien coûte un forfait clinique ?",
+          "a": "Klinika coûte 299,99 AZN/mois pour jusqu'à 15 postes médecins ; Klinika Plus coûte 599,99 AZN/mois pour jusqu'à 60 postes, avec statistiques avancées."
+        },
+        {
+          "q": "Y a-t-il un essai gratuit pour les cliniques ?",
+          "a": "Pas actuellement — les comptes cliniques passent directement à un forfait payant une fois approuvés. Contactez-nous, nous vous ferons d'abord une démonstration du tableau de bord."
+        },
+        {
+          "q": "Pouvons-nous voir les dossiers patients de nos médecins ?",
+          "a": "Non. Votre tableau de bord n'affiche que les plannings et le volume de rendez-vous — l'identité des patients et les notes médicales restent toujours réservées au médecin, jamais à votre équipe."
+        },
+        {
+          "q": "Comment ajouter des médecins à notre équipe ?",
+          "a": "Recherchez dans l'annuaire des médecins DocGet depuis votre tableau de bord et envoyez une invitation, ou approuvez les médecins qui demandent eux-mêmes à rejoindre votre clinique."
+        },
+        {
+          "q": "Que se passe-t-il si un médecin quitte notre clinique ?",
+          "a": "Son propre planning, ses patients et son historique restent intacts dans son compte personnel — le retirer de votre équipe ne fait que supprimer la visibilité de ses horaires depuis votre tableau de bord."
+        },
+        {
+          "q": "Pouvons-nous gérer des médecins sur plusieurs sites ?",
+          "a": "Oui. Définissez des horaires indépendants pour chaque médecin, sur chaque site de votre clinique, depuis le même tableau de bord."
+        }
+      ]
+    },
+    "stepsEyebrow": "Comment ça marche",
+    "featuresTitle": "Tout ce dont votre clinique a besoin, au même endroit",
+    "navFeaturesLabel": "Fonctionnalités"
+  },
+  "hospitalDemo": {
+    "clinicName": "Klinika Nizami",
+    "subtitle": "Voici votre équipe",
+    "doctorsTile": "Médecins",
+    "inviteTile": "Inviter",
+    "appointmentsTile": "Rendez-vous",
+    "profileTile": "Profil",
+    "searchPlaceholder": "Rechercher un médecin...",
+    "candidateName1": "Dr. Elşən Rzayev",
+    "candidateSpecialty1": "Cardiologue pédiatrique",
+    "inviteButton": "Inviter",
+    "invitedLabel": "Invité",
+    "tabConfirmed": "Confirmés",
+    "tabRequests": "Demandes",
+    "tabInvited": "Invités",
+    "requestedToJoin": "Demande à rejoindre",
+    "approveAction": "Approuver",
+    "rejectAction": "Refuser",
+    "hoursHeading": "Horaires de travail",
+    "hoursLocation": "Klinika Nizami · Bakou",
+    "appointmentsHeading": "Planning du jour",
+    "privacyNote": "L'identité du patient reste réservée au médecin",
+    "patientMasked": "Patient •••"
   }
 }

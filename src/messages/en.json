@@ -9,7 +9,9 @@
       "specialties": "Specialties",
       "why": "Why DocGet",
       "providers": "For providers",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "forDoctors": "For doctors",
+      "forHospitals": "For clinics"
     },
     "cta": "Join the waitlist"
   },
@@ -121,7 +123,8 @@
     "label": "Independent doctors",
     "title": "Every patient deserves the right to choose their doctor. Help give them that.",
     "body": "List your practice on DocGet with a simple flat subscription — no commission on every booking. Manage your schedule, workplaces and patient messages from one dashboard.",
-    "cta": "Apply as a doctor"
+    "cta": "Apply as a doctor",
+    "learnMore": "Learn more"
   },
   "forHospitals": {
     "label": "Hospitals & clinics",
@@ -142,7 +145,8 @@
       }
     ],
     "pricingNote": "Klinika — 299.99 AZN/mo for up to 15 doctors · Klinika Plus — 599.99 AZN/mo for up to 60 doctors + advanced stats",
-    "cta": "Talk to us about Klinika"
+    "cta": "Talk to us about Klinika",
+    "learnMore": "Learn more"
   },
   "waitlist": {
     "title": "Your next doctor is a few taps away.",
@@ -193,7 +197,8 @@
     "aboutLabel": "About",
     "contactLabel": "Contact",
     "legalNote": "By joining the waitlist you agree to be contacted about the DocGet launch. No spam, ever.",
-    "copyright": "© {year} <link>AuxioDev</link> · Baku, Azerbaijan"
+    "copyright": "© {year} <link>AuxioDev</link> · Baku, Azerbaijan",
+    "providersHeading": "For providers"
   },
   "profile": {
     "verifiedBadge": "Verified",
@@ -215,5 +220,279 @@
     "title": "This page isn't available",
     "body": "The link may be out of date, or this page just isn't here. Head back to the homepage to keep exploring DocGet.",
     "cta": "Back to homepage"
+  },
+  "doctorPage": {
+    "meta": {
+      "title": "DocGet for Doctors — List your practice, manage bookings",
+      "description": "Join DocGet as a doctor: a flat subscription, no commission, and one dashboard for your schedule, workplaces and patient messages across all of Azerbaijan."
+    },
+    "hero": {
+      "eyebrow": "For doctors",
+      "title": "Your practice, fully booked — without giving up a cut of every visit",
+      "subtitle": "List your profile on DocGet, manage every workplace and time slot from one app, and let patients book you directly. One flat monthly price, no commission, ever.",
+      "ctaPrimary": "Apply as a doctor",
+      "ctaSecondary": "See how it works",
+      "badge1Value": "0%",
+      "badge1Label": "commission on bookings",
+      "badge2Value": "30",
+      "badge2Label": "day free trial",
+      "badge3Value": "5",
+      "badge3Label": "workplaces on Peşəkar"
+    },
+    "steps": [
+      {
+        "label": "Apply",
+        "title": "Submit your license",
+        "body": "Send your medical license and credentials — our team verifies every doctor manually before they go live."
+      },
+      {
+        "label": "Set up",
+        "title": "Add your schedule",
+        "body": "Add your workplaces, set your hours per location, and choose your visit length. Patients only ever see open slots."
+      },
+      {
+        "label": "Get booked",
+        "title": "Manage it all in one place",
+        "body": "Confirm or decline requests, message patients, and track your month — from your phone, wherever you are."
+      }
+    ],
+    "features": [
+      {
+        "title": "Flat subscription, no commission",
+        "body": "One monthly price. Whatever you earn from a booking stays yours — DocGet never takes a cut."
+      },
+      {
+        "title": "Every workplace, one schedule",
+        "body": "Add every clinic and office you see patients at, and set independent hours for each."
+      },
+      {
+        "title": "Direct patient messaging",
+        "body": "Answer questions and share instructions through in-app chat — no phone tag, no lost messages."
+      }
+    ],
+    "pricing": {
+      "eyebrow": "Pricing",
+      "title": "One flat price. No commission, ever.",
+      "tiers": [
+        {
+          "name": "Başlanğıc",
+          "price": "19.99",
+          "period": "/mo",
+          "description": "For a single workplace.",
+          "features": [
+            "1 workplace",
+            "Up to 40 appointments/mo",
+            "30-day free trial"
+          ]
+        },
+        {
+          "name": "Peşəkar",
+          "price": "39.99",
+          "period": "/mo",
+          "description": "For doctors with more than one practice.",
+          "features": [
+            "Up to 5 workplaces",
+            "Unlimited appointments",
+            "In-app patient chat",
+            "Promoted placement",
+            "Advanced stats",
+            "30-day free trial"
+          ]
+        }
+      ],
+      "note": "Prices in Azerbaijani manat (AZN). Cancel anytime."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Doctor FAQ",
+      "items": [
+        {
+          "q": "How much does DocGet cost?",
+          "a": "Başlanğıc is 19.99 AZN/mo for one workplace; Peşəkar is 39.99 AZN/mo for up to 5 workplaces with unlimited bookings and in-app chat. Every plan starts with a 30-day free trial."
+        },
+        {
+          "q": "Does DocGet take a commission?",
+          "a": "No. Your subscription is the only cost — DocGet never takes a percentage of what you earn from a booking."
+        },
+        {
+          "q": "How do you verify doctors?",
+          "a": "You submit your medical license and credentials when you apply. Our team reviews them manually before your profile goes live — patients only ever see verified doctors."
+        },
+        {
+          "q": "Can I manage more than one workplace?",
+          "a": "Yes. Add every clinic or office you see patients at and set independent working hours for each — patients always see accurate, per-location availability."
+        },
+        {
+          "q": "What happens after the free trial?",
+          "a": "You keep every feature during the 30-day trial. Afterwards, choose Başlanğıc or Peşəkar to keep your profile live."
+        },
+        {
+          "q": "When can I start?",
+          "a": "We're onboarding doctors now. Apply today and our team will reach out to verify your credentials before DocGet launches publicly."
+        }
+      ]
+    },
+    "stepsEyebrow": "How it works",
+    "featuresTitle": "Everything you need to run your practice",
+    "navFeaturesLabel": "Features"
+  },
+  "doctorDemo": {
+    "greeting": "Hi, Dr. Elşən Rzayev",
+    "subtitle": "Here's your day",
+    "statMonth": "This month",
+    "statPatients": "Patients",
+    "statPending": "Pending",
+    "pendingHeading": "Pending requests",
+    "patientName": "Aysel Məmmədova",
+    "statusPending": "Pending",
+    "statusConfirmed": "Confirmed",
+    "declineButton": "Decline",
+    "confirmButton": "Confirm",
+    "workplaceHeading": "New workplace",
+    "workplaceName": "Klinika Nizami",
+    "cityLabel": "Baku",
+    "workingDaysLabel": "Working days",
+    "hoursLabel": "Hours",
+    "visitLengthLabel": "Visit length",
+    "visitLengthValue": "30 min",
+    "saveButton": "Save",
+    "publishedTitle": "Published",
+    "publishedSubtitle": "Patients can book you here now"
+  },
+  "hospitalPage": {
+    "meta": {
+      "title": "DocGet for Hospitals & Clinics — One dashboard for your roster",
+      "description": "Invite your doctors, manage their hours across every location, and see a live view of your clinic's schedule — without ever seeing a patient's identity."
+    },
+    "hero": {
+      "eyebrow": "For hospitals & clinics",
+      "title": "One dashboard for your clinic's entire doctor roster",
+      "subtitle": "Invite your doctors, set their hours across every location, and see a live view of appointment volume — patient identities and medical notes always stay with the doctor.",
+      "ctaPrimary": "Talk to us about Klinika",
+      "ctaSecondary": "See how it works",
+      "badge1Value": "60",
+      "badge1Label": "doctors on Klinika Plus",
+      "badge2Value": "0",
+      "badge2Label": "patient records your staff can see",
+      "badge3Value": "1",
+      "badge3Label": "dashboard for every location"
+    },
+    "steps": [
+      {
+        "label": "Invite",
+        "title": "Build your roster",
+        "body": "Search DocGet's doctor directory and invite your team to join — no manual data entry, no spreadsheets."
+      },
+      {
+        "label": "Approve",
+        "title": "Approve or invite",
+        "body": "Doctors already on DocGet can request to join your clinic, or you can invite them directly and they confirm from their phone."
+      },
+      {
+        "label": "Oversee",
+        "title": "See your clinic at a glance",
+        "body": "Set working hours per doctor per location, and track appointment volume — while patient details stay private to the doctor."
+      }
+    ],
+    "features": [
+      {
+        "title": "Invite your roster",
+        "body": "Search DocGet's doctor directory and invite them to join your clinic — no manual data entry."
+      },
+      {
+        "title": "Centralized hours",
+        "body": "Set and adjust working hours for every doctor across all your locations from one place."
+      },
+      {
+        "title": "Privacy-safe overview",
+        "body": "See your clinic's appointment volume and schedule — patient identities and medical notes stay with the doctor."
+      }
+    ],
+    "pricing": {
+      "eyebrow": "Pricing",
+      "title": "Seat-based plans for clinics of any size",
+      "tiers": [
+        {
+          "name": "Klinika",
+          "price": "299.99",
+          "period": "/mo",
+          "description": "For clinics with up to 15 doctors.",
+          "features": [
+            "Up to 15 doctor seats",
+            "Centralized working hours",
+            "Privacy-safe appointment overview"
+          ]
+        },
+        {
+          "name": "Klinika Plus",
+          "price": "599.99",
+          "period": "/mo",
+          "description": "For larger hospitals and networks.",
+          "features": [
+            "Up to 60 doctor seats",
+            "Advanced statistics",
+            "Everything in Klinika"
+          ]
+        }
+      ],
+      "note": "Prices in Azerbaijani manat (AZN). No free trial for clinic accounts — talk to us for a walkthrough first."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Hospital & clinic FAQ",
+      "items": [
+        {
+          "q": "How much does a clinic plan cost?",
+          "a": "Klinika is 299.99 AZN/mo for up to 15 doctor seats; Klinika Plus is 599.99 AZN/mo for up to 60 seats plus advanced statistics."
+        },
+        {
+          "q": "Is there a free trial for clinics?",
+          "a": "Not currently — clinic accounts move to a paid plan once approved. Contact us and we'll walk you through the dashboard first."
+        },
+        {
+          "q": "Can we see our doctors' patient records?",
+          "a": "No. Your dashboard shows schedules and appointment volume only — patient identities and medical notes always stay with the doctor, never your staff."
+        },
+        {
+          "q": "How do we add doctors to our roster?",
+          "a": "Search DocGet's doctor directory from your dashboard and send an invite, or approve doctors who request to join your clinic themselves."
+        },
+        {
+          "q": "What happens if a doctor leaves our clinic?",
+          "a": "Their own schedule, patients and history stay fully intact under their personal account — removing them from your roster only removes your dashboard's visibility into their clinic hours."
+        },
+        {
+          "q": "Can we manage doctors across multiple locations?",
+          "a": "Yes. Set independent working hours for each doctor at each of your clinic's locations, all from the same dashboard."
+        }
+      ]
+    },
+    "stepsEyebrow": "How it works",
+    "featuresTitle": "Everything your clinic needs in one place",
+    "navFeaturesLabel": "Features"
+  },
+  "hospitalDemo": {
+    "clinicName": "Klinika Nizami",
+    "subtitle": "Here's your roster",
+    "doctorsTile": "Doctors",
+    "inviteTile": "Invite",
+    "appointmentsTile": "Appointments",
+    "profileTile": "Profile",
+    "searchPlaceholder": "Search doctors...",
+    "candidateName1": "Dr. Elşən Rzayev",
+    "candidateSpecialty1": "Pediatric Cardiologist",
+    "inviteButton": "Invite",
+    "invitedLabel": "Invited",
+    "tabConfirmed": "Confirmed",
+    "tabRequests": "Requests",
+    "tabInvited": "Invited",
+    "requestedToJoin": "Requested to join",
+    "approveAction": "Approve",
+    "rejectAction": "Reject",
+    "hoursHeading": "Working hours",
+    "hoursLocation": "Klinika Nizami · Baku",
+    "appointmentsHeading": "Today's schedule",
+    "privacyNote": "Patient identity stays with the doctor",
+    "patientMasked": "Patient •••"
   }
 }

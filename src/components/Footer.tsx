@@ -1,21 +1,31 @@
 import { getTranslations } from "next-intl/server";
 import { Logo } from "./Logo";
+import { Link } from "@/i18n/navigation";
 
 export async function Footer() {
   const t = await getTranslations("footer");
   const header = await getTranslations("header");
 
+  // Home-page anchors need the "/#" prefix here (unlike Header's own nav,
+  // which links to sections on whichever page it's already rendered on) —
+  // the footer appears on /for-doctors and /for-hospitals too, where a
+  // bare "#how" would scroll nowhere instead of returning to the homepage
+  // section.
   const productLinks = [
-    { href: "#how", label: header("nav.how") },
-    { href: "#specialties", label: header("nav.specialties") },
-    { href: "#providers", label: header("nav.providers") },
-    { href: "#waitlist", label: header("cta") },
+    { href: "/#how", label: header("nav.how") },
+    { href: "/#specialties", label: header("nav.specialties") },
+    { href: "/#providers", label: header("nav.providers") },
+    { href: "/#waitlist", label: header("cta") },
+  ];
+  const providerLinks = [
+    { href: "/for-doctors", label: header("nav.forDoctors") },
+    { href: "/for-hospitals", label: header("nav.forHospitals") },
   ];
 
   return (
     <footer className="border-t border-brand-ink-border bg-brand-ink text-brand-ink-text">
       <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6">
-        <div className="grid gap-10 sm:grid-cols-[1.3fr_1fr_1fr]">
+        <div className="grid gap-10 sm:grid-cols-[1.2fr_1fr_1fr_1fr]">
           <div className="max-w-xs">
             <Logo wordmarkClassName="text-white" />
             <p className="mt-3 text-sm leading-relaxed text-slate-400">{t("tagline")}</p>
@@ -28,9 +38,24 @@ export async function Footer() {
             <ul className="mt-4 space-y-2.5">
               {productLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-sm text-slate-400 transition-colors hover:text-white">
+                  <Link href={link.href} className="text-sm text-slate-400 transition-colors hover:text-white">
                     {link.label}
-                  </a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+              {t("providersHeading")}
+            </h3>
+            <ul className="mt-4 space-y-2.5">
+              {providerLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-slate-400 transition-colors hover:text-white">
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>

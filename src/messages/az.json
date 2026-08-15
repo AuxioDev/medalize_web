@@ -9,7 +9,9 @@
       "specialties": "İxtisaslar",
       "why": "Niyə DocGet",
       "providers": "Tərəfdaşlar",
-      "faq": "Suallar"
+      "faq": "Suallar",
+      "forDoctors": "Həkimlər üçün",
+      "forHospitals": "Klinikalar üçün"
     },
     "cta": "Növbə siyahısına qoşul"
   },
@@ -121,7 +123,8 @@
     "label": "Müstəqil həkimlər",
     "title": "Hər bir insan öz həkimini seçmək hüququna layiqdir. Bu hüququ onlara verməyə kömək edin.",
     "body": "Sadə, sabit abunə haqqı ilə praktikanızı DocGet-da yerləşdirin — hər qəbuldan komissiya yoxdur. Cədvəlinizi, iş yerlərinizi və pasiyent yazışmalarını bir paneldən idarə edin.",
-    "cta": "Həkim kimi müraciət et"
+    "cta": "Həkim kimi müraciət et",
+    "learnMore": "Ətraflı"
   },
   "forHospitals": {
     "label": "Xəstəxanalar və klinikalar",
@@ -142,7 +145,8 @@
       }
     ],
     "pricingNote": "Klinika — ayda 299.99 AZN, 15 həkimə qədər · Klinika Plus — ayda 599.99 AZN, 60 həkimə qədər + genişləndirilmiş statistika",
-    "cta": "Klinika haqqında bizimlə əlaqə saxlayın"
+    "cta": "Klinika haqqında bizimlə əlaqə saxlayın",
+    "learnMore": "Ətraflı"
   },
   "waitlist": {
     "title": "Növbəti həkiminiz cəmi bir neçə toxunuş uzaqlıqdadır.",
@@ -193,7 +197,8 @@
     "aboutLabel": "Haqqımızda",
     "contactLabel": "Əlaqə",
     "legalNote": "Növbə siyahısına qoşularaq DocGet-nun buraxılışı barədə sizinlə əlaqə saxlanılmasına razılıq verirsiniz. Heç vaxt spam olmayacaq.",
-    "copyright": "© {year} <link>AuxioDev</link> · Bakı, Azərbaycan"
+    "copyright": "© {year} <link>AuxioDev</link> · Bakı, Azərbaycan",
+    "providersHeading": "Provayderlər üçün"
   },
   "profile": {
     "verifiedBadge": "Təsdiqlənib",
@@ -215,5 +220,279 @@
     "title": "Bu səhifə əlçatan deyil",
     "body": "Keçid köhnəlmiş ola bilər, ya da belə bir səhifə yoxdur. DocGet-ı kəşf etməyə davam etmək üçün əsas səhifəyə qayıdın.",
     "cta": "Əsas səhifəyə qayıt"
+  },
+  "doctorPage": {
+    "meta": {
+      "title": "DocGet Həkimlər üçün — Praktikanızı yerləşdirin, qəbulları idarə edin",
+      "description": "DocGet-a həkim kimi qoşulun: sabit abunə haqqı, komissiyasız və cədvəliniz, iş yerləriniz və pasiyent yazışmalarınız üçün Azərbaycan üzrə bir panel."
+    },
+    "hero": {
+      "eyebrow": "Həkimlər üçün",
+      "title": "Praktikanız tam dolu — hər qəbuldan pay vermədən",
+      "subtitle": "Profilinizi DocGet-da yerləşdirin, bütün iş yerlərinizi və vaxt aralıqlarınızı bir tətbiqdən idarə edin və pasiyentlərin birbaşa sizə yazılmasına imkan verin. Sabit aylıq qiymət, heç vaxt komissiya yoxdur.",
+      "ctaPrimary": "Həkim kimi müraciət et",
+      "ctaSecondary": "Necə işlədiyini gör",
+      "badge1Value": "0%",
+      "badge1Label": "qəbullardan komissiya",
+      "badge2Value": "30",
+      "badge2Label": "gün pulsuz sınaq",
+      "badge3Value": "5",
+      "badge3Label": "Peşəkar planında iş yeri"
+    },
+    "steps": [
+      {
+        "label": "Müraciət",
+        "title": "Sənədlərinizi göndərin",
+        "body": "Tibbi lisenziyanızı və sənədlərinizi göndərin — komandamız hər həkimi əl ilə yoxlayır, profil yayımlanmazdan əvvəl."
+      },
+      {
+        "label": "Qurun",
+        "title": "Cədvəlinizi əlavə edin",
+        "body": "İş yerlərinizi əlavə edin, hər məkan üçün iş saatlarını təyin edin və qəbul müddətini seçin. Pasiyentlər yalnız boş vaxtları görür."
+      },
+      {
+        "label": "Qəbul alın",
+        "title": "Hər şeyi bir yerdən idarə edin",
+        "body": "Sorğuları təsdiqləyin və ya rədd edin, pasiyentlərlə yazışın və ayınızı izləyin — telefonunuzdan, harada olmağınızdan asılı olmayaraq."
+      }
+    ],
+    "features": [
+      {
+        "title": "Sabit abunə, komissiya yoxdur",
+        "body": "Bir aylıq qiymət. Qəbuldan qazandığınız hər şey sizdə qalır — DocGet heç vaxt pay götürmür."
+      },
+      {
+        "title": "Hər iş yeri, bir cədvəl",
+        "body": "Pasiyent qəbul etdiyiniz bütün klinikaları və ofisləri əlavə edin, hər biri üçün ayrı iş saatları təyin edin."
+      },
+      {
+        "title": "Birbaşa pasiyent yazışması",
+        "body": "Tətbiq daxilində yazışma ilə suallara cavab verin və təlimatları paylaşın — telefon oyunu yoxdur, itmiş mesaj yoxdur."
+      }
+    ],
+    "pricing": {
+      "eyebrow": "Qiymətlər",
+      "title": "Sabit qiymət. Heç vaxt komissiya yoxdur.",
+      "tiers": [
+        {
+          "name": "Başlanğıc",
+          "price": "19.99",
+          "period": "/ay",
+          "description": "Bir iş yeri üçün.",
+          "features": [
+            "1 iş yeri",
+            "Ayda 40-a qədər qəbul",
+            "30 gün pulsuz sınaq"
+          ]
+        },
+        {
+          "name": "Peşəkar",
+          "price": "39.99",
+          "period": "/ay",
+          "description": "Birdən çox praktikası olan həkimlər üçün.",
+          "features": [
+            "5-ə qədər iş yeri",
+            "Limitsiz qəbul",
+            "Tətbiq daxilində pasiyent yazışması",
+            "Önə çıxarılan yerləşdirmə",
+            "Genişləndirilmiş statistika",
+            "30 gün pulsuz sınaq"
+          ]
+        }
+      ],
+      "note": "Qiymətlər Azərbaycan manatı (AZN) ilədir. İstənilən vaxt ləğv edə bilərsiniz."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Həkimlər üçün suallar",
+      "items": [
+        {
+          "q": "DocGet nə qədər başa gəlir?",
+          "a": "Başlanğıc bir iş yeri üçün ayda 19.99 AZN-dir; Peşəkar limitsiz qəbul və tətbiq daxilində yazışma ilə 5-ə qədər iş yeri üçün ayda 39.99 AZN-dir. Hər plan 30 gün pulsuz sınaqla başlayır."
+        },
+        {
+          "q": "DocGet komissiya götürürmü?",
+          "a": "Xeyr. Yeganə xərciniz abunə haqqınızdır — DocGet qəbuldan qazandığınızın heç bir faizini götürmür."
+        },
+        {
+          "q": "Həkimləri necə yoxlayırsınız?",
+          "a": "Müraciət edərkən tibbi lisenziyanızı və sənədlərinizi göndərirsiniz. Komandamız profiliniz yayımlanmazdan əvvəl onları əl ilə yoxlayır — pasiyentlər yalnız təsdiqlənmiş həkimləri görür."
+        },
+        {
+          "q": "Birdən çox iş yerini idarə edə bilərəmmi?",
+          "a": "Bəli. Pasiyent qəbul etdiyiniz bütün klinikaları və ya ofisləri əlavə edin və hər biri üçün ayrı iş saatları təyin edin — pasiyentlər həmişə məkana görə dəqiq mövcudluğu görür."
+        },
+        {
+          "q": "Pulsuz sınaqdan sonra nə olur?",
+          "a": "30 günlük sınaq müddətində bütün funksiyalar sizdə qalır. Sonra profilinizi aktiv saxlamaq üçün Başlanğıc və ya Peşəkar seçin."
+        },
+        {
+          "q": "Nə vaxt başlaya bilərəm?",
+          "a": "Hazirda həkimləri qeydiyyata alırıq. Bu gün müraciət edin, DocGet ictimai olaraq işə düşməzdən əvvəl komandamız sənədlərinizi yoxlamaq üçün sizinlə əlaqə saxlayacaq."
+        }
+      ]
+    },
+    "stepsEyebrow": "Necə işləyir",
+    "featuresTitle": "Praktikanızı idarə etmək üçün lazım olan hər şey",
+    "navFeaturesLabel": "Xüsusiyyətlər"
+  },
+  "doctorDemo": {
+    "greeting": "Salam, Dr. Elşən Rzayev",
+    "subtitle": "Bugününüz belədir",
+    "statMonth": "Bu ay",
+    "statPatients": "Pasiyentlər",
+    "statPending": "Gözləyir",
+    "pendingHeading": "Gözləyən sorğular",
+    "patientName": "Aysel Məmmədova",
+    "statusPending": "Gözləyir",
+    "statusConfirmed": "Təsdiqləndi",
+    "declineButton": "Rədd et",
+    "confirmButton": "Təsdiqlə",
+    "workplaceHeading": "Yeni iş yeri",
+    "workplaceName": "Klinika Nizami",
+    "cityLabel": "Bakı",
+    "workingDaysLabel": "İş günləri",
+    "hoursLabel": "Saatlar",
+    "visitLengthLabel": "Qəbul müddəti",
+    "visitLengthValue": "30 dəq",
+    "saveButton": "Yadda saxla",
+    "publishedTitle": "Yayımlandı",
+    "publishedSubtitle": "Pasiyentlər artıq buradan sizə yazıla bilər"
+  },
+  "hospitalPage": {
+    "meta": {
+      "title": "DocGet Xəstəxanalar və Klinikalar üçün — Heyyətiniz üçün bir panel",
+      "description": "Həkimlərinizi dəvət edin, onların iş saatlarını bütün məkanlar üzrə idarə edin və klinikanızın cədvəlini canlı izləyin — pasiyentin kimliyini heç vaxt görmədən."
+    },
+    "hero": {
+      "eyebrow": "Xəstəxanalar və klinikalar üçün",
+      "title": "Klinikanızın bütün həkim heyyəti üçün bir panel",
+      "subtitle": "Həkimlərinizi dəvət edin, onların iş saatlarını bütün məkanlar üzrə təyin edin və qəbul həcmini canlı izləyin — pasiyentin kimliyi və tibbi qeydləri həmişə həkimdə qalır.",
+      "ctaPrimary": "Klinika haqqında bizimlə əlaqə saxlayın",
+      "ctaSecondary": "Necə işlədiyini gör",
+      "badge1Value": "60",
+      "badge1Label": "Klinika Plus-da həkim",
+      "badge2Value": "0",
+      "badge2Label": "heyyətinizin gördüyü pasiyent qeydi",
+      "badge3Value": "1",
+      "badge3Label": "hər məkan üçün panel"
+    },
+    "steps": [
+      {
+        "label": "Dəvət edin",
+        "title": "Heyyətinizi qurun",
+        "body": "DocGet-nun həkim kataloqunda axtarın və komandanızı qoşulmağa dəvət edin — əl ilə məlumat daxil etmək və ya cədvəl yoxdur."
+      },
+      {
+        "label": "Təsdiqləyin",
+        "title": "Təsdiqləyin və ya dəvət edin",
+        "body": "DocGet-da olan həkimlər klinikanıza qoşulmaq üçün sorğu göndərə bilər, ya da onları birbaşa dəvət edə bilərsiniz və onlar telefonlarından təsdiqləyir."
+      },
+      {
+        "label": "Nəzarət edin",
+        "title": "Klinikanızı bir baxışda görün",
+        "body": "Hər həkim və hər məkan üçün iş saatları təyin edin, qəbul həcmini izləyin — pasiyent detalları isə həkimdə məxfi qalır."
+      }
+    ],
+    "features": [
+      {
+        "title": "Heyyətinizi dəvət edin",
+        "body": "DocGet-nun həkim kataloqunda axtarın və onları klinikanıza dəvət edin — əl ilə məlumat daxil etməyə ehtiyac yoxdur."
+      },
+      {
+        "title": "Mərkəzləşdirilmiş iş saatları",
+        "body": "Bütün məkanlarınız üzrə hər həkimin iş saatlarını bir yerdən təyin edin və dəyişdirin."
+      },
+      {
+        "title": "Məxfiliyi qoruyan icmal",
+        "body": "Klinikanızın qəbul həcmini və cədvəlini görün — pasiyent kimliyi və tibbi qeydlər həkimdə qalır."
+      }
+    ],
+    "pricing": {
+      "eyebrow": "Qiymətlər",
+      "title": "Klinikanın ölçüsünə uyğun yer əsaslı planlar",
+      "tiers": [
+        {
+          "name": "Klinika",
+          "price": "299.99",
+          "period": "/ay",
+          "description": "15 həkimə qədər klinikalar üçün.",
+          "features": [
+            "15 həkim yerinə qədər",
+            "Mərkəzləşdirilmiş iş saatları",
+            "Məxfiliyi qoruyan qəbul icmalı"
+          ]
+        },
+        {
+          "name": "Klinika Plus",
+          "price": "599.99",
+          "period": "/ay",
+          "description": "Böyük xəstəxanalar və şəbəkələr üçün.",
+          "features": [
+            "60 həkim yerinə qədər",
+            "Genişləndirilmiş statistika",
+            "Klinikadakı hər şey"
+          ]
+        }
+      ],
+      "note": "Qiymətlər Azərbaycan manatı (AZN) ilədir. Klinika hesabları üçün pulsuz sınaq yoxdur — əvvəlcə bizimlə əlaqə saxlayın, sizə göstərək."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Xəstəxanalar və klinikalar üçün suallar",
+      "items": [
+        {
+          "q": "Klinika planı nə qədər başa gəlir?",
+          "a": "Klinika 15 həkim yerinə qədər ayda 299.99 AZN-dir; Klinika Plus genişləndirilmiş statistika ilə 60 yerə qədər ayda 599.99 AZN-dir."
+        },
+        {
+          "q": "Klinikalar üçün pulsuz sınaq varmı?",
+          "a": "Hazirda yoxdur — klinika hesabları təsdiqləndikdən sonra birbaşa ödənişli plana keçir. Bizimlə əlaqə saxlayın, əvvəlcə paneli sizə göstərək."
+        },
+        {
+          "q": "Həkimlərimizin pasiyent qeydlərini görə bilərikmi?",
+          "a": "Xeyr. Paneliniz yalnız cədvəlləri və qəbul həcmini göstərir — pasiyentin kimliyi və tibbi qeydləri həmişə həkimdə qalır, heç vaxt heyyətinizə görünmür."
+        },
+        {
+          "q": "Həkimləri heyyətimizə necə əlavə edirik?",
+          "a": "Panelinizdən DocGet-nun həkim kataloqunda axtarın və dəvət göndərin, ya da klinikanıza qoşulmaq üçün özləri sorğu göndərən həkimləri təsdiqləyin."
+        },
+        {
+          "q": "Bir həkim klinikamızdan ayrılsa nə olur?",
+          "a": "Onun öz cədvəli, pasiyentləri və tarixçəsi şəxsi hesabında tam saxlanılır — onu heyyətinizdən çıxarmaq yalnız panelinizin onun klinika saatlarına baxış imkanını aradan qaldırır."
+        },
+        {
+          "q": "Həkimləri bir neçə məkan üzrə idarə edə bilərikmi?",
+          "a": "Bəli. Eyni paneldən klinikanızın hər məkanında hər həkim üçün ayrı iş saatları təyin edin."
+        }
+      ]
+    },
+    "stepsEyebrow": "Necə işləyir",
+    "featuresTitle": "Klinikanıza lazım olan hər şey bir yerdə",
+    "navFeaturesLabel": "Xüsusiyyətlər"
+  },
+  "hospitalDemo": {
+    "clinicName": "Klinika Nizami",
+    "subtitle": "Heyyətiniz belədir",
+    "doctorsTile": "Həkimlər",
+    "inviteTile": "Dəvət et",
+    "appointmentsTile": "Qəbullar",
+    "profileTile": "Profil",
+    "searchPlaceholder": "Həkim axtarın...",
+    "candidateName1": "Dr. Elşən Rzayev",
+    "candidateSpecialty1": "Pediatrik Kardioloq",
+    "inviteButton": "Dəvət et",
+    "invitedLabel": "Dəvət edildi",
+    "tabConfirmed": "Təsdiqlənmiş",
+    "tabRequests": "Sorğular",
+    "tabInvited": "Dəvət edilmiş",
+    "requestedToJoin": "Qoşulmaq istəyir",
+    "approveAction": "Təsdiqlə",
+    "rejectAction": "Rədd et",
+    "hoursHeading": "İş saatları",
+    "hoursLocation": "Klinika Nizami · Bakı",
+    "appointmentsHeading": "Bugünkü cədvəl",
+    "privacyNote": "Pasiyentin kimliyi həkimdə qalır",
+    "patientMasked": "Pasiyent •••"
   }
 }

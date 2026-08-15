@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { Reveal, RevealGroup, RevealItem } from "./Reveal";
 
 const icons = [
@@ -45,6 +46,12 @@ export async function ForHospitalsCard() {
           {t("title")}
         </h3>
         <p className="mt-4 text-sm leading-relaxed text-slate-400 sm:text-base">{t("body")}</p>
+        <Link
+          href="/for-hospitals"
+          className="mt-4 inline-block text-sm font-semibold text-teal-400 underline-offset-4 transition-colors hover:text-teal-300 hover:underline"
+        >
+          {t("learnMore")} →
+        </Link>
       </div>
 
       <RevealGroup className="mt-8 grid gap-5 sm:grid-cols-3">

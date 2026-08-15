@@ -5,8 +5,16 @@ import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "motion/react";
 import { Logo } from "./Logo";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { Link } from "@/i18n/navigation";
 
-export function Header() {
+type NavLink = { href: string; label: string };
+
+// The homepage passes nothing and gets its usual in-page anchor nav. The
+// /for-doctors and /for-hospitals pages pass their own section anchors
+// (#how, #features, #pricing, #faq — all on that same page) plus
+// homeHref="/" so the logo routes back to the homepage instead of trying
+// to scroll to a #top section that doesn't exist there.
+export function Header({ links: linksProp, homeHref = "#top" }: { links?: NavLink[]; homeHref?: string }) {
   const t = useTranslations("header");
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -18,13 +26,14 @@ export function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const links = [
+  const links = linksProp ?? [
     { href: "#how", label: t("nav.how") },
     { href: "#specialties", label: t("nav.specialties") },
     { href: "#why", label: t("nav.why") },
     { href: "#providers", label: t("nav.providers") },
     { href: "#faq", label: t("nav.faq") },
   ];
+  const isRoute = homeHref.startsWith("/");
 
   return (
     <motion.header
@@ -36,9 +45,15 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-6">
-        <a href="#top" className="shrink-0">
-          <Logo />
-        </a>
+        {isRoute ? (
+          <Link href={homeHref} className="shrink-0">
+            <Logo />
+          </Link>
+        ) : (
+          <a href={homeHref} className="shrink-0">
+            <Logo />
+          </a>
+        )}
 
         <nav className="hidden items-center gap-7 lg:flex">
           {links.map((link) => (
