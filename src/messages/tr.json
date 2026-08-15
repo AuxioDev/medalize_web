@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "DocLine — Azerbaycan'ın her yerinde doğru doktoru bulun",
-    "description": "DocLine, sizi uzmanlık alanına, mesafeye ve gerçek hasta yorumlarına göre doğrulanmış doktorlarla eşleştirir; ardından tüm aileniz için randevu almanızı, mesajlaşmanızı ve sağlık kayıtlarınızı yönetmenizi sağlar. Yakında iOS ve Android'de."
+    "title": "DocGet — Azerbaycan'ın her yerinde doğru doktoru bulun",
+    "description": "DocGet, sizi uzmanlık alanına, mesafeye ve gerçek hasta yorumlarına göre doğrulanmış doktorlarla eşleştirir; ardından tüm aileniz için randevu almanızı, mesajlaşmanızı ve sağlık kayıtlarınızı yönetmenizi sağlar. Yakında iOS ve Android'de."
   },
   "header": {
     "nav": {
       "how": "Nasıl çalışır",
       "specialties": "Uzmanlıklar",
-      "why": "Neden DocLine",
+      "why": "Neden DocGet",
       "providers": "Ortaklarımız",
       "faq": "SSS"
     },
@@ -16,7 +16,7 @@
   "hero": {
     "eyebrow": "Yakında iOS ve Android'de — tüm Azerbaycan'da",
     "title": "Azerbaycan'ın her yerinde doğru doktoru bulun",
-    "subtitle": "DocLine, sizi uzmanlık alanına, mesafeye ve gerçek hasta yorumlarına göre doğrulanmış doktorlarla eşleştirir — ardından tek bir uygulamada randevu almanızı, mesajlaşmanızı ve tüm aileniz için sağlık kayıtlarınızı yönetmenizi sağlar.",
+    "subtitle": "DocGet, sizi uzmanlık alanına, mesafeye ve gerçek hasta yorumlarına göre doğrulanmış doktorlarla eşleştirir — ardından tek bir uygulamada randevu almanızı, mesajlaşmanızı ve tüm aileniz için sağlık kayıtlarınızı yönetmenizi sağlar.",
     "ctaPrimary": "Bekleme listesine katıl",
     "ctaSecondary": "Nasıl çalıştığını gör",
     "badge1Value": "75+",
@@ -88,11 +88,11 @@
     "eyebrow": "Uzmanlıklar",
     "title": "Her uzmanlık. Tek arama.",
     "subtitle": "Lansmanda sizi neyin beklediğini görmek için bir uzmanlık seçin.",
-    "detailBody": "Bu alandaki uzmanlar lansman gününden itibaren DocLine'da olacak. Mesafeye, müsaitliğe ve doğrulanmış yorumlara göre uygulama içinden eşleşin.",
+    "detailBody": "Bu alandaki uzmanlar lansman gününden itibaren DocGet'da olacak. Mesafeye, müsaitliğe ve doğrulanmış yorumlara göre uygulama içinden eşleşin.",
     "cta": "Bekleme listesine katıl"
   },
   "why": {
-    "eyebrow": "Neden DocLine",
+    "eyebrow": "Neden DocGet",
     "title": "Sağlık hizmetlerine erişimi en önemli şeye — güvene — odaklanarak yeniden kuruyoruz.",
     "cards": [
       {
@@ -120,7 +120,7 @@
   "forDoctors": {
     "label": "Bağımsız doktorlar",
     "title": "Her insan kendi doktorunu seçme hakkını hak eder. Onlara bu hakkı vermeye yardımcı olun.",
-    "body": "Muayenehanenizi DocLine'da basit, sabit bir abonelikle listeleyin — her randevudan komisyon alınmaz. Takviminizi, çalışma yerlerinizi ve hasta mesajlarınızı tek bir panelden yönetin.",
+    "body": "Muayenehanenizi DocGet'da basit, sabit bir abonelikle listeleyin — her randevudan komisyon alınmaz. Takviminizi, çalışma yerlerinizi ve hasta mesajlarınızı tek bir panelden yönetin.",
     "cta": "Doktor olarak başvur"
   },
   "forHospitals": {
@@ -130,7 +130,7 @@
     "features": [
       {
         "title": "Kadronuzu davet edin",
-        "body": "DocLine'nun doktor dizininde arama yapın ve onları kliniğinize davet edin — manuel veri girişine gerek yok."
+        "body": "DocGet'nun doktor dizininde arama yapın ve onları kliniğinize davet edin — manuel veri girişine gerek yok."
       },
       {
         "title": "Merkezi çalışma saatleri",
@@ -146,13 +146,13 @@
   },
   "waitlist": {
     "title": "Bir sonraki doktorunuz sadece birkaç dokunuş uzağınızda.",
-    "subtitle": "Bekleme listesine katılın, DocLine iOS ve Android'de yayınlandığında ilk siz öğrenin.",
+    "subtitle": "Bekleme listesine katılın, DocGet iOS ve Android'de yayınlandığında ilk siz öğrenin.",
     "placeholder": "siz@ornek.com",
     "button": "Bekleme listesine katıl",
     "buttonLoading": "Gönderiliyor…",
-    "disclaimer": "Spam yok. Sadece DocLine hazır olduğunda yazacağız.",
+    "disclaimer": "Spam yok. Sadece DocGet hazır olduğunda yazacağız.",
     "successTitle": "Listedesiniz.",
-    "successBody": "DocLine yayınlanır yayınlanmaz size e-posta göndereceğiz.",
+    "successBody": "DocGet yayınlanır yayınlanmaz size e-posta göndereceğiz.",
     "errorInvalid": "Lütfen geçerli bir e-posta adresi girin.",
     "errorGeneric": "Bir şeyler ters gitti. Lütfen birazdan tekrar deneyin."
   },
@@ -161,11 +161,11 @@
     "title": "Sıkça sorulan sorular",
     "items": [
       {
-        "q": "DocLine nedir?",
-        "a": "DocLine, Azerbaycan'ın doktor arama ve randevu platformudur. Uzmanlık veya belirtiye göre arayın, yakınınızdaki doğrulanmış bir doktorla eşleşin ve kendi dilinizde saniyeler içinde randevu alın."
+        "q": "DocGet nedir?",
+        "a": "DocGet, Azerbaycan'ın doktor arama ve randevu platformudur. Uzmanlık veya belirtiye göre arayın, yakınınızdaki doğrulanmış bir doktorla eşleşin ve kendi dilinizde saniyeler içinde randevu alın."
       },
       {
-        "q": "DocLine hastalar için ücretsiz mi?",
+        "q": "DocGet hastalar için ücretsiz mi?",
         "a": "Evet. Doktor arama, randevu alma ve mesajlaşma hastalar için tamamen ücretsizdir. Doktorlar basit bir abonelik planıyla katılır."
       },
       {
@@ -177,11 +177,11 @@
         "a": "Yalnızca randevusunu tamamlamış hastalar yorum bırakabilir ve doktorlar daha yüksek puan için ödeme yapamaz — sahtesini yapmanın bir yolu yok."
       },
       {
-        "q": "DocLine ne zaman yayınlanıyor?",
-        "a": "Şu anda doğrulama ve doktor kaydını tamamlıyoruz. Bekleme listesine katılın, DocLine yayınlanır yayınlanmaz size e-posta göndereceğiz."
+        "q": "DocGet ne zaman yayınlanıyor?",
+        "a": "Şu anda doğrulama ve doktor kaydını tamamlıyoruz. Bekleme listesine katılın, DocGet yayınlanır yayınlanmaz size e-posta göndereceğiz."
       },
       {
-        "q": "Hastaneler ve klinikler DocLine'ya katılabilir mi?",
+        "q": "Hastaneler ve klinikler DocGet'ya katılabilir mi?",
         "a": "Evet. Hastaneler ve klinikler; doktor davet etmek, programlarını lokasyonlar arasında yönetmek ve randevu hacmini görmek için kendi panellerine sahip olur — hasta bilgilerine erişim olmadan. Planlar 15 doktor koltuğundan başlar."
       }
     ]
@@ -192,7 +192,7 @@
     "companyHeading": "Şirket",
     "aboutLabel": "Hakkımızda",
     "contactLabel": "İletişim",
-    "legalNote": "Bekleme listesine katılarak DocLine lansmanı hakkında sizinle iletişime geçilmesini kabul edersiniz. Asla spam olmayacak.",
+    "legalNote": "Bekleme listesine katılarak DocGet lansmanı hakkında sizinle iletişime geçilmesini kabul edersiniz. Asla spam olmayacak.",
     "copyright": "© {year} <link>AuxioDev</link> · Bakü, Azerbaycan"
   },
   "profile": {
@@ -206,14 +206,14 @@
     "ctaWaitlist": "Bekleme listesine katıl",
     "doctorDisplayName": "Dr. {name}",
     "doctorPageTitle": "Dr. {name} — {specialty}",
-    "doctorMetaDescription": "Dr. {name}, {specialty} — DocLine'da onaylı doktor profili. DocLine bölgenizde yayına girdiğinde randevu almak için bekleme listesine katılın.",
+    "doctorMetaDescription": "Dr. {name}, {specialty} — DocGet'da onaylı doktor profili. DocGet bölgenizde yayına girdiğinde randevu almak için bekleme listesine katılın.",
     "hospitalDoctorsHeading": "Buradaki doktorlar",
     "hospitalPageTitle": "{name} — {city}",
-    "hospitalMetaDescription": "{name}, DocLine'da, {city}. DocLine yakınınızda yayına girdiğinde haberdar olmak için bekleme listesine katılın."
+    "hospitalMetaDescription": "{name}, DocGet'da, {city}. DocGet yakınınızda yayına girdiğinde haberdar olmak için bekleme listesine katılın."
   },
   "notFound": {
     "title": "Bu sayfa şu anda erişilebilir değil",
-    "body": "Bağlantı güncel olmayabilir ya da böyle bir sayfa yok. DocLine'ı keşfetmeye devam etmek için ana sayfaya dönün.",
+    "body": "Bağlantı güncel olmayabilir ya da böyle bir sayfa yok. DocGet'ı keşfetmeye devam etmek için ana sayfaya dönün.",
     "cta": "Ana sayfaya dön"
   }
 }

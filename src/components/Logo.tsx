@@ -31,7 +31,7 @@ export function Logo({
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
       <LogoMark className="h-8 w-8 shrink-0" />
       <span className={`text-lg font-semibold tracking-tight ${wordmarkClassName}`}>
-        DocLine
+        DocGet
       </span>
     </span>
   );

@@ -16,7 +16,7 @@ export async function ForDoctorsCard() {
         <p className="mt-4 text-sm leading-relaxed text-slate-400 sm:text-base">{t("body")}</p>
       </div>
       <a
-        href="mailto:info@auxiodev.com?subject=DocLine%20—%20Doctor%20application"
+        href="mailto:info@auxiodev.com?subject=DocGet%20—%20Doctor%20application"
         className="brand-gradient shrink-0 rounded-full px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition-all hover:scale-[1.03] active:scale-[0.98]"
       >
         {t("cta")}

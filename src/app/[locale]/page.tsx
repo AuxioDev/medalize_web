@@ -3,7 +3,7 @@ import { Hero } from "@/components/Hero";
 import { Problem } from "@/components/Problem";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Specialties } from "@/components/Specialties";
-import { WhyMedoro } from "@/components/WhyMedoro";
+import { WhyDocGet } from "@/components/WhyDocGet";
 import { Providers } from "@/components/Providers";
 import { WaitlistCta } from "@/components/WaitlistCta";
 import { Faq } from "@/components/Faq";
@@ -18,7 +18,7 @@ export default function Home() {
         <Problem />
         <HowItWorks />
         <Specialties />
-        <WhyMedoro />
+        <WhyDocGet />
         <Providers />
         <WaitlistCta />
         <Faq />

@@ -3,7 +3,7 @@ import { Resend } from "resend";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const NOTIFY_TO = process.env.WAITLIST_NOTIFY_EMAIL || "info@auxiodev.com";
-const NOTIFY_FROM = process.env.WAITLIST_FROM_EMAIL || "DocLine Waitlist <waitlist@medoroapp.com>";
+const NOTIFY_FROM = process.env.WAITLIST_FROM_EMAIL || "DocGet Waitlist <waitlist@medoroapp.com>";
 
 export async function POST(request: Request) {
   let body: unknown;
@@ -32,7 +32,7 @@ export async function POST(request: Request) {
       from: NOTIFY_FROM,
       to: NOTIFY_TO,
       replyTo: email,
-      subject: "New DocLine waitlist signup",
+      subject: "New DocGet waitlist signup",
       text: `Email: ${email}\nLocale: ${locale ?? "unknown"}\nAt: ${new Date().toISOString()}`,
     });
 

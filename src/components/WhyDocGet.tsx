@@ -40,7 +40,7 @@ const icons = [
   </svg>,
 ];
 
-export async function WhyMedoro() {
+export async function WhyDocGet() {
   const t = await getTranslations("why");
   const cards = t.raw("cards") as { title: string; body: string }[];
 

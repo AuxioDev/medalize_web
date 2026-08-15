@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "DocLine — Azərbaycanın istənilən yerində doğru həkimi tapın",
-    "description": "DocLine sizi ixtisas, məsafə və real pasiyent rəylərinə görə təsdiqlənmiş həkimlərlə uyğunlaşdırır, sonra bütün ailəniz üçün qəbula yazılmağa, yazışmağa və tibbi qeydləri idarə etməyə imkan verir. Tezliklə iOS və Android-də."
+    "title": "DocGet — Azərbaycanın istənilən yerində doğru həkimi tapın",
+    "description": "DocGet sizi ixtisas, məsafə və real pasiyent rəylərinə görə təsdiqlənmiş həkimlərlə uyğunlaşdırır, sonra bütün ailəniz üçün qəbula yazılmağa, yazışmağa və tibbi qeydləri idarə etməyə imkan verir. Tezliklə iOS və Android-də."
   },
   "header": {
     "nav": {
       "how": "Necə işləyir",
       "specialties": "İxtisaslar",
-      "why": "Niyə DocLine",
+      "why": "Niyə DocGet",
       "providers": "Tərəfdaşlar",
       "faq": "Suallar"
     },
@@ -16,7 +16,7 @@
   "hero": {
     "eyebrow": "Tezliklə iOS və Android-də — bütün Azərbaycanda",
     "title": "Azərbaycanın istənilən yerində doğru həkimi tapın",
-    "subtitle": "DocLine sizi ixtisas, məsafə və real pasiyent rəylərinə görə təsdiqlənmiş həkimlərlə uyğunlaşdırır — sonra bir tətbiqdə bütün ailəniz üçün qəbula yazılmağa, yazışmağa və tibbi qeydləri idarə etməyə imkan verir.",
+    "subtitle": "DocGet sizi ixtisas, məsafə və real pasiyent rəylərinə görə təsdiqlənmiş həkimlərlə uyğunlaşdırır — sonra bir tətbiqdə bütün ailəniz üçün qəbula yazılmağa, yazışmağa və tibbi qeydləri idarə etməyə imkan verir.",
     "ctaPrimary": "Növbə siyahısına qoşul",
     "ctaSecondary": "Necə işlədiyinə bax",
     "badge1Value": "75+",
@@ -88,11 +88,11 @@
     "eyebrow": "İxtisaslar",
     "title": "Hər ixtisas. Bir axtarış.",
     "subtitle": "Buraxılışda sizi nəyin gözlədiyini görmək üçün bir ixtisas seçin.",
-    "detailBody": "Bu sahədəki mütəxəssislər buraxılış günündən DocLine-da olacaq. Tətbiq daxilində məsafə, boş vaxt və təsdiqlənmiş rəylərə görə uyğunlaşın.",
+    "detailBody": "Bu sahədəki mütəxəssislər buraxılış günündən DocGet-da olacaq. Tətbiq daxilində məsafə, boş vaxt və təsdiqlənmiş rəylərə görə uyğunlaşın.",
     "cta": "Növbə siyahısına qoşul"
   },
   "why": {
-    "eyebrow": "Niyə DocLine",
+    "eyebrow": "Niyə DocGet",
     "title": "Səhiyyəyə çıxışı ən vacib olan şeyə — etibara diqqət yetirərək yenidən qururuq.",
     "cards": [
       {
@@ -120,7 +120,7 @@
   "forDoctors": {
     "label": "Müstəqil həkimlər",
     "title": "Hər bir insan öz həkimini seçmək hüququna layiqdir. Bu hüququ onlara verməyə kömək edin.",
-    "body": "Sadə, sabit abunə haqqı ilə praktikanızı DocLine-da yerləşdirin — hər qəbuldan komissiya yoxdur. Cədvəlinizi, iş yerlərinizi və pasiyent yazışmalarını bir paneldən idarə edin.",
+    "body": "Sadə, sabit abunə haqqı ilə praktikanızı DocGet-da yerləşdirin — hər qəbuldan komissiya yoxdur. Cədvəlinizi, iş yerlərinizi və pasiyent yazışmalarını bir paneldən idarə edin.",
     "cta": "Həkim kimi müraciət et"
   },
   "forHospitals": {
@@ -130,7 +130,7 @@
     "features": [
       {
         "title": "Heyətinizi dəvət edin",
-        "body": "DocLine-nun həkim kataloqunda axtarın və onları klinikanıza dəvət edin — əl ilə məlumat daxil etməyə ehtiyac yoxdur."
+        "body": "DocGet-nun həkim kataloqunda axtarın və onları klinikanıza dəvət edin — əl ilə məlumat daxil etməyə ehtiyac yoxdur."
       },
       {
         "title": "Mərkəzləşdirilmiş iş saatları",
@@ -146,13 +146,13 @@
   },
   "waitlist": {
     "title": "Növbəti həkiminiz cəmi bir neçə toxunuş uzaqlıqdadır.",
-    "subtitle": "Növbə siyahısına qoşulun, DocLine iOS və Android-də işə düşən kimi ilk siz bilin.",
+    "subtitle": "Növbə siyahısına qoşulun, DocGet iOS və Android-də işə düşən kimi ilk siz bilin.",
     "placeholder": "siz@example.com",
     "button": "Növbəyə qoşul",
     "buttonLoading": "Göndərilir…",
-    "disclaimer": "Spam yoxdur. Yalnız DocLine hazır olanda yazacağıq.",
+    "disclaimer": "Spam yoxdur. Yalnız DocGet hazır olanda yazacağıq.",
     "successTitle": "Siz artıq siyahıdasınız.",
-    "successBody": "DocLine işə düşən kimi sizə e-poçt göndərəcəyik.",
+    "successBody": "DocGet işə düşən kimi sizə e-poçt göndərəcəyik.",
     "errorInvalid": "Zəhmət olmasa düzgün e-poçt ünvanı daxil edin.",
     "errorGeneric": "Nəsə səhv getdi. Zəhmət olmasa bir azdan yenidən cəhd edin."
   },
@@ -161,11 +161,11 @@
     "title": "Tez-tez verilən suallar",
     "items": [
       {
-        "q": "DocLine nədir?",
-        "a": "DocLine Azərbaycanın həkim axtarışı və qəbula yazılış platformasıdır. İxtisas və ya simptoma görə axtarın, yaxınlıqdakı təsdiqlənmiş həkimlə uyğunlaşın və öz dilinizdə saniyələr içində yazılın."
+        "q": "DocGet nədir?",
+        "a": "DocGet Azərbaycanın həkim axtarışı və qəbula yazılış platformasıdır. İxtisas və ya simptoma görə axtarın, yaxınlıqdakı təsdiqlənmiş həkimlə uyğunlaşın və öz dilinizdə saniyələr içində yazılın."
       },
       {
-        "q": "DocLine pasiyentlər üçün pulsuzdur?",
+        "q": "DocGet pasiyentlər üçün pulsuzdur?",
         "a": "Bəli. Həkim axtarışı, qəbula yazılış və yazışma pasiyentlər üçün tamamilə pulsuzdur. Həkimlər sadə abunə planı ilə qoşulur."
       },
       {
@@ -177,11 +177,11 @@
         "a": "Yalnız qəbulu tamamlamış pasiyentlər rəy yaza bilər, həkimlər isə daha yuxarı reytinq üçün ödəyə bilməzlər — saxtalaşdırmağın yolu yoxdur."
       },
       {
-        "q": "DocLine nə vaxt işə düşür?",
-        "a": "Hazırda həkimlərin təsdiqini və qeydiyyatını tamamlayırıq. Növbə siyahısına qoşulun, DocLine işə düşən kimi sizə e-poçt göndərəcəyik."
+        "q": "DocGet nə vaxt işə düşür?",
+        "a": "Hazırda həkimlərin təsdiqini və qeydiyyatını tamamlayırıq. Növbə siyahısına qoşulun, DocGet işə düşən kimi sizə e-poçt göndərəcəyik."
       },
       {
-        "q": "Xəstəxanalar və klinikalar DocLine-ya qoşula bilərmi?",
+        "q": "Xəstəxanalar və klinikalar DocGet-ya qoşula bilərmi?",
         "a": "Bəli. Xəstəxanalar və klinikalar həkimləri dəvət etmək, onların cədvəllərini məkanlar üzrə idarə etmək və qəbul həcmini görmək üçün öz panellərini əldə edirlər — pasiyent məlumatlarına giriş olmadan. Planlar 15 həkim yerindən başlayır."
       }
     ]
@@ -192,7 +192,7 @@
     "companyHeading": "Şirkət",
     "aboutLabel": "Haqqımızda",
     "contactLabel": "Əlaqə",
-    "legalNote": "Növbə siyahısına qoşularaq DocLine-nun buraxılışı barədə sizinlə əlaqə saxlanılmasına razılıq verirsiniz. Heç vaxt spam olmayacaq.",
+    "legalNote": "Növbə siyahısına qoşularaq DocGet-nun buraxılışı barədə sizinlə əlaqə saxlanılmasına razılıq verirsiniz. Heç vaxt spam olmayacaq.",
     "copyright": "© {year} <link>AuxioDev</link> · Bakı, Azərbaycan"
   },
   "profile": {
@@ -206,14 +206,14 @@
     "ctaWaitlist": "Növbəyə yazıl",
     "doctorDisplayName": "Dr. {name}",
     "doctorPageTitle": "Dr. {name} — {specialty}",
-    "doctorMetaDescription": "Dr. {name}, {specialty} — DocLine-da təsdiqlənmiş həkim profili. DocLine sizin şəhərinizdə işə düşəndə qeydiyyatdan keçmək üçün növbəyə yazılın.",
+    "doctorMetaDescription": "Dr. {name}, {specialty} — DocGet-da təsdiqlənmiş həkim profili. DocGet sizin şəhərinizdə işə düşəndə qeydiyyatdan keçmək üçün növbəyə yazılın.",
     "hospitalDoctorsHeading": "Buradakı həkimlər",
     "hospitalPageTitle": "{name} — {city}",
-    "hospitalMetaDescription": "{name} DocLine-da, {city}. DocLine yaxınlıqda işə düşəndə xəbərdar olmaq üçün növbəyə yazılın."
+    "hospitalMetaDescription": "{name} DocGet-da, {city}. DocGet yaxınlıqda işə düşəndə xəbərdar olmaq üçün növbəyə yazılın."
   },
   "notFound": {
     "title": "Bu səhifə əlçatan deyil",
-    "body": "Keçid köhnəlmiş ola bilər, ya da belə bir səhifə yoxdur. DocLine-ı kəşf etməyə davam etmək üçün əsas səhifəyə qayıdın.",
+    "body": "Keçid köhnəlmiş ola bilər, ya da belə bir səhifə yoxdur. DocGet-ı kəşf etməyə davam etmək üçün əsas səhifəyə qayıdın.",
     "cta": "Əsas səhifəyə qayıt"
   }
 }

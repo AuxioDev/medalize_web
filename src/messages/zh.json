@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "DocLine — 在阿塞拜疆各地找到合适的医生",
-    "description": "DocLine 根据专科、距离和真实患者评价为您匹配经过认证的医生，并让您为全家预约、发消息和管理病历记录。即将登陆 iOS 和 Android。"
+    "title": "DocGet — 在阿塞拜疆各地找到合适的医生",
+    "description": "DocGet 根据专科、距离和真实患者评价为您匹配经过认证的医生，并让您为全家预约、发消息和管理病历记录。即将登陆 iOS 和 Android。"
   },
   "header": {
     "nav": {
       "how": "使用方法",
       "specialties": "科室",
-      "why": "为什么选择 DocLine",
+      "why": "为什么选择 DocGet",
       "providers": "合作伙伴",
       "faq": "常见问题"
     },
@@ -16,7 +16,7 @@
   "hero": {
     "eyebrow": "即将登陆 iOS 和 Android — 覆盖全阿塞拜疆",
     "title": "在阿塞拜疆各地找到合适的医生",
-    "subtitle": "DocLine 根据专科、距离和真实患者评价为您匹配经过认证的医生——然后让您在同一个应用中为全家预约、发消息并管理病历记录。",
+    "subtitle": "DocGet 根据专科、距离和真实患者评价为您匹配经过认证的医生——然后让您在同一个应用中为全家预约、发消息并管理病历记录。",
     "ctaPrimary": "加入等候名单",
     "ctaSecondary": "了解使用方法",
     "badge1Value": "75+",
@@ -88,11 +88,11 @@
     "eyebrow": "科室",
     "title": "所有科室，一次搜索。",
     "subtitle": "选择一个科室，看看上线时会有哪些医生。",
-    "detailBody": "该领域的专科医生将从上线首日起入驻 DocLine。您可以在应用内按距离、空闲时间和真实评价进行匹配。",
+    "detailBody": "该领域的专科医生将从上线首日起入驻 DocGet。您可以在应用内按距离、空闲时间和真实评价进行匹配。",
     "cta": "加入等候名单"
   },
   "why": {
-    "eyebrow": "为什么选择 DocLine",
+    "eyebrow": "为什么选择 DocGet",
     "title": "我们围绕最重要的一点——信任，重新构建医疗服务的获取方式。",
     "cards": [
       {
@@ -120,7 +120,7 @@
   "forDoctors": {
     "label": "独立医生",
     "title": "每个人都应该有权选择自己的医生。帮助我们把这项权利交到他们手中。",
-    "body": "以简单的固定订阅费用在 DocLine 上线您的诊所——每次预约不收取佣金。在一个后台管理您的排班、执业地点和患者消息。",
+    "body": "以简单的固定订阅费用在 DocGet 上线您的诊所——每次预约不收取佣金。在一个后台管理您的排班、执业地点和患者消息。",
     "cta": "申请入驻"
   },
   "forHospitals": {
@@ -130,7 +130,7 @@
     "features": [
       {
         "title": "邀请您的团队",
-        "body": "在 DocLine 医生名录中搜索并邀请他们加入您的诊所——无需手动录入信息。"
+        "body": "在 DocGet 医生名录中搜索并邀请他们加入您的诊所——无需手动录入信息。"
       },
       {
         "title": "统一管理工作时间",
@@ -146,13 +146,13 @@
   },
   "waitlist": {
     "title": "您的下一位医生，只需轻轻几下即可预约。",
-    "subtitle": "加入等候名单，DocLine 在 iOS 和 Android 上线时第一时间通知您。",
+    "subtitle": "加入等候名单，DocGet 在 iOS 和 Android 上线时第一时间通知您。",
     "placeholder": "you@example.com",
     "button": "加入等候名单",
     "buttonLoading": "提交中…",
-    "disclaimer": "绝不发送垃圾邮件，只有在 DocLine 准备就绪时才会联系您。",
+    "disclaimer": "绝不发送垃圾邮件，只有在 DocGet 准备就绪时才会联系您。",
     "successTitle": "您已加入等候名单。",
-    "successBody": "DocLine 上线后，我们会立即发邮件通知您。",
+    "successBody": "DocGet 上线后，我们会立即发邮件通知您。",
     "errorInvalid": "请输入有效的邮箱地址。",
     "errorGeneric": "出了点问题，请稍后再试。"
   },
@@ -161,11 +161,11 @@
     "title": "常见问题解答",
     "items": [
       {
-        "q": "DocLine 是什么？",
-        "a": "DocLine 是阿塞拜疆的医生搜索与预约平台。按科室或症状搜索，匹配附近经过认证的医生，用您自己的语言在几秒钟内完成预约。"
+        "q": "DocGet 是什么？",
+        "a": "DocGet 是阿塞拜疆的医生搜索与预约平台。按科室或症状搜索，匹配附近经过认证的医生，用您自己的语言在几秒钟内完成预约。"
       },
       {
-        "q": "患者使用 DocLine 是否免费？",
+        "q": "患者使用 DocGet 是否免费？",
         "a": "是的。对患者而言，搜索、预约和与医生沟通完全免费。医生则通过简单的订阅方案入驻。"
       },
       {
@@ -177,11 +177,11 @@
         "a": "只有真正完成就诊的患者才能发表评价，医生也无法花钱提高排名——不存在造假的可能。"
       },
       {
-        "q": "DocLine 什么时候上线？",
-        "a": "我们目前正在完成医生认证与入驻工作。加入等候名单，DocLine 一上线我们就会立即发邮件通知您。"
+        "q": "DocGet 什么时候上线？",
+        "a": "我们目前正在完成医生认证与入驻工作。加入等候名单，DocGet 一上线我们就会立即发邮件通知您。"
       },
       {
-        "q": "医院和诊所可以加入 DocLine 吗？",
+        "q": "医院和诊所可以加入 DocGet 吗？",
         "a": "可以。医院和诊所将拥有自己的管理后台，用于邀请医生、跨地点管理排班以及查看预约量——且无法访问患者信息。套餐从 15 个医生席位起。"
       }
     ]
@@ -192,7 +192,7 @@
     "companyHeading": "公司",
     "aboutLabel": "关于我们",
     "contactLabel": "联系方式",
-    "legalNote": "加入等候名单即表示您同意我们就 DocLine 上线事宜与您联系。绝不发送垃圾邮件。",
+    "legalNote": "加入等候名单即表示您同意我们就 DocGet 上线事宜与您联系。绝不发送垃圾邮件。",
     "copyright": "© {year} <link>AuxioDev</link> · 阿塞拜疆巴库"
   },
   "profile": {
@@ -206,14 +206,14 @@
     "ctaWaitlist": "加入等候名单",
     "doctorDisplayName": "{name} 医生",
     "doctorPageTitle": "{name} 医生 — {specialty}",
-    "doctorMetaDescription": "{name} 医生，{specialty} — DocLine 认证医生主页。加入等候名单，DocLine 在您所在城市上线后即可预约。",
+    "doctorMetaDescription": "{name} 医生，{specialty} — DocGet 认证医生主页。加入等候名单，DocGet 在您所在城市上线后即可预约。",
     "hospitalDoctorsHeading": "在这里出诊的医生",
     "hospitalPageTitle": "{name} — {city}",
-    "hospitalMetaDescription": "{name}（DocLine 平台，{city}）。加入等候名单，DocLine 在您附近上线时将第一时间通知您。"
+    "hospitalMetaDescription": "{name}（DocGet 平台，{city}）。加入等候名单，DocGet 在您附近上线时将第一时间通知您。"
   },
   "notFound": {
     "title": "此页面暂时无法访问",
-    "body": "链接可能已失效，或该页面并不存在。返回首页继续了解 DocLine。",
+    "body": "链接可能已失效，或该页面并不存在。返回首页继续了解 DocGet。",
     "cta": "返回首页"
   }
 }

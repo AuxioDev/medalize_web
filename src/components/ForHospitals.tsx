@@ -62,7 +62,7 @@ export async function ForHospitalsCard() {
       <div className="mt-8 flex flex-col gap-4 border-t border-brand-ink-border pt-6 sm:flex-row sm:items-center sm:justify-between">
         <p className="max-w-md text-xs leading-relaxed text-slate-500">{t("pricingNote")}</p>
         <a
-          href="mailto:info@auxiodev.com?subject=DocLine%20—%20Hospital%20inquiry"
+          href="mailto:info@auxiodev.com?subject=DocGet%20—%20Hospital%20inquiry"
           className="brand-gradient shrink-0 rounded-full px-6 py-3 text-center text-sm font-semibold text-white shadow-lg shadow-blue-900/20 transition-all hover:scale-[1.03] active:scale-[0.98]"
         >
           {t("cta")}

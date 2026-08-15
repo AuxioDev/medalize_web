@@ -1,6 +1,6 @@
 # medalize_web
 
-Pre-launch marketing / waitlist site for **Medoro** — find the right doctor
+Pre-launch marketing / waitlist site for **DocGet** — find the right doctor
 anywhere in Azerbaijan. Next.js 16 (App Router) + Tailwind CSS v4 + next-intl.
 
 ## Stack

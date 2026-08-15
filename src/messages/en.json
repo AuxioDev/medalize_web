@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "DocLine — Find the right doctor, anywhere in Azerbaijan",
-    "description": "DocLine matches you with verified doctors by specialty, location and real patient reviews, then lets you book, message and manage records for your whole family. Coming soon to iOS and Android."
+    "title": "DocGet — Find the right doctor, anywhere in Azerbaijan",
+    "description": "DocGet matches you with verified doctors by specialty, location and real patient reviews, then lets you book, message and manage records for your whole family. Coming soon to iOS and Android."
   },
   "header": {
     "nav": {
       "how": "How it works",
       "specialties": "Specialties",
-      "why": "Why DocLine",
+      "why": "Why DocGet",
       "providers": "For providers",
       "faq": "FAQ"
     },
@@ -16,7 +16,7 @@
   "hero": {
     "eyebrow": "Coming soon to iOS & Android — all over Azerbaijan",
     "title": "Find the right doctor, wherever you are in Azerbaijan",
-    "subtitle": "DocLine matches you with verified doctors by specialty, location and real patient reviews — then lets you book, message and manage records for your whole family, in one app.",
+    "subtitle": "DocGet matches you with verified doctors by specialty, location and real patient reviews — then lets you book, message and manage records for your whole family, in one app.",
     "ctaPrimary": "Join the waitlist",
     "ctaSecondary": "See how it works",
     "badge1Value": "75+",
@@ -88,11 +88,11 @@
     "eyebrow": "Specialties",
     "title": "Every specialty. One search.",
     "subtitle": "Pick a specialty to see what's waiting for you at launch.",
-    "detailBody": "Specialists in this field will be on DocLine from launch day. Match by distance, availability and verified reviews right inside the app.",
+    "detailBody": "Specialists in this field will be on DocGet from launch day. Match by distance, availability and verified reviews right inside the app.",
     "cta": "Join the waitlist"
   },
   "why": {
-    "eyebrow": "Why DocLine",
+    "eyebrow": "Why DocGet",
     "title": "Rebuilding healthcare access around the one thing that matters: trust.",
     "cards": [
       {
@@ -120,7 +120,7 @@
   "forDoctors": {
     "label": "Independent doctors",
     "title": "Every patient deserves the right to choose their doctor. Help give them that.",
-    "body": "List your practice on DocLine with a simple flat subscription — no commission on every booking. Manage your schedule, workplaces and patient messages from one dashboard.",
+    "body": "List your practice on DocGet with a simple flat subscription — no commission on every booking. Manage your schedule, workplaces and patient messages from one dashboard.",
     "cta": "Apply as a doctor"
   },
   "forHospitals": {
@@ -130,7 +130,7 @@
     "features": [
       {
         "title": "Invite your roster",
-        "body": "Search DocLine's doctor directory and invite them to join your clinic — no manual data entry."
+        "body": "Search DocGet's doctor directory and invite them to join your clinic — no manual data entry."
       },
       {
         "title": "Centralized hours",
@@ -146,13 +146,13 @@
   },
   "waitlist": {
     "title": "Your next doctor is a few taps away.",
-    "subtitle": "Join the waitlist and be the first to know when DocLine launches on iOS and Android.",
+    "subtitle": "Join the waitlist and be the first to know when DocGet launches on iOS and Android.",
     "placeholder": "you@example.com",
     "button": "Join waitlist",
     "buttonLoading": "Joining…",
-    "disclaimer": "No spam. We'll only write when DocLine is ready.",
+    "disclaimer": "No spam. We'll only write when DocGet is ready.",
     "successTitle": "You're on the list.",
-    "successBody": "We'll email you the moment DocLine launches.",
+    "successBody": "We'll email you the moment DocGet launches.",
     "errorInvalid": "Please enter a valid email address.",
     "errorGeneric": "Something went wrong. Please try again in a moment."
   },
@@ -161,11 +161,11 @@
     "title": "Frequently asked questions",
     "items": [
       {
-        "q": "What is DocLine?",
-        "a": "DocLine is Azerbaijan's doctor search and appointment platform. Search by specialty or symptom, match with a verified doctor near you, and book in seconds — in your language."
+        "q": "What is DocGet?",
+        "a": "DocGet is Azerbaijan's doctor search and appointment platform. Search by specialty or symptom, match with a verified doctor near you, and book in seconds — in your language."
       },
       {
-        "q": "Is DocLine free for patients?",
+        "q": "Is DocGet free for patients?",
         "a": "Yes. Searching, booking and messaging doctors is completely free for patients. Doctors join through a simple subscription plan."
       },
       {
@@ -177,11 +177,11 @@
         "a": "Only patients who completed a visit can leave a review, and doctors cannot pay to rank higher — there's no way to fake it."
       },
       {
-        "q": "When does DocLine launch?",
-        "a": "We're finishing verification and onboarding doctors right now. Join the waitlist and we'll email you the moment DocLine is live."
+        "q": "When does DocGet launch?",
+        "a": "We're finishing verification and onboarding doctors right now. Join the waitlist and we'll email you the moment DocGet is live."
       },
       {
-        "q": "Can hospitals and clinics join DocLine?",
+        "q": "Can hospitals and clinics join DocGet?",
         "a": "Yes. Hospitals and clinics get their own dashboard to invite doctors, manage their schedules across locations, and see appointment volume — without access to patient details. Plans start at 15 doctor seats."
       }
     ]
@@ -192,7 +192,7 @@
     "companyHeading": "Company",
     "aboutLabel": "About",
     "contactLabel": "Contact",
-    "legalNote": "By joining the waitlist you agree to be contacted about the DocLine launch. No spam, ever.",
+    "legalNote": "By joining the waitlist you agree to be contacted about the DocGet launch. No spam, ever.",
     "copyright": "© {year} <link>AuxioDev</link> · Baku, Azerbaijan"
   },
   "profile": {
@@ -206,14 +206,14 @@
     "ctaWaitlist": "Join the waitlist",
     "doctorDisplayName": "Dr. {name}",
     "doctorPageTitle": "Dr. {name} — {specialty}",
-    "doctorMetaDescription": "Dr. {name}, {specialty} — verified doctor profile on DocLine. Join the waitlist to book once DocLine launches near you.",
+    "doctorMetaDescription": "Dr. {name}, {specialty} — verified doctor profile on DocGet. Join the waitlist to book once DocGet launches near you.",
     "hospitalDoctorsHeading": "Doctors here",
     "hospitalPageTitle": "{name} — {city}",
-    "hospitalMetaDescription": "{name} on DocLine, {city}. Join the waitlist to be notified when DocLine launches near you."
+    "hospitalMetaDescription": "{name} on DocGet, {city}. Join the waitlist to be notified when DocGet launches near you."
   },
   "notFound": {
     "title": "This page isn't available",
-    "body": "The link may be out of date, or this page just isn't here. Head back to the homepage to keep exploring DocLine.",
+    "body": "The link may be out of date, or this page just isn't here. Head back to the homepage to keep exploring DocGet.",
     "cta": "Back to homepage"
   }
 }

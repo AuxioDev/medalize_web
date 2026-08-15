@@ -50,7 +50,7 @@ export default async function OgImage({
               />
             </svg>
           </div>
-          <div style={{ fontSize: 34, fontWeight: 600 }}>DocLine</div>
+          <div style={{ fontSize: 34, fontWeight: 600 }}>DocGet</div>
         </div>
         <div
           style={{
