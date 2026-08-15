@@ -13,7 +13,8 @@
       "forDoctors": "Médecins",
       "forHospitals": "Cliniques"
     },
-    "cta": "Rejoindre la liste d'attente"
+    "cta": "Rejoindre la liste d'attente",
+    "langLabel": "Langue"
   },
   "hero": {
     "eyebrow": "Bientôt sur iOS et Android — partout en Azerbaïdjan",

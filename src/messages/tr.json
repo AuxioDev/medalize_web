@@ -13,7 +13,8 @@
       "forDoctors": "Doktorlar için",
       "forHospitals": "Klinikler için"
     },
-    "cta": "Bekleme listesine katıl"
+    "cta": "Bekleme listesine katıl",
+    "langLabel": "Dil seçimi"
   },
   "hero": {
     "eyebrow": "Yakında iOS ve Android'de — tüm Azerbaycan'da",

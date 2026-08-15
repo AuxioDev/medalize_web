@@ -13,7 +13,8 @@
       "forDoctors": "Врачам",
       "forHospitals": "Клиникам"
     },
-    "cta": "Встать в очередь"
+    "cta": "Встать в очередь",
+    "langLabel": "Язык"
   },
   "hero": {
     "eyebrow": "Скоро в iOS и Android — по всему Азербайджану",

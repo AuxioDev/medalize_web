@@ -30,10 +30,10 @@ export function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
         onClick={() => setOpen((v) => !v)}
         aria-haspopup="listbox"
         aria-expanded={open}
-        className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium transition-colors ${
+        className={`flex h-10 items-center gap-1.5 rounded-full px-4 text-[13.5px] font-semibold transition-colors ${
           dark
-            ? "border-brand-ink-border text-brand-ink-text hover:bg-brand-ink-surface-alt"
-            : "border-brand-border text-brand-text hover:bg-brand-muted-bg"
+            ? "border border-brand-ink-border text-brand-ink-text hover:bg-brand-ink-surface-alt"
+            : "bg-brand-muted-bg text-brand-text hover:bg-brand-border/70"
         }`}
       >
         {locale.toUpperCase()}

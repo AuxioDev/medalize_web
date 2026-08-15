@@ -13,7 +13,8 @@
       "forDoctors": "Həkimlər üçün",
       "forHospitals": "Klinikalar üçün"
     },
-    "cta": "Növbə siyahısına qoşul"
+    "cta": "Növbə siyahısına qoşul",
+    "langLabel": "Dil seçimi"
   },
   "hero": {
     "eyebrow": "Tezliklə iOS və Android-də — bütün Azərbaycanda",

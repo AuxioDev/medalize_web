@@ -13,7 +13,8 @@
       "forDoctors": "For doctors",
       "forHospitals": "For clinics"
     },
-    "cta": "Join the waitlist"
+    "cta": "Join the waitlist",
+    "langLabel": "Language"
   },
   "hero": {
     "eyebrow": "Coming soon to iOS & Android — all over Azerbaijan",

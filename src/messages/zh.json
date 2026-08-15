@@ -13,7 +13,8 @@
       "forDoctors": "医生专区",
       "forHospitals": "诊所专区"
     },
-    "cta": "加入等候名单"
+    "cta": "加入等候名单",
+    "langLabel": "语言"
   },
   "hero": {
     "eyebrow": "即将登陆 iOS 和 Android — 覆盖全阿塞拜疆",

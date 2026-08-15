@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import { Header } from "@/components/Header";
+import { CompassIcon, GridIcon, Header, InfoCircleIcon, TagIcon } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Faq } from "@/components/Faq";
 import { WaitlistCta } from "@/components/WaitlistCta";
@@ -76,10 +76,10 @@ export default async function ForHospitalsPage({ params }: { params: Params }) {
   const tp = await getTranslations({ locale, namespace: "hospitalPage" });
 
   const navLinks = [
-    { href: "#how", label: tp("stepsEyebrow") },
-    { href: "#features", label: tp("navFeaturesLabel") },
-    { href: "#pricing", label: tp("pricing.eyebrow") },
-    { href: "#faq", label: tp("faq.eyebrow") },
+    { href: "#how", label: tp("stepsEyebrow"), icon: <CompassIcon /> },
+    { href: "#features", label: tp("navFeaturesLabel"), icon: <GridIcon /> },
+    { href: "#pricing", label: tp("pricing.eyebrow"), icon: <TagIcon /> },
+    { href: "#faq", label: tp("faq.eyebrow"), icon: <InfoCircleIcon /> },
   ];
 
   return (
