@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     openGraph: {
       title,
       description,
-      url: `https://medoroapp.com/${locale}/doctor/${id}`,
+      url: `https://docget.az/${locale}/doctor/${id}`,
       type: "profile",
       images: doctor.avatar_url ? [doctor.avatar_url] : undefined,
     },

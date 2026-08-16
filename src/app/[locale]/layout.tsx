@@ -25,7 +25,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "meta" });
 
   return {
-    metadataBase: new URL("https://medoroapp.com"),
+    metadataBase: new URL("https://docget.az"),
     title: {
       default: t("title"),
       template: `%s · DocGet`,
@@ -40,7 +40,7 @@ export async function generateMetadata({
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: `https://medoroapp.com/${locale}`,
+      url: `https://docget.az/${locale}`,
       siteName: "DocGet",
       locale,
       type: "website",

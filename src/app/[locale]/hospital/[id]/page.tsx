@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     openGraph: {
       title,
       description,
-      url: `https://medoroapp.com/${locale}/hospital/${id}`,
+      url: `https://docget.az/${locale}/hospital/${id}`,
       type: "website",
       images: hospital.logo ? [hospital.logo] : undefined,
     },

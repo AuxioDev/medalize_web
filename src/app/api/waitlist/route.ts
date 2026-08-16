@@ -3,7 +3,7 @@ import { Resend } from "resend";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const NOTIFY_TO = process.env.WAITLIST_NOTIFY_EMAIL || "info@auxiodev.com";
-const NOTIFY_FROM = process.env.WAITLIST_FROM_EMAIL || "DocGet Waitlist <waitlist@medoroapp.com>";
+const NOTIFY_FROM = process.env.WAITLIST_FROM_EMAIL || "DocGet Waitlist <waitlist@docget.az>";
 
 export async function POST(request: Request) {
   let body: unknown;
