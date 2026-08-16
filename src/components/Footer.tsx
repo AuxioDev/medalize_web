@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 export async function Footer() {
   const t = await getTranslations("footer");
   const header = await getTranslations("header");
+  const legal = await getTranslations("legal");
 
   // Home-page anchors need the "/#" prefix here (unlike Header's own nav,
   // which links to sections on whichever page it's already rendered on) —
@@ -83,6 +84,11 @@ export async function Footer() {
                 >
                   {t("contactLabel")}
                 </a>
+              </li>
+              <li>
+                <Link href="/legal" className="text-sm text-slate-400 transition-colors hover:text-white">
+                  {legal("title")}
+                </Link>
               </li>
             </ul>
           </div>
