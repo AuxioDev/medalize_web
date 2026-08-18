@@ -11,7 +11,7 @@ import { NextResponse } from "next/server";
 // Setup > App integrity > App signing key certificate once the app is
 // published there. Without the real value, App Links silently fail
 // Android's domain verification — the app just never opens for these links.
-const PACKAGE_NAME = "az.medalize.app";
+const PACKAGE_NAME = "com.auxiodev.docget";
 const FINGERPRINTS = (
   process.env.ANDROID_SHA256_CERT_FINGERPRINTS || "REPLACE_WITH_ANDROID_SHA256_FINGERPRINT"
 )

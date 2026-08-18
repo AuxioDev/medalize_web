@@ -8,7 +8,7 @@ import { NextResponse } from "next/server";
 // Without the real value, Universal Links silently fail Apple's domain
 // verification — the app just never opens for these links.
 const TEAM_ID = process.env.APPLE_TEAM_ID || "REPLACE_WITH_APPLE_TEAM_ID";
-const BUNDLE_ID = "az.medalize.app";
+const BUNDLE_ID = "com.auxiodev.docget";
 
 export function GET() {
   return NextResponse.json({
