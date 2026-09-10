@@ -52,8 +52,31 @@ export default async function HospitalProfilePage({ params }: { params: Params }
 
   const t = await getTranslations("profile");
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    name: hospital.name,
+    url: `https://docget.az/${locale}/hospital/${id}`,
+    ...(hospital.logo ? { image: hospital.logo } : {}),
+    ...(hospital.address || hospital.city_display
+      ? {
+          address: {
+            "@type": "PostalAddress",
+            ...(hospital.address ? { streetAddress: hospital.address } : {}),
+            ...(hospital.city_display ? { addressLocality: hospital.city_display } : {}),
+            ...(hospital.region_display ? { addressRegion: hospital.region_display } : {}),
+            addressCountry: "AZ",
+          },
+        }
+      : {}),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+      />
       <ProfileHeader />
       <main className="flex-1 bg-white">
         <div className="mx-auto max-w-2xl px-5 py-12 sm:px-6 sm:py-16">

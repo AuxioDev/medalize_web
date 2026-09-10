@@ -55,8 +55,44 @@ export default async function DoctorProfilePage({ params }: { params: Params }) 
     .filter(Boolean)
     .join(" · ");
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    name: rawName,
+    url: `https://docget.az/${locale}/doctor/${id}`,
+    medicalSpecialty: doctor.specialization_display,
+    ...(doctor.avatar_url ? { image: doctor.avatar_url } : {}),
+    ...(doctor.bio ? { description: doctor.bio } : {}),
+    ...(doctor.primary_workplace
+      ? {
+          worksFor: {
+            "@type": "MedicalOrganization",
+            name: doctor.primary_workplace.name,
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: doctor.primary_workplace.address,
+              addressLocality: doctor.primary_workplace.city_display,
+            },
+          },
+        }
+      : {}),
+    ...(doctor.average_rating
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: doctor.average_rating,
+            reviewCount: doctor.review_count,
+          },
+        }
+      : {}),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+      />
       <ProfileHeader />
       <main className="flex-1 bg-white">
         <div className="mx-auto max-w-2xl px-5 py-12 sm:px-6 sm:py-16">
