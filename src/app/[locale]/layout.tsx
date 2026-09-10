@@ -50,9 +50,6 @@ export async function generateMetadata({
       title: t("title"),
       description: t("description"),
     },
-    icons: {
-      icon: "/brand/app-icon-1024.png",
-    },
   };
 }
 
