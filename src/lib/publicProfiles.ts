@@ -63,7 +63,14 @@ async function fetchPublic<T>(path: string, locale: string): Promise<T | null> {
   const url = `${BACKEND_API_URL}${path}${path.includes("?") ? "&" : "?"}lang=${locale}`;
   let res: Response;
   try {
-    res = await fetch(url);
+    // Short revalidate window rather than an uncached fetch on every hit —
+    // these are share-link pages that can see bursts of traffic (a QR code
+    // on a clinic's door, a WhatsApp share) and the underlying profile data
+    // barely changes minute to minute. Kept well under the 5-minute TTL on
+    // the signed Cloudinary avatar/logo URLs medalize_be hands back (see
+    // apps/core/storage.py's SIGNED_URL_TTL_SECONDS), so a stale-but-cached
+    // page never serves an avatar URL that's already expired.
+    res = await fetch(url, { next: { revalidate: 60 } });
   } catch (err) {
     console.error(`[publicProfiles] failed to reach backend at ${url}`, err);
     return null;
