@@ -42,6 +42,7 @@ export function WaitlistForm() {
 
       if (!res.ok) throw new Error("request_failed");
 
+      window.plausible?.("Waitlist Signup", { props: { locale } });
       setStatus("success");
     } catch {
       setStatus("error");

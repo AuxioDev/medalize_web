@@ -4,6 +4,7 @@ import { hasLocale } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
 
@@ -69,6 +70,20 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-white text-brand-text">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        {/* Plausible: privacy-friendly, cookie-free — no consent banner
+            needed. The queue shim lets WaitlistForm call window.plausible(…)
+            for the signup event even if it fires before the real script has
+            loaded. Requires "docget.az" to be added as a site in the
+            Plausible account for data to actually show up anywhere. */}
+        <Script id="plausible-init" strategy="beforeInteractive">
+          {`window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }`}
+        </Script>
+        <Script
+          defer
+          data-domain="docget.az"
+          src="https://plausible.io/js/script.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
