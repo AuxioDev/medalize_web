@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, type Variants } from "motion/react";
+import { motion, useReducedMotion, type Variants } from "motion/react";
 import type { ReactNode } from "react";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -19,6 +19,15 @@ export function Reveal({
   className?: string;
   delay?: number;
 }) {
+  const reduceMotion = useReducedMotion();
+
+  // prefers-reduced-motion: skip the scroll-in animation entirely instead
+  // of just speeding it up — no initial/whileInView state means the
+  // content renders in its final position with no motion at all.
+  if (reduceMotion) {
+    return <div className={className}>{children}</div>;
+  }
+
   return (
     <motion.div
       className={className}
@@ -42,10 +51,15 @@ export function RevealGroup({
   className?: string;
   stagger?: number;
 }) {
+  const reduceMotion = useReducedMotion();
   const container: Variants = {
     hidden: {},
     show: { transition: { staggerChildren: stagger, delayChildren: 0.03 } },
   };
+
+  if (reduceMotion) {
+    return <div className={className}>{children}</div>;
+  }
 
   return (
     <motion.div
@@ -67,6 +81,12 @@ export function RevealItem({
   children: ReactNode;
   className?: string;
 }) {
+  const reduceMotion = useReducedMotion();
+
+  if (reduceMotion) {
+    return <div className={className}>{children}</div>;
+  }
+
   return (
     <motion.div className={className} variants={item}>
       {children}
