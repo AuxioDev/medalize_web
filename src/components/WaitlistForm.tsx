@@ -14,6 +14,12 @@ export function WaitlistForm() {
   const t = useTranslations("waitlist");
   const locale = useLocale();
   const [email, setEmail] = useState("");
+  // Honeypot: a field no sighted human ever sees or tabs into (aria-hidden +
+  // tabIndex -1 + off-screen, not display:none — some bots skip hidden
+  // fields but still fill visible-but-styled-away ones). Real submissions
+  // always leave it empty; the API silently no-ops when it's filled instead
+  // of returning an error, so a bot can't tell it was caught.
+  const [website, setWebsite] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -31,7 +37,7 @@ export function WaitlistForm() {
       const res = await fetch("/api/waitlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, locale }),
+        body: JSON.stringify({ email, locale, website }),
       });
 
       if (!res.ok) throw new Error("request_failed");
@@ -75,6 +81,16 @@ export function WaitlistForm() {
           noValidate
         >
           <div className="flex flex-col gap-3 sm:flex-row">
+            <input
+              type="text"
+              name="website"
+              value={website}
+              onChange={(e) => setWebsite(e.target.value)}
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+              className="absolute -left-[9999px] h-px w-px overflow-hidden opacity-0"
+            />
             <input
               type="email"
               required

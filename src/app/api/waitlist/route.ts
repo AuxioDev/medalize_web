@@ -13,16 +13,28 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "invalid_body" }, { status: 400 });
   }
 
-  const { email, locale } = (body ?? {}) as { email?: string; locale?: string };
+  const { email, locale, website } = (body ?? {}) as {
+    email?: string;
+    locale?: string;
+    website?: string;
+  };
 
   if (typeof email !== "string" || !EMAIL_RE.test(email)) {
     return NextResponse.json({ error: "invalid_email" }, { status: 400 });
   }
 
+  const normalizedEmail = email.trim().toLowerCase();
+
+  // Honeypot tripped — a real browser never fills this field. Report
+  // success without sending anything, so a bot has no signal it was caught.
+  if (typeof website === "string" && website.trim() !== "") {
+    return NextResponse.json({ ok: true });
+  }
+
   const apiKey = process.env.RESEND_API_KEY;
 
   if (!apiKey) {
-    console.log(`[waitlist] (dev, no RESEND_API_KEY set) ${email} — locale=${locale ?? "?"}`);
+    console.log(`[waitlist] (dev, no RESEND_API_KEY set) ${normalizedEmail} — locale=${locale ?? "?"}`);
     return NextResponse.json({ ok: true });
   }
 
@@ -31,9 +43,9 @@ export async function POST(request: Request) {
     const { error } = await resend.emails.send({
       from: NOTIFY_FROM,
       to: NOTIFY_TO,
-      replyTo: email,
+      replyTo: normalizedEmail,
       subject: "New DocGet waitlist signup",
-      text: `Email: ${email}\nLocale: ${locale ?? "unknown"}\nAt: ${new Date().toISOString()}`,
+      text: `Email: ${normalizedEmail}\nLocale: ${locale ?? "unknown"}\nAt: ${new Date().toISOString()}`,
     });
 
     if (error) {
