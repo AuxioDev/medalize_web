@@ -17,17 +17,58 @@
   --color-brand-text: #0f172a;
   --color-brand-text-muted: #64748b;
 
+  /* The site's one deliberately-always-dark accent section (Footer,
+     Providers) — fixed regardless of --color-brand-* above, same in both
+     color schemes. Not part of the light/dark swap below. */
   --color-brand-ink: #0b1120;
   --color-brand-ink-surface: #111827;
   --color-brand-ink-surface-alt: #1b2536;
   --color-brand-ink-border: #2a3850;
   --color-brand-ink-text: #f1f5f9;
+
+  /* Default keyboard-focus ring color. #2563eb (not the darker
+     -primary-dark) is the one shade in the palette that clears 3:1 against
+     both white and --color-brand-ink — verified by contrast calculation,
+     not eyeballed. .brand-gradient overrides this to white below, since
+     that class paints the same blue as a background on many CTAs. */
+  --focus-ring: var(--color-brand-primary);
+}
+
+/* One dark palette, driven by the OS/browser setting only — this site has
+   no manual theme toggle. Every --color-brand-* utility (bg-brand-surface,
+   text-brand-text, ...) already resolves through a live CSS variable (see
+   the @theme inline block below), so redefining the variables here is
+   enough to repaint the whole site — no component's className needs to
+   change. --color-brand-ink* is intentionally left out: it's a fixed
+   design accent (Footer, Providers), not a light/dark pair. In dark mode
+   its values now equal the general surface/text/border tokens, so that
+   section stops reading as "a dark box on a light page" and instead sits
+   flush with the rest of a now-dark page — the border between them is
+   still real (same --color-brand-border token on both sides), just no
+   longer a high-contrast seam. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b1120;
+    --foreground: #f1f5f9;
+
+    --color-brand-surface: #0b1120;
+    --color-brand-card: #111827;
+    --color-brand-muted-bg: #1b2536;
+    --color-brand-border: #2a3850;
+    --color-brand-text: #f1f5f9;
+    --color-brand-text-muted: #94a3b8;
+  }
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
+
+  /* Below Tailwind's own smallest breakpoint (sm, 640px) — for the handful
+     of layouts (Hero's stat row, grids that currently jump 1→3 right at
+     sm:) that need one more step for ~360px Android widths. */
+  --breakpoint-xs: 22.5rem;
 
   --color-brand-primary: var(--color-brand-primary);
   --color-brand-primary-dark: var(--color-brand-primary-dark);
@@ -53,6 +94,33 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  /* viewport-fit=cover (set via the Viewport export in layout.tsx) lets
+     content draw under the notch/rounded corners on iPhone — this is what
+     makes that safe rather than a regression, mainly in landscape where
+     the notch sits on a long horizontal edge. */
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* Pairs with viewport-fit=cover above: pushes the sticky header's content
+   below the notch instead of under it, in the one orientation
+   (landscape) where the notch overlaps a fixed-to-top bar. Zero effect on
+   any device without a safe-area inset. */
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+/* Same idea, all four sides — for the one position:fixed overlay on the
+   site (the mobile nav panel), which sits outside body's own box and so
+   never inherits body's left/right safe-area padding the way a sticky
+   element does. calc() adds the inset on top of the panel's own
+   px-6/pt-6/pb-8 rather than replacing it — plain padding-* utilities of
+   the same property would just lose outright to this unlayered rule. */
+.safe-inset {
+  padding-top: calc(1.5rem + env(safe-area-inset-top));
+  padding-right: calc(1.5rem + env(safe-area-inset-right));
+  padding-bottom: calc(2rem + env(safe-area-inset-bottom));
+  padding-left: calc(1.5rem + env(safe-area-inset-left));
 }
 
 /* Anchor nav links (#how, #specialties, ...) jump instantly to their
@@ -68,7 +136,19 @@ html {
   }
 }
 
+/* Every interactive element on the site relied on the browser's default
+   focus ring before this — invisible in Chrome/Safari's common configs and
+   removed outright by WaitlistForm's own focus:outline-none. This is the
+   one rule that makes keyboard navigation visible anywhere on the site. */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
 .brand-gradient {
+  /* Same blue as --focus-ring's default, painted as this element's own
+     background on most CTAs — a blue ring on a blue pill would vanish. */
+  --focus-ring: #ffffff;
   background-image: linear-gradient(
     135deg,
     var(--color-brand-primary) 0%,

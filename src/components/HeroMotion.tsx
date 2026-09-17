@@ -16,8 +16,14 @@ const item: Variants = {
 };
 
 export function HeroStagger({ children }: { children: ReactNode }) {
+  // initial={false}, not initial="hidden": with "hidden" here, SSR ships
+  // every child inline-styled to opacity:0 (motion computes the initial
+  // variant server-side, since there's no IntersectionObserver on the
+  // server). That held the hero's own text invisible until React hydrated
+  // and Motion could animate it back in — the site's actual LCP element.
+  // false skips the mount transition and renders straight at "show".
   return (
-    <motion.div initial="hidden" animate="show" variants={container}>
+    <motion.div initial={false} animate="show" variants={container}>
       {children}
     </motion.div>
   );
@@ -38,9 +44,12 @@ export function HeroItem({
 }
 
 export function PhoneReveal({ children }: { children: ReactNode }) {
+  // Same fix as HeroStagger above: initial={false} instead of the object
+  // form, so the phone mockup — also above the fold — doesn't SSR at
+  // opacity:0 while waiting for JS.
   return (
     <motion.div
-      initial={{ opacity: 0, x: 28, scale: 0.96 }}
+      initial={false}
       animate={{ opacity: 1, x: 0, scale: 1 }}
       transition={{ duration: 0.75, ease: EASE, delay: 0.2 }}
     >

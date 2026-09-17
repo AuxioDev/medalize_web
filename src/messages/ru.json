@@ -14,7 +14,9 @@
       "forHospitals": "Клиникам"
     },
     "cta": "Встать в очередь",
-    "langLabel": "Язык"
+    "langLabel": "Язык",
+    "menuOpen": "Открыть меню",
+    "menuClose": "Закрыть меню"
   },
   "hero": {
     "eyebrow": "Скоро в iOS и Android — по всему Азербайджану",
@@ -152,6 +154,7 @@
   "waitlist": {
     "title": "Ваш следующий врач — в паре касаний.",
     "subtitle": "Встаньте в очередь и узнайте первыми, когда DocGet запустится в iOS и Android.",
+    "label": "Email",
     "placeholder": "you@example.com",
     "button": "Встать в очередь",
     "buttonLoading": "Отправка…",

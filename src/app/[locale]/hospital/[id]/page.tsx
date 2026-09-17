@@ -78,7 +78,7 @@ export default async function HospitalProfilePage({ params }: { params: Params }
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
       <ProfileHeader />
-      <main className="flex-1 bg-white">
+      <main className="flex-1 bg-brand-surface">
         <div className="mx-auto max-w-2xl px-5 py-12 sm:px-6 sm:py-16">
           <div className="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left sm:gap-6">
             {hospital.logo ? (

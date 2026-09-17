@@ -14,7 +14,9 @@
       "forHospitals": "Klinikalar üçün"
     },
     "cta": "Növbə siyahısına qoşul",
-    "langLabel": "Dil seçimi"
+    "langLabel": "Dil seçimi",
+    "menuOpen": "Menyunu aç",
+    "menuClose": "Menyunu bağla"
   },
   "hero": {
     "eyebrow": "Tezliklə iOS və Android-də — bütün Azərbaycanda",
@@ -152,6 +154,7 @@
   "waitlist": {
     "title": "Növbəti həkiminiz cəmi bir neçə toxunuş uzaqlıqdadır.",
     "subtitle": "Növbə siyahısına qoşulun, DocGet iOS və Android-də işə düşən kimi ilk siz bilin.",
+    "label": "E-poçt ünvanı",
     "placeholder": "siz@example.com",
     "button": "Növbəyə qoşul",
     "buttonLoading": "Göndərilir…",

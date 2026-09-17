@@ -10,7 +10,7 @@ import { PulseTrace } from "@/components/PulseLoader";
 // in-page sections.
 export function ProfileHeader() {
   return (
-    <header className="border-b border-brand-border bg-white">
+    <header className="border-b border-brand-border bg-brand-surface">
       <div className="mx-auto flex h-16 max-w-2xl items-center justify-between px-5 sm:px-6">
         <Link href="/" className="shrink-0">
           <Logo />

@@ -22,6 +22,8 @@ export function WaitlistForm() {
   const [website, setWebsite] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const emailId = "waitlist-email";
+  const errorId = "waitlist-email-error";
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -40,7 +42,15 @@ export function WaitlistForm() {
         body: JSON.stringify({ email, locale, website }),
       });
 
-      if (!res.ok) throw new Error("request_failed");
+      if (!res.ok) {
+        // The API distinguishes invalid_email (400) from send_failed (502)
+        // — this used to collapse both into one generic message even
+        // though the server already knew which one happened.
+        const data: { error?: string } | null = await res.json().catch(() => null);
+        setStatus("error");
+        setErrorMessage(data?.error === "invalid_email" ? t("errorInvalid") : t("errorGeneric"));
+        return;
+      }
 
       window.plausible?.("Waitlist Signup", { props: { locale } });
       setStatus("success");
@@ -55,6 +65,8 @@ export function WaitlistForm() {
       {status === "success" ? (
         <motion.div
           key="success"
+          role="status"
+          aria-live="polite"
           initial={{ opacity: 0, y: 10, scale: 0.97 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.4, ease: EASE }}
@@ -81,6 +93,9 @@ export function WaitlistForm() {
           className="mx-auto max-w-md"
           noValidate
         >
+          <label htmlFor={emailId} className="sr-only">
+            {t("label")}
+          </label>
           <div className="flex flex-col gap-3 sm:flex-row">
             <input
               type="text"
@@ -93,20 +108,26 @@ export function WaitlistForm() {
               className="absolute -left-[9999px] h-px w-px overflow-hidden opacity-0"
             />
             <input
+              id={emailId}
               type="email"
+              name="email"
               required
+              autoComplete="email"
+              inputMode="email"
               value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
                 if (status === "error") setStatus("idle");
               }}
               placeholder={t("placeholder")}
-              aria-label={t("placeholder")}
-              className="w-full rounded-full border-0 bg-white px-5 py-3 text-sm text-brand-text placeholder:text-brand-text-muted focus:outline-none focus:ring-2 focus:ring-white/60 sm:flex-1"
+              aria-invalid={status === "error"}
+              aria-describedby={status === "error" ? errorId : undefined}
+              className="w-full rounded-full border-0 bg-white px-5 py-3 text-sm text-brand-text placeholder:text-brand-text-muted sm:flex-1"
             />
             <motion.button
               type="submit"
               disabled={status === "loading"}
+              aria-busy={status === "loading"}
               whileHover={status === "loading" ? undefined : { scale: 1.03 }}
               whileTap={status === "loading" ? undefined : { scale: 0.97 }}
               className="shrink-0 rounded-full bg-brand-ink px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-60"
@@ -136,6 +157,8 @@ export function WaitlistForm() {
           <AnimatePresence>
             {status === "error" && (
               <motion.p
+                id={errorId}
+                role="alert"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}

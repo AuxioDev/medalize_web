@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { hasLocale } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
@@ -11,7 +11,24 @@ import "../globals.css";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin", "cyrillic", "latin-ext"],
+  // Explicit even though "swap" is next/font's own default — states the
+  // intent (show fallback text immediately, swap once Inter loads) instead
+  // of relying on a default nobody wrote down.
+  display: "swap",
 });
+
+// manifest.ts already declares theme_color: "#2563eb" for the installed
+// PWA case, but that alone never reaches the browser chrome (address bar,
+// task switcher) — only a real <meta name="theme-color"> does, which only
+// this export generates. Two entries, not one, so the address bar matches
+// whichever palette globals.css's prefers-color-scheme block just picked.
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#2563eb" },
+    { media: "(prefers-color-scheme: dark)", color: "#0b1120" },
+  ],
+  viewportFit: "cover",
+};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -68,7 +85,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-white text-brand-text">
+      <body className="min-h-full flex flex-col bg-brand-surface text-brand-text">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         {/* Plausible: privacy-friendly, cookie-free — no consent banner
             needed. The queue shim lets WaitlistForm call window.plausible(…)

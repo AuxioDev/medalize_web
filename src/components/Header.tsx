@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "motion/react";
 import { Logo } from "./Logo";
@@ -82,6 +82,10 @@ export function Header({ links: linksProp, homeHref = "#top" }: { links?: NavLin
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const panelId = "mobile-nav-panel";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -99,6 +103,44 @@ export function Header({ links: linksProp, homeHref = "#top" }: { links?: NavLin
     };
   }, [open]);
 
+  function closeMenu() {
+    setOpen(false);
+    menuButtonRef.current?.focus();
+  }
+
+  // The panel is a full-screen dialog, so it needs the behavior one
+  // implies: focus moves into it on open, Escape closes it, and Tab is
+  // trapped inside it rather than leaking back to the (invisible, covered)
+  // page behind it.
+  useEffect(() => {
+    if (!open) return;
+    closeButtonRef.current?.focus();
+
+    function onKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        closeMenu();
+        return;
+      }
+      if (e.key !== "Tab" || !panelRef.current) return;
+      const focusables = panelRef.current.querySelectorAll<HTMLElement>(
+        "a[href], button:not([disabled])"
+      );
+      if (focusables.length === 0) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [open]);
+
   const links: NavLink[] = linksProp ?? [
     { href: "#how", label: t("nav.how"), icon: <CompassIcon /> },
     { href: "#specialties", label: t("nav.specialties"), icon: <GridIcon /> },
@@ -111,10 +153,16 @@ export function Header({ links: linksProp, homeHref = "#top" }: { links?: NavLin
   return (
     <>
       <motion.header
-        initial={{ y: -16, opacity: 0 }}
+        // false, not the {y:-16,opacity:0} object: the header is the very
+        // first thing painted on every page, so SSR-ing it at opacity:0
+        // (Motion resolves `initial` server-side, same issue as
+        // HeroMotion.tsx) meant the whole nav bar was invisible until JS
+        // hydrated. It only ever mounts once, so there's no repeat
+        // animation being lost by skipping it.
+        initial={false}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: EASE }}
-        className="sticky top-0 z-40 px-3 sm:px-5"
+        className="safe-top sticky top-0 z-40 px-3 sm:px-5"
       >
         <motion.div
           animate={{
@@ -162,8 +210,11 @@ export function Header({ links: linksProp, homeHref = "#top" }: { links?: NavLin
           </div>
 
           <button
+            ref={menuButtonRef}
             type="button"
-            aria-label="Menu"
+            aria-label={t("menuOpen")}
+            aria-expanded={open}
+            aria-controls={panelId}
             onClick={() => setOpen((v) => !v)}
             className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full transition-colors hover:bg-brand-muted-bg lg:hidden"
           >
@@ -210,26 +261,32 @@ export function Header({ links: linksProp, homeHref = "#top" }: { links?: NavLin
       <AnimatePresence>
         {open && (
           <motion.div
+            id={panelId}
+            ref={panelRef}
+            role="dialog"
+            aria-modal="true"
+            aria-label={t("menuOpen")}
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.4, ease: EASE }}
-            className="fixed inset-0 z-50 flex flex-col overflow-y-auto bg-white px-6 pb-8 pt-6 lg:hidden"
+            className="safe-inset fixed inset-0 z-50 flex flex-col overflow-y-auto bg-brand-surface lg:hidden"
           >
             <div className="mb-4 flex items-center justify-between border-b border-brand-border pb-5">
               {isRoute ? (
-                <Link href={homeHref} onClick={() => setOpen(false)}>
+                <Link href={homeHref} onClick={closeMenu}>
                   <Logo />
                 </Link>
               ) : (
-                <a href={homeHref} onClick={() => setOpen(false)}>
+                <a href={homeHref} onClick={closeMenu}>
                   <Logo />
                 </a>
               )}
               <button
+                ref={closeButtonRef}
                 type="button"
-                aria-label="Close menu"
-                onClick={() => setOpen(false)}
+                aria-label={t("menuClose")}
+                onClick={closeMenu}
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-muted-bg text-brand-text transition-colors hover:bg-brand-border"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -243,7 +300,7 @@ export function Header({ links: linksProp, homeHref = "#top" }: { links?: NavLin
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setOpen(false)}
+                  onClick={closeMenu}
                   className="group flex items-center justify-between gap-3 border-b border-brand-border py-4 text-lg font-semibold text-brand-text transition-colors hover:text-brand-primary"
                 >
                   <span className="flex items-center gap-3">
@@ -267,7 +324,7 @@ export function Header({ links: linksProp, homeHref = "#top" }: { links?: NavLin
                     key={l}
                     type="button"
                     onClick={() => {
-                      setOpen(false);
+                      closeMenu();
                       router.replace(pathname, { locale: l });
                     }}
                     className={`flex-1 rounded-xl border px-2 py-3 text-center text-sm font-bold transition-all ${
@@ -284,7 +341,7 @@ export function Header({ links: linksProp, homeHref = "#top" }: { links?: NavLin
 
             <a
               href="#waitlist"
-              onClick={() => setOpen(false)}
+              onClick={closeMenu}
               className="brand-gradient mt-auto flex w-full items-center justify-center rounded-full py-3.5 text-sm font-semibold text-white"
             >
               {t("cta")}

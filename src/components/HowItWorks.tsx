@@ -6,7 +6,7 @@ export async function HowItWorks() {
   const steps = t.raw("steps") as { label: string; title: string; body: string }[];
 
   return (
-    <section id="how" className="scroll-mt-16 bg-white py-20 sm:py-24">
+    <section id="how" className="scroll-mt-16 bg-brand-surface py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <Reveal>
           <span className="text-xs font-semibold uppercase tracking-wide text-brand-primary">

@@ -14,7 +14,9 @@
       "forHospitals": "Cliniques"
     },
     "cta": "Rejoindre la liste d'attente",
-    "langLabel": "Langue"
+    "langLabel": "Langue",
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu"
   },
   "hero": {
     "eyebrow": "Bientôt sur iOS et Android — partout en Azerbaïdjan",
@@ -152,6 +154,7 @@
   "waitlist": {
     "title": "Votre prochain médecin n'est qu'à quelques clics.",
     "subtitle": "Rejoignez la liste d'attente et soyez informé en premier du lancement de DocGet sur iOS et Android.",
+    "label": "Adresse e-mail",
     "placeholder": "vous@exemple.com",
     "button": "Rejoindre la liste d'attente",
     "buttonLoading": "Envoi…",

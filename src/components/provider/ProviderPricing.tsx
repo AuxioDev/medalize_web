@@ -13,7 +13,7 @@ export async function ProviderPricing({ namespace }: { namespace: string }) {
   const tiers = t.raw("tiers") as Tier[];
 
   return (
-    <section id="pricing" className="scroll-mt-16 bg-white py-20 sm:py-24">
+    <section id="pricing" className="scroll-mt-16 bg-brand-surface py-20 sm:py-24">
       <div className="mx-auto max-w-5xl px-5 sm:px-6">
         <Reveal>
           <span className="text-xs font-semibold uppercase tracking-wide text-brand-primary">

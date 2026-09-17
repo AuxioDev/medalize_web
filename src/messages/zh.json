@@ -14,7 +14,9 @@
       "forHospitals": "诊所专区"
     },
     "cta": "加入等候名单",
-    "langLabel": "语言"
+    "langLabel": "语言",
+    "menuOpen": "打开菜单",
+    "menuClose": "关闭菜单"
   },
   "hero": {
     "eyebrow": "即将登陆 iOS 和 Android — 覆盖全阿塞拜疆",
@@ -152,6 +154,7 @@
   "waitlist": {
     "title": "您的下一位医生，只需轻轻几下即可预约。",
     "subtitle": "加入等候名单，DocGet 在 iOS 和 Android 上线时第一时间通知您。",
+    "label": "电子邮箱地址",
     "placeholder": "you@example.com",
     "button": "加入等候名单",
     "buttonLoading": "提交中…",

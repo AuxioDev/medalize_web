@@ -45,7 +45,7 @@ export async function WhyDocGet() {
   const cards = t.raw("cards") as { title: string; body: string }[];
 
   return (
-    <section id="why" className="scroll-mt-16 bg-white py-20 sm:py-24">
+    <section id="why" className="scroll-mt-16 bg-brand-surface py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <Reveal>
           <span className="text-xs font-semibold uppercase tracking-wide text-brand-primary">

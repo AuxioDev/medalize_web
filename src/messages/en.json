@@ -14,7 +14,9 @@
       "forHospitals": "For clinics"
     },
     "cta": "Join the waitlist",
-    "langLabel": "Language"
+    "langLabel": "Language",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
   },
   "hero": {
     "eyebrow": "Coming soon to iOS & Android — all over Azerbaijan",
@@ -152,6 +154,7 @@
   "waitlist": {
     "title": "Your next doctor is a few taps away.",
     "subtitle": "Join the waitlist and be the first to know when DocGet launches on iOS and Android.",
+    "label": "Email address",
     "placeholder": "you@example.com",
     "button": "Join waitlist",
     "buttonLoading": "Joining…",

@@ -1,16 +1,41 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "motion/react";
 import type { Locale } from "@/i18n/routing";
 import { specialties, specialtyOrder } from "@/data/specialties";
 import { Reveal, RevealGroup, RevealItem } from "./Reveal";
 
+const subscribeNever = () => () => {};
+
+// True once the browser has taken over from SSR, false for every server
+// render and the first client render that has to match it byte-for-byte.
+// useSyncExternalStore is the React-blessed way to read a value that
+// legitimately differs between server and client without an effect (which
+// would mean a setState call whose only job is "become true after mount",
+// exactly the anti-pattern react-hooks/set-state-in-effect flags) or a
+// ref read during render (which react-hooks/refs flags for the same
+// tearing reason).
+function useHasHydrated() {
+  return useSyncExternalStore(
+    subscribeNever,
+    () => true,
+    () => false
+  );
+}
+
 export function Specialties() {
   const t = useTranslations("specialties");
   const locale = useLocale() as Locale;
   const [active, setActive] = useState(specialtyOrder[1]);
+  // The detail panel below re-animates every time `active` changes — a
+  // real, click-triggered transition worth keeping. But that same
+  // `initial` object also gets resolved at SSR time for whichever
+  // specialty is selected by default, shipping the page at opacity:0.
+  // hasHydrated skips only that one first, unrequested mount; every later
+  // swap (a new key, mounting fresh) still gets the fade.
+  const hasHydrated = useHasHydrated();
 
   return (
     <section id="specialties" className="scroll-mt-16 bg-brand-muted-bg py-20 sm:py-24">
@@ -59,7 +84,7 @@ export function Specialties() {
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
-              initial={{ opacity: 0, y: 8 }}
+              initial={hasHydrated ? { opacity: 0, y: 8 } : false}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}

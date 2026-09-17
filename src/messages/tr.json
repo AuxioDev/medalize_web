@@ -14,7 +14,9 @@
       "forHospitals": "Klinikler için"
     },
     "cta": "Bekleme listesine katıl",
-    "langLabel": "Dil seçimi"
+    "langLabel": "Dil seçimi",
+    "menuOpen": "Menüyü aç",
+    "menuClose": "Menüyü kapat"
   },
   "hero": {
     "eyebrow": "Yakında iOS ve Android'de — tüm Azerbaycan'da",
@@ -152,6 +154,7 @@
   "waitlist": {
     "title": "Bir sonraki doktorunuz sadece birkaç dokunuş uzağınızda.",
     "subtitle": "Bekleme listesine katılın, DocGet iOS ve Android'de yayınlandığında ilk siz öğrenin.",
+    "label": "E-posta adresi",
     "placeholder": "siz@ornek.com",
     "button": "Bekleme listesine katıl",
     "buttonLoading": "Gönderiliyor…",
